@@ -1,0 +1,8 @@
+$col-prot: light-dark(
+  oklch(0.69 0.1184 204.88),
+  oklch(0.75 0.1184 204.88));
+$col-prot-contrast: light-dark(
+  oklch(0.55 0.0913 204.88),
+  oklch(0.82 0.1184 204.88));
+
+$col-text: light-dark(black, white);
