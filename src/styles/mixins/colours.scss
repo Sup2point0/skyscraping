@@ -5,4 +5,11 @@ $col-prot-contrast: light-dark(
   oklch(0.55 0.0913 204.88),
   oklch(0.82 0.1184 204.88));
 
+$col-deut: oklch(0.69 0.1973 34.41);
+$col-deut-contrast: oklch(0.6 0.1973 34.41);
+
 $col-text: light-dark(black, white);
+$col-text-deut: light-dark(grey, grey);
+$col-text-highlight: oklch(0.42 0.1184 254.88);
+
+$col-line: lightgrey;

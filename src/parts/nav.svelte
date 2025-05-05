@@ -11,42 +11,54 @@ import NavLink from "#parts/nav.link.svelte";
 
 
 <nav>
+  <NavLink text="Skyscraping" link="https://sup2point0.github.io/skyscraping" />
+
   <section>
-    <h3> Setting Out: <span class="numeric">4x4</span> </h3>
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
+    <h3> Foreword </h3>
+    <NavLink text="Wait, Skyscrapers?" intern="foreword" />
+    <NavLink text="Adventure Awaits" intern="adventure-awaits" />
+  </section>
+
+  <section>
+    <h3> Setting Out: <span class="num">4x4</span> </h3>
+    <NavLink text="Case: Silhouette" intern="case/silhouette" />
+    <NavLink text="Case: Stairs" intern="case/stairs" />
+    <NavLink text="Technique: Pencil Marks" intern="tech/pencil-marks" />
+    <NavLink text="Case: Blockade" intern="case/blockade" />
+    <NavLink text="Clueless" intern="4x4/clueless" />
+    <NavLink text="Technique: Guesswork, I’m Guessing?" intern="tech/guesswork" />
+  </section>
+
+  <section>
+    <h3> Gearing Up: <span class="num">5x5</span> </h3>
+    <NavLink text="Technique: Haven" intern="tech/haven" />
+    <NavLink text="Case: Slide" intern="case/" />
+    <NavLink text="Case: Leap of Faith" intern="case/" />
+    <NavLink text="Case: High-Rise" intern="case/" />
+  </section>
+
+  <section>
+    <h3> Bring the Heat: <span class="num">6x6</span> </h3>
     <NavLink text="Case" intern="case/" />
   </section>
 
   <section>
-    <h3> Gearing Up: <span class="numeric">5x5</span> </h3>
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
+    <h3> In the Deep End: <span class="num">7x7</span> </h3>
     <NavLink text="Case" intern="case/" />
   </section>
 
   <section>
-    <h3> Bring the Heat: <span class="numeric">6x6</span> </h3>
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
-    <NavLink text="Case" intern="case/" />
+    <h3> Showerthoughts </h3>
+    <NavLink text="Satisfaction" intern="" />
+    <NavLink text="Guesswork vs Imagination" intern="" />
+    <NavLink text="Nontriviality" intern="" />
+  </section>
+
+  <section>
+    <h3> Meta </h3>
+    <NavLink text="Synopsis" intern="synopsis" />
+    <NavLink text="FAQ" intern="faq" />
+    <NavLink text="License" intern="license" />
   </section>
 </nav>
 
@@ -79,10 +91,15 @@ section {
     color: $col-prot;
     @media (prefers-contrast: more) { color: $col-prot-contrast; }
 
-    .numeric {
+    .num {
       font-style: italic;
     }
   }
+}
+
+a {
+  color: $col-text;
+  text-decoration: none;
 }
 
 </style>

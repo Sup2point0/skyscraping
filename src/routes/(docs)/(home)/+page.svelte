@@ -1,5 +1,8 @@
 <script>
 
+import Header from "#parts/header.svelte"
+import Footer from "#parts/footer.svelte";
+
 import Content from "./~content.svx";
 import { metadata as page } from "./~content.svx";
 
@@ -7,7 +10,9 @@ import { metadata as page } from "./~content.svx";
 
 
 <article>
-  <h1> {page.head} </h1>
+  <Header title={page.head} capt={page.capt} />
   
   <Content />
+
+  <Footer date={page.date_display} path={page.path} />
 </article>

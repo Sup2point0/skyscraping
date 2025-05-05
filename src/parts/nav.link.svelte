@@ -9,15 +9,16 @@ import { base } from "$app/paths";
 
 interface Props {
   text: string;
-  intern: string;
+  link?: string;
+    intern?: string;
 }
 
-let { text, intern }: Props = $props();
+let { text, link, intern }: Props = $props();
 
 </script>
 
 
-<a href="{base}/{intern}">
+<a href={link ?? `${base}/${intern}`}>
   {text}
 </a>
 
@@ -35,19 +36,19 @@ a {
   @media (prefers-contrast: more) { text-decoration: underline; }
 
   &:hover, &:focus-visible {
-    color: $col-prot;
+    color: $col-deut;
     background: light-dark(
-      rgb(black, 4%),
+      rgb(black, 2%),
       rgb(white, 8%));
 
       @media (prefers-contrast: more) {
-        color: $col-prot-contrast;
+        color: $col-deut-contrast;
       }
   }
 
   &:active {
     background: light-dark(
-      rgb(black, 8%),
+      rgb(black, 5%),
       rgb(white, 16%));
   }
 }
