@@ -5,13 +5,16 @@
 
   "paths / site": "./",
   "paths / sources": [
-    ""
+    "./",
+    "articles/"
   ],
-  "paths / exclude": [],
+  "paths / exclude": [
+    "stranger-quarkdown/"
+  ],
   "paths / dest": "src/routes/",
   
-  "out / file-name": "~content.svx",
-  "out / site-data": "/src/site-data.json",
+  "out / file-name": "~content",
+  "out / site-data": "src/site-data.json",
 
   "opts / on-no-dir": ["warn", "create"],
   "opts / on-error": "warn",

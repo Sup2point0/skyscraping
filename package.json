@@ -4,8 +4,9 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite",
-      "devx": "vite --open",
-		"build": "vite build",
+      "devx": "npm run prep && vite --open",
+    "prep": "cd stranger-quarkdown && rake squark[fonts] && cd ..",
+		"build": "npm run prep && vite build",
 		"preview": "vite preview"
 	},
 	"devDependencies": {
