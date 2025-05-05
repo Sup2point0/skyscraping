@@ -56,7 +56,7 @@ import NavLink from "#parts/nav.link.svelte";
 nav {
   flex-grow: 1;
   max-width: 25vw;
-  padding: 1.25rem 1.5rem 5rem;
+  padding: 2.5rem 1.5rem 4rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 1.5rem;
