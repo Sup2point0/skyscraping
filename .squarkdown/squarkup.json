@@ -1,0 +1,30 @@
+{
+  "$schema": "https://sup2point0.github.io/stranger-quarkdown/squarkup-schema/latest.json",
+
+  "repo": "skyscraping",
+
+  "paths / site": "./",
+  "paths / sources": [
+    ""
+  ],
+  "paths / exclude": [],
+  "paths / dest": "src/routes/",
+  
+  "out / file-name": "~content.svx",
+  "out / site-data": "/src/site-data.json",
+
+  "opts / on-no-dir": ["warn", "create"],
+  "opts / on-error": "warn",
+
+  "bases / path": "src/parts/bases/",
+  "bases / page.svelte": "~page.svelte",
+
+  "styles / path": "src/styles/",
+  "styles / page-styles": "src/styles/",
+  "styles / base-style": "article",
+
+  "fonts / queries": [
+    "Sora:wght@100..800",
+    "Lora:ital,wght@0,400..700;1,400..700"
+  ]
+}
