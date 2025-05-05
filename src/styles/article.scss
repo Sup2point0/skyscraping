@@ -1,0 +1,8 @@
+@use 'src/styles/mixins/fonts' as *;
+
+
+p {
+  margin: 1em 0;
+  @include font-body;
+  line-height: 175%;
+}
