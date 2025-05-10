@@ -58,7 +58,7 @@ import NavLink from "#parts/nav.link.svelte";
     <h3> Meta </h3>
     <NavLink text="Synopsis" intern="synopsis" />
     <NavLink text="FAQ" intern="faq" />
-    <NavLink text="License" intern="license" />
+    <NavLink text="Licence" intern="licence" />
   </section>
 </nav>
 

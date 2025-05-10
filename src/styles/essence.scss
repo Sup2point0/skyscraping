@@ -21,7 +21,7 @@ html {
 
 article .content {
   p {
-    margin: 1.5em 0;
+    margin: 0.75em 0;
     @include font-body;
     line-height: 160%;
   }
@@ -36,7 +36,7 @@ article .content {
   }
 
   h3 {
-    margin: 1em 0 0.5em;
+    margin: 1.5em 0 0.5em;
     @include font-body;
     font-weight: normal;
     font-size: 140%;
@@ -50,7 +50,9 @@ article .content {
 
 
 .puzzle table {
-  $size: 1.5em;
+  $size: 2em;
+  margin: 1em 0;
+  border-collapse: collapse;
 
   th {
     display: none;
@@ -59,11 +61,19 @@ article .content {
   td {
     width: $size;
     height: $size;
-    padding: 0;
     margin: 0;
     @include font-ui;
+    font-weight: 300;
     font-size: 150%;
     text-align: center;
-    border: 1px solid $col-deut;
+    border: 1px solid $col-line;
+  }
+
+  td:first-child,
+  tr:first-child td,
+  td:last-child,
+  tr:last-child td {
+    font-weight: 400;
+    border: none;
   }
 }

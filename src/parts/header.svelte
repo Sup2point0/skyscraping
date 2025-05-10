@@ -27,7 +27,7 @@ let { title, capt }: Props = $props();
 <style lang="scss">
 
 header {
-  padding: 0 0 0.8rem;
+  padding: 0 0 1rem;
 }
 
 h1 {
