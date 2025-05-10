@@ -5,6 +5,8 @@ The footer at the end of each page.
 
 <script lang="ts">
 
+import { base } from "$app/paths";
+
 interface Props {
   date?: string;
   path?: string;
@@ -27,7 +29,13 @@ let { date, path }: Props = $props();
   </div>
 
   <div class="about">
-    <p> <span style:font-size="120%">Skyscraping</span>&ensp;by <a target="_blank" href="https://github.com/Sup2point0">Sup#2.0</a> </p>
+    <a href="https://sup2point0.github.io/skyscraping">
+      <img alt="" src="{base}/skyscraping-icon.svg">
+    </a>
+
+    <p>
+      <span style:font-size="120%">Skyscraping</span>&ensp;by <a target="_blank" href="https://github.com/Sup2point0">Sup#2.0</a>
+    </p>
   </div>
 </footer>
 
@@ -44,7 +52,7 @@ p {
   @include font-body;
 }
 
-a {
+a:not(:has(img)) {
   @include link-underline;
 }
 
@@ -67,6 +75,17 @@ a {
 
   span {
     color: $col-text-highlight;
+  }
+
+  img {
+    max-width: 4em;
+    aspect-ratio: 1;
+    margin-bottom: 0.5rem;
+    transition: filter 0.1s ease-out;
+
+    &:hover {
+      filter: brightness(90%);
+    }
   }
 }
 

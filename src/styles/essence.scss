@@ -18,6 +18,11 @@ html {
   color-scheme: light dark;
 }
 
+::selection {
+  color: white;
+  background: $col-prot;
+}
+
 
 article .content {
   p {

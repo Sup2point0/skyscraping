@@ -1,16 +1,22 @@
 <!-- @component NavPane
 
-The global side navigation pane
+The global side navigation pane.
 -->
 
 <script lang="ts">
 
 import NavLink from "#parts/nav.link.svelte";
 
+interface Props {
+  mobile?: boolean;
+}
+
+let { mobile = false }: Props = $props();
+
 </script>
 
 
-<nav>
+<nav class:mobile>
   <NavLink text="Skyscraping" link="https://sup2point0.github.io/skyscraping" />
 
   <section>
@@ -68,6 +74,7 @@ import NavLink from "#parts/nav.link.svelte";
 nav {
   flex-grow: 1;
   max-width: 25vw;
+  &.mobile { max-width: 100vw; }
   padding: 2.5rem 1.5rem 4rem;
   display: flex;
   flex-flow: column nowrap;
