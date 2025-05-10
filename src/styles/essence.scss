@@ -1,4 +1,6 @@
+@use 'src/styles/mixins/colours' as *;
 @use 'src/styles/mixins/fonts' as *;
+@use 'src/styles/mixins/links' as *;
 
 
 * {
@@ -14,4 +16,54 @@
 
 html {
   color-scheme: light dark;
+}
+
+
+article .content {
+  p {
+    margin: 1.5em 0;
+    @include font-body;
+    line-height: 160%;
+  }
+
+  h2 {
+    padding-bottom: 0.2em;
+    margin: 2em 0 1em;
+    @include font-body;
+    font-weight: normal;
+    font-size: 200%;
+    border-bottom: 1px solid $col-line;
+  }
+
+  h3 {
+    margin: 1em 0 0.5em;
+    @include font-body;
+    font-weight: normal;
+    font-size: 140%;
+    color: $col-text-highlight;
+  }
+
+  a {
+    @include link-underline();
+  }
+}
+
+
+.puzzle table {
+  $size: 1.5em;
+
+  th {
+    display: none;
+  }
+
+  td {
+    width: $size;
+    height: $size;
+    padding: 0;
+    margin: 0;
+    @include font-ui;
+    font-size: 150%;
+    text-align: center;
+    border: 1px solid $col-deut;
+  }
 }

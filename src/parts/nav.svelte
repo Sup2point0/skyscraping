@@ -21,10 +21,10 @@ import NavLink from "#parts/nav.link.svelte";
 
   <section>
     <h3> Setting Out: <span class="num">4x4</span> </h3>
-    <NavLink text="Case: Silhouette" intern="case/silhouette" />
-    <NavLink text="Case: Stairs" intern="case/stairs" />
+    <NavLink text="Case: Silhouette" intern="cases/silhouette" />
+    <NavLink text="Case: Stairs" intern="cases/stairs" />
     <NavLink text="Technique: Pencil Marks" intern="tech/pencil-marks" />
-    <NavLink text="Case: Blockade" intern="case/blockade" />
+    <NavLink text="Case: Blockade" intern="cases/blockade" />
     <NavLink text="Clueless" intern="4x4/clueless" />
     <NavLink text="Technique: Guesswork, I’m Guessing?" intern="tech/guesswork" />
   </section>
@@ -32,19 +32,19 @@ import NavLink from "#parts/nav.link.svelte";
   <section>
     <h3> Gearing Up: <span class="num">5x5</span> </h3>
     <NavLink text="Technique: Haven" intern="tech/haven" />
-    <NavLink text="Case: Slide" intern="case/" />
-    <NavLink text="Case: Leap of Faith" intern="case/" />
-    <NavLink text="Case: High-Rise" intern="case/" />
+    <NavLink text="Case: Slide" intern="cases/" />
+    <NavLink text="Case: Leap of Faith" intern="cases/" />
+    <NavLink text="Case: High-Rise" intern="cases/" />
   </section>
 
   <section>
     <h3> Bring the Heat: <span class="num">6x6</span> </h3>
-    <NavLink text="Case" intern="case/" />
+    <NavLink text="Case" intern="cases/" />
   </section>
 
   <section>
     <h3> In the Deep End: <span class="num">7x7</span> </h3>
-    <NavLink text="Case" intern="case/" />
+    <NavLink text="Case" intern="cases/" />
   </section>
 
   <section>

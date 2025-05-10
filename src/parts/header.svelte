@@ -39,7 +39,8 @@ h1 {
 
 p.caption {
   @include font-body;
-  color: $col-text-deut;
+  font-size: 125%;
+  color: $col-text-highlight;
 }
 
 </style>

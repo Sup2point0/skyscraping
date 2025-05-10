@@ -27,7 +27,7 @@ let { date, path }: Props = $props();
   </div>
 
   <div class="about">
-    <p> <span>Skyscraping</span> by <a target="_blank" href="https://github.com/Sup2point0">Sup#2.0</a> </p>
+    <p> <span style:font-size="120%">Skyscraping</span>&ensp;by <a target="_blank" href="https://github.com/Sup2point0">Sup#2.0</a> </p>
   </div>
 </footer>
 

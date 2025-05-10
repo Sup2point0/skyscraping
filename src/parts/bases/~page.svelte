@@ -12,7 +12,9 @@ import { metadata as page } from "./~content.svx";
 <article>
   <Header title={page.head} capt={page.capt} />
   
-  <Content />
+  <div class="content">
+    <Content />
+  </div>
 
   <Footer date={page.date_display} path={page.path} />
 </article>
