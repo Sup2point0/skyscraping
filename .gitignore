@@ -2,6 +2,8 @@
 ~content.svx
 site-data.json
 
+(dyna)/
+
 # output
 build/
 
