@@ -22,7 +22,8 @@ let { mobile = false }: Props = $props();
   <section>
     <h3> Foreword </h3>
     <NavLink text="Wait, Skyscrapers?" intern="foreword" />
-    <NavLink text="Adventure Awaits" intern="adventure-awaits" />
+    <NavLink text="Adventure Awaits" intern="primer" />
+    <NavLink text="Glossary" intern="jargon" />
   </section>
 
   <section>
@@ -55,16 +56,17 @@ let { mobile = false }: Props = $props();
 
   <section>
     <h3> Showerthoughts </h3>
-    <NavLink text="Satisfaction" intern="" />
-    <NavLink text="Guesswork vs Imagination" intern="" />
-    <NavLink text="Nontriviality" intern="" />
+    <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
+    <NavLink text="Satisfaction" intern="thoughts/" />
+    <NavLink text="Guesswork vs Imagination" intern="thoughts/" />
+    <NavLink text="Nontriviality" intern="thoughts/" />
   </section>
 
   <section>
     <h3> Meta </h3>
-    <NavLink text="Synopsis" intern="synopsis" />
-    <NavLink text="FAQ" intern="faq" />
-    <NavLink text="Licence" intern="licence" />
+    <NavLink text="Synopsis" intern="info/synopsis" />
+    <NavLink text="FAQ" intern="info/faq" />
+    <NavLink text="Licence" intern="info/licence" />
   </section>
 </nav>
 

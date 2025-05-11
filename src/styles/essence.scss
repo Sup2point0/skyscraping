@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 @use 'src/styles/mixins/colours' as *;
 @use 'src/styles/mixins/fonts' as *;
 @use 'src/styles/mixins/links' as *;
@@ -51,6 +53,10 @@ article .content {
   a {
     @include link-underline();
   }
+
+  strong {
+    font-weight: 600;
+  }
 }
 
 
@@ -67,11 +73,42 @@ article .content {
     width: $size;
     height: $size;
     margin: 0;
+    position: relative;
     @include font-ui;
     font-weight: 300;
     font-size: 150%;
     text-align: center;
+    vertical-align: middle;
     border: 1px solid $col-line;
+
+    em {
+      font-size: 50%;
+      font-style: normal
+    }
+
+    strong {
+      font-weight: normal;
+      color: $col-prot;
+
+      // &:has(em) {
+      //   font-size: 50%;  // prevent `<strong>` from keeping the old larger text height
+      // }
+    }
+
+    &:has(strong) {
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $col-prot;
+        opacity: 5%;
+        z-index: 0;
+      }
+    }
   }
 
   td:first-child,
