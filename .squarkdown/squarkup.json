@@ -6,7 +6,8 @@
   "paths / site": "./",
   "paths / sources": [
     "./",
-    "articles/"
+    "articles/",
+    ".squarkdown/"
   ],
   "paths / exclude": [
     "stranger-quarkdown/"

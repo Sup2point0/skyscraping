@@ -1,6 +1,6 @@
 # Skyscraping
 <!-- #SQUARK live!
-| dest = (docs)/(home)
+| dest = (home)
 | capt = The quick brown fox jumps over the lazy dog
 | date = 2025 May 5
 -->
