@@ -36,6 +36,10 @@ let { date, path }: Props = $props();
     <p>
       <span style:font-size="120%">Skyscraping</span>&ensp;by <a target="_blank" href="https://github.com/Sup2point0">Sup#2.0</a>
     </p>
+
+    <p style:padding-top="1em">
+      <a href="{base}/info/licence"> CC BY-SA 4.0 </a>
+    </p>
   </div>
 </footer>
 
