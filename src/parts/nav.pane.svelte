@@ -20,46 +20,42 @@ let { mobile = false }: Props = $props();
   <NavLink text="Skyscraping" link="https://sup2point0.github.io/skyscraping" />
 
   <section>
-    <h3> Foreword </h3>
-    <NavLink text="Wait, Skyscrapers?" intern="foreword" />
-    <NavLink text="Adventure Awaits" intern="primer" />
+    <h3> Walkthrough </h3>
+    <NavLink text="Foreword" intern="foreword" />
+    <NavLink text="Primer" intern="primer" />
+    <NavLink text="Clueless" intern="clueless" />
     <NavLink text="Glossary" intern="jargon" />
   </section>
 
   <section>
-    <h3> Setting Out: <span class="num">4x4</span> </h3>
-    <NavLink text="Case: Silhouette" intern="cases/silhouette" />
-    <NavLink text="Case: Stairs" intern="cases/stairs" />
-    <NavLink text="Technique: Pencil Marks" intern="tech/pencil-marks" />
-    <NavLink text="Case: Blockade" intern="cases/blockade" />
-    <NavLink text="Clueless" intern="4x4/clueless" />
-    <NavLink text="Technique: Guesswork, I’m Guessing?" intern="tech/guesswork" />
+    <h3> Techniques </h3>
+    <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
+    <NavLink text="Pencil Marks" intern="tech/pencil-marks" />
+    <NavLink text="Haven" intern="tech/haven" />
+    <NavLink text="Pinpoint" intern="tech/pinpoint" />
+    <NavLink text="Couples" intern="tech/couples" />
   </section>
 
   <section>
-    <h3> Gearing Up: <span class="num">5x5</span> </h3>
-    <NavLink text="Technique: Haven" intern="tech/haven" />
-    <NavLink text="Case: Slide" intern="cases/" />
-    <NavLink text="Case: Leap of Faith" intern="cases/" />
-    <NavLink text="Case: High-Rise" intern="cases/" />
-  </section>
-
-  <section>
-    <h3> Bring the Heat: <span class="num">6x6</span> </h3>
-    <NavLink text="Case" intern="cases/" />
-  </section>
-
-  <section>
-    <h3> In the Deep End: <span class="num">7x7</span> </h3>
-    <NavLink text="Case" intern="cases/" />
+    <h3> Cases </h3>
+    <NavLink text="Silhouette" intern="cases/silhouette" />
+    <NavLink text="Stairs" intern="cases/stairs" />
+    <NavLink text="Blockade" intern="cases/blockade" />
+    <NavLink text="Slide" intern="cases/" />
+    <NavLink text="Leap of Faith" intern="cases/" />
+    <NavLink text="High-Rise" intern="cases/" />
+    <NavLink text="Slide" intern="cases/" />
+    <NavLink text="Hideout" intern="cases/" />
+    <NavLink text="Middle Ground" intern="cases/" />
+    <NavLink text="Frontier" intern="cases/" />
   </section>
 
   <section>
     <h3> Showerthoughts </h3>
     <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
-    <NavLink text="Satisfaction" intern="thoughts/" />
-    <NavLink text="Guesswork vs Imagination" intern="thoughts/" />
-    <NavLink text="Nontriviality" intern="thoughts/" />
+    <NavLink text="Satisfaction" intern="thoughts/satisfaction" />
+    <NavLink text="Guesswork vs Imagination" intern="thoughts/imagination-vs-guesswork" />
+    <NavLink text="Nontriviality" intern="thoughts/nontriviality" />
   </section>
 
   <section>
