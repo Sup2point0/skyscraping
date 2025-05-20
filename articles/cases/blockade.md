@@ -3,21 +3,22 @@
 | dest = cases/blockade
 | capt = $N$ opposite clue of $2$
 | index = cases
-| date = 2025 May 9
+| date = 2025 May 20
 -->
 
 When we have a clue of $2$, and skyscraper $N$ is at the back of that lane, then we know skyscraper $N-1$ must lie immediately in front of that clue.
 
 <div class="puzzle">
 
-|||||||
-| :- | :- | :- | :- | :- | :- |
-|    |  . |  . |  . |  . |    |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|    |  . |  . |  . |  . |    |
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|  2  |**4**|     |     |     |  5  |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 </div>
 
@@ -30,14 +31,15 @@ This deduction only applies if $N$ is at the **very end of the lane**. If it’s
 
 <div class="puzzle">
 
-|||||||
-| :- | :- | :- | :- | :- | :- |
-|    |  . |  . |  . |  . |    |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|    |  . |  . |  . |  . |    |
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|  2  | *4* |     |     |  5  | *4* |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 </div>
 
@@ -45,14 +47,15 @@ However, notice that if the cell(s) behind the $N$ can’t contain $N-1$, then t
 
 <div class="puzzle">
 
-|||||||
-| :- | :- | :- | :- | :- | :- |
-|    |  . |  . |  . |  . |    |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|  . |    |    |    |    |  . |
-|    |  . |  . |  . |  . |    |
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|  2  |**4**|     |     |  5  |     |     |
+|     |     |     |     |     |  4  |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 </div>
 
