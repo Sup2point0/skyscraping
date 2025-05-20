@@ -57,6 +57,27 @@ article .content {
   strong {
     font-weight: 600;
   }
+
+  ul {
+    list-style-type: '▶';
+
+    li {
+      margin-left: 1em;
+      padding-left: 0.75em;
+      line-height: 175%;
+      transition: all 0.1s ease-out;
+
+      &:has(a:hover) {
+        margin-left: 1.15em;
+        padding-left: 0.6em;
+      }
+    }
+
+    ::marker {
+      font-size: 50%;
+      color: $col-text-deut;
+    }
+  }
 }
 
 
