@@ -16,7 +16,7 @@ let shown = $state(false);
 </script>
 
 
-<div class="nav-top">
+<div class="nav-bar">
   <nav>
     <a href="https://sup2point0.github.io/skyscraping">
       <img alt="" src="{base}/skyscraping-icon.svg">
@@ -40,7 +40,7 @@ let shown = $state(false);
 
 <style lang="scss">
 
-.nav-top {
+.nav-bar {
   width: 100%;
   margin-bottom: 2rem;
   position: relative;
@@ -69,9 +69,10 @@ img {
   }
 }
 
-button {
-  padding: 0.5em 1em;
+button#nav {
+  padding: 0 0.35em;
   @include font-ui;
+  font-size: 200%;
   background: none;
   border: none;
   transition: all 0.1s ease-out;

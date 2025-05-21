@@ -3,6 +3,7 @@
 
 @mixin link-underline {
   position: relative;
+  z-index: -1;
   color: $col-prot;
   text-decoration: none;
   transition: all 0.1s ease-out;
@@ -14,6 +15,7 @@
     position: absolute;
     left: 0;
     bottom: -3px;
+    z-index: -1;
     background: $col-prot;
     transition: all 0.1s ease-out;
   }

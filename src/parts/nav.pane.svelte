@@ -74,8 +74,7 @@ let { mobile = false }: Props = $props();
 nav {
   flex-grow: 1;
   max-width: 25vw;
-  &.mobile { max-width: 100vw; }
-  padding: 2.5rem 1.5rem 4rem;
+  padding: 2.5rem 1vw 4rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 1.5rem;
@@ -84,6 +83,11 @@ nav {
   background: light-dark(
     rgb(black, 2%),
     rgb(white, 4%));
+  
+  &.mobile {
+    max-width: 100vw;
+    z-index: 10;
+  }
 }
 
 section {
