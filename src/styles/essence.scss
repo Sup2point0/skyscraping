@@ -51,12 +51,28 @@ article .content {
     color: $col-text-highlight;
   }
 
-  a {
+  strong {
+    font-weight: 600;
+  }
+
+  a:not(sup > a):not(.footnote-backref) {
     @include link-underline();
   }
 
-  strong {
-    font-weight: 600;
+  sup > a, a.footnote-backref {
+    margin-top: -0.5em;
+    margin-left: 0.1em;
+    font-style: italic;
+    color: $col-prot;
+    text-decoration: none;
+
+    &:hover, &:focus-visible {
+      color: $col-deut;
+    }
+  }
+
+  sup {
+    line-height: 100%;
   }
 
   ul {
@@ -139,5 +155,20 @@ article .content {
   tr:last-child td {
     font-weight: 400;
     border: none;
+  }
+}
+
+
+.footnotes {
+  padding-top: 2rem;
+
+  hr {
+    display: none;
+  }
+
+  li {
+    padding-bottom: 0.5em;
+    @include font-body;
+    font-size: 80%;
   }
 }
