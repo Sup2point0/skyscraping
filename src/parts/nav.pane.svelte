@@ -17,18 +17,20 @@ let { mobile = false }: Props = $props();
 
 
 <nav class:mobile>
-  <NavLink text="Skyscraping" link="https://sup2point0.github.io/skyscraping" />
-
   <section>
-    <h3> Walkthrough </h3>
-    <NavLink text="Foreword" intern="foreword" />
-    <NavLink text="Primer" intern="primer" />
-    <NavLink text="Clueless" intern="clueless" />
+    <NavLink text="Skyscraping" link="https://sup2point0.github.io/skyscraping" />
     <NavLink text="Glossary" intern="jargon" />
   </section>
 
   <section>
-    <h3> Techniques </h3>
+    <NavLink text="Walkthrough" intern="walkthrough" header={true} />
+    <NavLink text="Foreword" intern="walk/foreword" />
+    <NavLink text="Primer" intern="walk/primer" />
+    <NavLink text="Clueless" intern="walk/clueless" />
+  </section>
+
+  <section>
+    <NavLink text="Techniques" intern="tech" header={true} />
     <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
     <NavLink text="Pencil Marks" intern="tech/pencil-marks" />
     <NavLink text="Haven" intern="tech/haven" />
@@ -37,7 +39,7 @@ let { mobile = false }: Props = $props();
   </section>
 
   <section>
-    <h3> Cases </h3>
+    <NavLink text="Cases" intern="cases" header={true} />
     <NavLink text="Silhouette" intern="cases/silhouette" />
     <NavLink text="Stairs" intern="cases/stairs" />
     <NavLink text="Blockade" intern="cases/blockade" />
@@ -51,7 +53,7 @@ let { mobile = false }: Props = $props();
   </section>
 
   <section>
-    <h3> Showerthoughts </h3>
+    <NavLink text="Showerthoughts" intern="thoughts" header={true} />
     <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
     <NavLink text="Satisfaction" intern="thoughts/satisfaction" />
     <NavLink text="Guesswork vs Imagination" intern="thoughts/imagination-vs-guesswork" />
@@ -59,7 +61,7 @@ let { mobile = false }: Props = $props();
   </section>
 
   <section>
-    <h3> Meta </h3>
+    <NavLink text="Meta" intern="info" header={true} />
     <NavLink text="Synopsis" intern="info/synopsis" />
     <NavLink text="FAQ" intern="info/faq" />
     <NavLink text="Licence" intern="info/licence" />
@@ -87,24 +89,6 @@ nav {
 section {
   display: flex;
   flex-flow: column nowrap;
-
-  h3 {
-    margin: 0 0 0.5em;
-    @include font-body;
-    font-weight: 500;
-    font-size: 100%;
-    color: $col-prot;
-    @media (prefers-contrast: more) { color: $col-prot-contrast; }
-
-    .num {
-      font-style: italic;
-    }
-  }
-}
-
-a {
-  color: $col-text;
-  text-decoration: none;
 }
 
 </style>
