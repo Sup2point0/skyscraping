@@ -18,7 +18,8 @@
 
 html {
   color-scheme: light dark;
-  overflow-y: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 ::selection {
