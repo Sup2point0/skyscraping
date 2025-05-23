@@ -1,23 +1,25 @@
 # Adventure Awaits
 <!-- #SQUARK live!
-| dest = primer
+| dest = walk/primer
 | capt = A primer on Skyscrapers and how to solve them
 | date = 2025 May 10
 -->
 
-Skyscrapers are a variety of gridded, Sudoku-like puzzle. They look like this:
+So, Skyscrapers.[^tt] They’re a variety of gridded puzzle similar to a Sudoku, and they look something like this:
+
+[^tt]: There are way too many plane jokes to be made here. I think I’ll just keep my (metaphorical) mouth shut.
 
 <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  3  |  .  |  1  |  3  |  .  |     |
-|  .  |     |     |     |     |     |  3  |
-|  .  |     |     |     |  1  |     |  3  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |     |  3  |     |     |  .  |
-|  .  |     |  1  |     |     |     |  .  |
-|     |  .  |  .  |  .  |  2  |  .  |     |
+|     |  3  |     |  1  |  3  |     |     |
+|     |     |     |     |     |     |  3  |
+|     |     |     |     |  1  |     |  3  |
+|     |     |     |     |     |     |     |
+|     |     |     |  3  |     |     |     |
+|     |     |  1  |     |     |     |     |
+|     |     |     |     |  2  |     |     |
 
 </div>
 
@@ -27,13 +29,13 @@ The aim is to complete the grid such that each row and column contains each digi
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  3  |  .  |  1  |  3  |  .  |     |
-|  .  |  1  |  3  |  5  |  2  |  4  |  3  |
-|  .  |  3  |  5  |  4  |  1  |  2  |  3  |
-|  .  |  5  |  2  |  1  |  4  |  3  |  .  |
-|  .  |  2  |  4  |  3  |  5  |  1  |  .  |
-|  .  |  4  |  1  |  2  |  3  |  5  |  .  |
-|     |  .  |  .  |  .  |  2  |  .  |     |
+|     |  3  |     |  1  |  3  |     |     |
+|     |  1  |  3  |  5  |  2  |  4  |  3  |
+|     |  3  |  5  |  4  |  1  |  2  |  3  |
+|     |  5  |  2  |  1  |  4  |  3  |     |
+|     |  2  |  4  |  3  |  5  |  1  |     |
+|     |  4  |  1  |  2  |  3  |  5  |     |
+|     |     |     |     |  2  |     |     |
 
 </div>
 
@@ -43,7 +45,7 @@ Each number in the grid represents the height of a ‘skyscraper’ in that cell
 
 [ 3d ]
 
-What the clues along the outside tell you are how many skyscrapers you can ‘see’ by looking along that row or column. Imagine yourself looking down that lane – shorter skyscrapers would be obscured by taller ones in front of them.
+What the clues along the outside tell you are how many skyscrapers you can ‘see’ by looking along that row or column. Imagine yourself standing on the clue and looking down that lane – shorter skyscrapers would be obscured by taller ones in front of them.
 
 [ line ]
 
@@ -61,25 +63,128 @@ The easiest and quickest way to learn how to solve a Skyscrapers is just to see 
 
 |||||||
 | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |     |
-|  .  |     |     |     |     |  .  |
-|  .  |     |     |     |     |  .  |
-|  .  |     |     |     |     |  1  |
-|  .  |     |     |     |     |  3  |
-|     |  .  |  .  |  4  |  .  |     |
+|     |     |     |     |     |     |
+|     |     |     |     |     |     |
+|     |     |     |     |     |     |
+|     |     |     |     |     |  1  |
+|     |     |     |     |     |  3  |
+|     |     |     |  4  |     |     |
 
 </div>
 
-First, notice anywhere we have a clue of $1$, we know the $4$ skyscraper must go directly in front of it, so that it hides all the other skyscrapers behind itself. So we can start by filling in a few cells with $4$.
+First, notice if we have a clue of $1$, we know the $4$ skyscraper must go directly in front of it. This way the $4$ hides all the other skyscrapers behind itself.
 
-[ puzzle ]
+<div class="puzzle">
 
-This lays a nice framework for us to work with, and will help us make more logical deductions from here.
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |     |     |     |     |
+|     |     |     |     |     |     |
+|     |     |     |     |**4**|  1  |
+|     |     |     |     |     |  3  |
+|     |     |     |  4  |     |     |
 
+</div>
 
+Similarly, where we have a clue of $4$, we know all 4 skyscrapers must be in order so that all 4 are visible.
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |     |**4**|     |     |
+|     |     |     |**3**|     |     |
+|     |     |     |**2**|  4  |  1  |
+|     |     |     |**1**|     |  3  |
+|     |     |     |  4  |     |     |
+
+</div>
+
+> Any other order, and we’d see less than 4 skyscrapers.
+
+Now looking at the $3$ clue, the only possible order of the row is $[2, 1, 3, 4]$, such that $(2, 1, 4)$ are visible.
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |     |  4  |     |     |
+|     |     |     |  3  |     |     |
+|     |     |     |  2  |  4  |  1  |
+|     |**4**|**3**|  1  |**2**|  3  |
+|     |     |     |  4  |     |     |
+
+</div>
+
+> There’s already a $1$ in the row, and if we put the $3$ next to the clue, we’d only see $(3, 4)$.
+
+We’ve found 3/4 of the $4$ skyscrapers, so by the rules of Sudoku we know where the last one goes.
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |     |  4  |     |     |
+|     |     |**4**|  3  |     |     |
+|     |     |     |  2  |  4  |  1  |
+|     |  4  |  3  |  1  |  2  |  3  |
+|     |     |     |  4  |     |     |
+
+</div>
+
+It’s plain sailing from here as we can solve the rest of the puzzle with Sudoku deductions.
+
+These are the only places $3$ skyscrapers can go:
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |     |  4  |**3**|     |
+|     |     |  4  |  3  |     |     |
+|     |**3**|     |  2  |  4  |  1  |
+|     |  4  |  3  |  1  |  2  |  3  |
+|     |     |     |  4  |     |     |
+
+</div>
+
+Then the $2$ skyscrapers:
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |**2**|  4  |  3  |     |
+|     |**2**|  4  |  3  |     |     |
+|     |  3  |     |  2  |  4  |  1  |
+|     |  4  |  3  |  1  |  2  |  3  |
+|     |     |     |  4  |     |     |
+
+</div>
+
+And finally we can fill out the rest of the $1$ skyscrapers:
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |**1**|  2  |  4  |  3  |     |
+|     |  2  |  4  |  3  |**1**|     |
+|     |  3  |**1**|  2  |  4  |  1  |
+|     |  4  |  3  |  1  |  2  |  3  |
+|     |     |     |  4  |     |     |
+
+</div>
 
 And there we have it, all done. Not too bad, eh?
 
-Luckily, it gets much harder very quickly from here! With fewer clues and larger grid sizes, Skyscrapers become a deliciously mind-bending challenge. Cracking them takes thought, ingenuity, and above all, persistence.
+Luckily, it gets much harder very quickly from here! With larger grid sizes and scarcity of clues, Skyscrapers become a deliciously mind-bending challenge. Cracking them takes thought, ingenuity, and above all, persistence.
 
 If you’re new, I hope you’ve found Skyscrapers intriguing. You should go try one yourself now – it *will* be fun, and you might just find yourself with a new ~~addiction~~ hobby ;)
