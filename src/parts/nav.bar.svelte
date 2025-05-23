@@ -55,6 +55,7 @@ nav {
 .nav-pane {
   width: 100%;
   position: absolute;
+  z-index: 10;
   background: light-dark(white, black);
   box-shadow: 0 2px 4px $col-line;
 }

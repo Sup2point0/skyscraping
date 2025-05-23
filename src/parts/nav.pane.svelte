@@ -86,7 +86,6 @@ nav {
   
   &.mobile {
     max-width: 100vw;
-    z-index: 10;
   }
 }
 
