@@ -12,6 +12,22 @@ Here are some Skyscrapers which were really satisfying to solve. I’ll (very sl
 
 ## *5x5*
 
+### [A Curious Crossways](../solutions/curious-crossways.md)
+
+<div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  3  |     |     |     |     |
+|     |     |     |     |     |     |     |
+|  3  |     |     |     |     |     |  1  |
+|  4  |     |     |     |     |     |     |
+|  3  |     |     |     |     |     |     |
+|     |     |     |     |     |     |  2  |
+|     |     |     |     |  2  |     |     |
+
+</div>
+
 ### 2024 March 4
 
 <https://www.brainbashers.com/p477612>

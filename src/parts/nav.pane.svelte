@@ -61,6 +61,11 @@ let { mobile = false }: Props = $props();
   </section>
 
   <section>
+    <NavLink text="Solutions" intern="solutions" header={true} />
+    <NavLink text="A Curious Crossways" intern="solutions/curious-crossways" />
+  </section>
+
+  <section>
     <NavLink text="Meta" intern="info" header={true} />
     <NavLink text="Synopsis" intern="info/synopsis" />
     <NavLink text="FAQ" intern="info/faq" />
