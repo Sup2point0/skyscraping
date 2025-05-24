@@ -128,16 +128,21 @@ article .content {
 
     em {
       font-size: 50%;
-      font-style: normal
+      font-style: normal;
+      line-height: 275%;
     }
 
     strong {
       font-weight: normal;
       color: $col-prot;
+    }
 
-      // &:has(em) {
-      //   font-size: 50%;  // prevent `<strong>` from keeping the old larger text height
-      // }
+    strong:has(em) {
+      font-size: 50%;
+
+      em {
+        font-size: 100%;
+      }
     }
 
     &:has(strong) {

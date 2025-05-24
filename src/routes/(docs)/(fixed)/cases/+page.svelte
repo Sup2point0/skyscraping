@@ -36,10 +36,3 @@ const paths: string[] = Site.index.cases.pages;
 
   <Footer />
 </article>
-
-
-<style lang="scss">
-
-
-
-</style>
