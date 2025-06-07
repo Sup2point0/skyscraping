@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = thoughts/size
 | index = thoughts
-| date = 2025 May 10
+| date = 2025 June 7
 -->
 
 The difficulty of a Skyscrapers isn’t determined by its size. You certainly have a lot more to think about with a 6x6 Skyscraper than a 5x5, but there are 5x5 Skyscrapers that might stump you for days while you can speedrun a 6x6 in sub-180. Just because a puzzle’s larger doesn’t mean it’s more difficult.
