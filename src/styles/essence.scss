@@ -102,6 +102,12 @@ article .content {
     color: $col-text-deut;
     border-left: 1.5px solid $col-line;
   }
+
+  img {
+    margin: 1rem 0;
+    max-width: 80%;
+    box-shadow: 0 2px 4px light-dark($col-line, black);
+  }
 }
 
 

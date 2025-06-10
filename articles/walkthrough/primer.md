@@ -51,7 +51,7 @@ What the clues along the outside tell you are how many skyscrapers you can ‘se
 
 So, if you have a clue of $4$ in a 4x4 puzzle, that means you can see all 4 skyscrapers in that lane.
 
-[ line ]
+![[1, 2, 3, 4] allows all 4 skyscrapers to be seen.]({base}/primer/all-4.png)
 
 That’s all there is to it!
 
