@@ -47,7 +47,7 @@ Each number in the grid represents the height of a ‘skyscraper’ in that cell
 
 What the clues along the outside tell you are how many skyscrapers you can ‘see’ by looking along that row or column. Imagine yourself standing on the clue and looking down that lane – shorter skyscrapers would be obscured by taller ones in front of them.
 
-[ line ]
+![[3, 1, 2, 4] hides the {1, 2} skyscrapers.]({base}/primer/2-visible.png)
 
 So, if you have a clue of $4$ in a 4x4 puzzle, that means you can see all 4 skyscrapers in that lane.
 
@@ -104,7 +104,7 @@ Similarly, where we have a clue of $4$, we know all 4 skyscrapers must be in ord
 
 > Any other order, and we’d see less than 4 skyscrapers.
 
-Now looking at the $3$ clue, the only possible order of the row is $[2, 1, 3, 4]$, such that $(2, 1, 4)$ are visible.
+Now looking at the $3$ clue, the only possible order of the row is $[2, 1, 3, 4]$, such that $\{2, 1, 4\}$ are visible.
 
 <div class="puzzle">
 
@@ -119,7 +119,7 @@ Now looking at the $3$ clue, the only possible order of the row is $[2, 1, 3, 4]
 
 </div>
 
-> There’s already a $1$ in the row, and if we put the $3$ next to the clue, we’d only see $(3, 4)$.
+> There’s already a $1$ in the row, and if we put the $3$ next to the clue, we’d only see $\{3, 4\}$.
 
 We’ve found 3/4 of the $4$ skyscrapers, so by the rules of Sudoku we know where the last one goes.
 
