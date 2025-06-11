@@ -1,6 +1,6 @@
 # Glossary
 <!-- #SQUARK live!
-| dest = jargon
+| dest = glossary
 | capt = (Unofficial) skyscraping jargon
 | date = 2025 May 10
 -->

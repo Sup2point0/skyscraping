@@ -33,7 +33,7 @@ The point of this site is to show many of those specific deductions, which you c
 The numbers supposedly represent the height of skyscrapers, here referring to the tall buildings that tower high into the sky.
 
 ### I don’t understand all this technical jargon...
-A lot of it is just made up and unofficially coined by me. See [Jargon](../jargon) for a glossary of all the terminology used through *Skyscraping*.
+A lot of it is just made up and unofficially coined by me. See [Glossary](../glossary.md) for an overview of all the terminology used through *Skyscraping*.
 
 ### Why do you love Skyscrapers so much?
 I love solving Skyscrapers almost as much as writing integrals.

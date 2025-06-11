@@ -20,7 +20,7 @@ All that being said, there are still very apparent general trends in difficulty 
 
 With no disrespect, the vast majority of 4x4 puzzles are near-trivial. This is simply a result of the small puzzle size – there is inherently not enough complexity to unlock the rich and diverse problem-solving that you see in larger Skyscrapers.
 
-However, this by no means makes 4x4 Skyscrapers worthless. Firstly, they’re great for introducing people to Skyscrapers. Compared to a 5x5, a 4x4 Skyscrapers appears much simpler, which really reduces cognitive load and eases beginners into the puzzle. I find people pick up the mechanics of Skyscrapers much quicker when trying a 4x4 (even [Open](../jargon.md) puzzles) than a 5x5. This is especially true for people less accustomed to puzzles (or just games and rules in general) – the last thing you want is too much cognitive load and them just quitting from frustration.
+However, this by no means makes 4x4 Skyscrapers worthless. Firstly, they’re great for introducing people to Skyscrapers. Compared to a 5x5, a 4x4 Skyscrapers appears much simpler, which really reduces cognitive load and eases beginners into the puzzle. I find people pick up the mechanics of Skyscrapers much quicker when trying a 4x4 (even [Open](../glossary.md#open) puzzles) than a 5x5. This is especially true for people less accustomed to puzzles (or just games and rules in general) – the last thing you want is too much cognitive load and them just quitting from frustration.
 
 > [!Note]
 > This probably sounds a bit like a given, but 5x5 is often viewed as the ‘standard’ size for Skyscrapers, so going any smaller would be absurd.

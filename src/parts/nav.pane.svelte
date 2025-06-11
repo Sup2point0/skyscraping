@@ -19,7 +19,7 @@ let { mobile = false }: Props = $props();
 <nav class:mobile>
   <section>
     <NavLink text="Skyscraping" link="https://sup2point0.github.io/skyscraping" />
-    <NavLink text="Glossary" intern="jargon" />
+    <NavLink text="Glossary" intern="glossary" />
   </section>
 
   <section>
@@ -57,6 +57,7 @@ let { mobile = false }: Props = $props();
     <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
     <NavLink text="Satisfaction" intern="thoughts/satisfaction" />
     <NavLink text="Guesswork vs Imagination" intern="thoughts/imagination-vs-guesswork" />
+    <NavLink text="Mistakes" intern="thoughts/mistakes" />
     <NavLink text="Nontriviality" intern="thoughts/nontriviality" />
   </section>
 
