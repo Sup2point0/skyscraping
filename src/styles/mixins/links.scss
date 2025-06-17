@@ -2,29 +2,19 @@
 
 
 @mixin link-underline {
+  padding-bottom: 0.15em;
   position: relative;
   z-index: 0;
   color: $col-prot;
   text-decoration: none;
+  background-image: linear-gradient($col-prot, $col-prot);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
   transition: all 0.1s ease-out;
-
-  &::after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    z-index: -1;
-    background: $col-prot;
-    transition: all 0.1s ease-out;
-  }
 
   &:hover, &:focus-visible {
     color: $col-deut;
-
-    &::after {
-      background: $col-deut;
-    }
+    background-image: linear-gradient($col-deut, $col-deut);
   }
 }
