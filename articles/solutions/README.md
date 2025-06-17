@@ -1,13 +1,10 @@
 # Great Skyscrapers
 <!-- #SQUARK live!
 | dest = solutions
-| date = 2025 May 10
+| date = 2025 June 17
 -->
 
 Here are some Skyscrapers which were really satisfying to solve. I’ll (very slowly) be making solution walkthroughs for all of them.
-
-> [!Warning]
-> Uh, some of the skyscrapers here may be wrong since I forgot to archive them with a permalink. I’ll check those that aren’t the right puzzle and remove them at some point.
 
 
 ## *5x5*
@@ -28,7 +25,7 @@ Here are some Skyscrapers which were really satisfying to solve. I’ll (very sl
 
 </div>
 
-### 2024 March 4
+### March 4
 
 <https://www.brainbashers.com/p477612>
 
@@ -48,29 +45,29 @@ Here are some Skyscrapers which were really satisfying to solve. I’ll (very sl
 
 Some lovely symmetry, right?
 
-### 2024 March 13
+### March 13
 <https://www.brainbashers.com/p803777>
 
-### 2024 March 14
+### March 14
 <https://www.brainbashers.com/p082977>
 
-### 2024 March 26
+### March 26
 <https://www.brainbashers.com/p138680>
 
-### 2024 August 5
+### August 5
 <https://www.brainbashers.com/p977315>
 
 Cool concept, very handmade!
 
-### 2024 October 4
+### October 4
 <https://www.brainbashers.com/p961237>
 
 Crazy crux.
 
-### 2024 November 22
+### November 22
 <https://www.brainbashers.com/p228337>
 
-### 2025 May 4
+### May 4
 <https://www.brainbashers.com/p255487>
 
 Smooth reasoning
@@ -80,7 +77,7 @@ Smooth reasoning
 
 Ending collapse!
 
-### June 2025
+### June 25
 <https://www.brainbashers.com/p705390>
 
 End of a speedrun session, turned out to be quite nontrivial
@@ -98,16 +95,19 @@ Cool spot.
 
 ## *6x6*
 
-### 2024 October 1
+### June 24
+<https://www.brainbashers.com/p150732>
+
+### October 1
 <https://www.brainbashers.com/p273095>
 
-### 2024 October 27
+### October 27
 <https://www.brainbashers.com/p840623>
 
-### 2024 October 5
+### October 5
 <https://www.brainbashers.com/p082457>
 
-### 2024 September 14
+### September 14
 <https://www.brainbashers.com/p330726>
 
 ### March 15
@@ -131,17 +131,16 @@ Cool spot.
 <div class="puzzle">
 
 ||||||||||
-| :- | :- | :- | :- | :- | :- | :- | :- | :- |
-|    |    |    |  2 |  3 |  2 |  3 |    |    |
-|  4 |  4 |    |    |    |    |    |    |    |
-|  1 |    |  2 |    |    |    |    |    |    |
-|    |    |    |    |    |    |    |    |    |
-|    |    |    |    |    |    |    |    |    |
-|  3 |    |    |    |    |    |    |    |  3 |
-|  5 |    |    |  3 |    |    |    |    |    |
-|  3 |    |    |    |    |  2 |    |    |  4 |
-|    |  4 |    |    |    |    |    |    |    |
-
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |  2  |  3  |  2  |  3  |     |     |
+|  4  |  4  |     |     |     |     |     |     |     |
+|  1  |     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |     |     |
+|  3  |     |     |     |     |     |     |     |  3  |
+|  5  |     |     |  3  |     |     |     |     |     |
+|  3  |     |     |     |     |  2  |     |     |  4  |
+|     |  4  |     |     |     |     |     |     |     |
 </div>
 
 My first ever 7x7 (hard). Completed it over about 2 days.
