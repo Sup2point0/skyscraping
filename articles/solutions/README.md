@@ -82,6 +82,11 @@ Ending collapse!
 
 End of a speedrun session, turned out to be quite nontrivial
 
+### June 5
+<https://www.brainbashers.com/p753023>
+
+Tough.
+
 ### October 17
 <https://www.brainbashers.com/p334483>
 
