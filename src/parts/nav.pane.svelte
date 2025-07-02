@@ -42,14 +42,15 @@ let { mobile = false }: Props = $props();
     <NavLink text="Cases" intern="cases" header={true} />
     <NavLink text="Silhouette" intern="cases/silhouette" />
     <NavLink text="Stairs" intern="cases/stairs" />
+    <NavLink text="Lighthouse" intern="cases/lighthouse" />
     <NavLink text="Blockade" intern="cases/blockade" />
-    <NavLink text="Slide" intern="cases/" />
-    <NavLink text="Leap of Faith" intern="cases/" />
+    <NavLink text="Slide" intern="cases/" disabled={true} />
+    <NavLink text="Leap of Faith" intern="cases/" disabled={true} />
     <NavLink text="High-Rise" intern="cases/" />
-    <NavLink text="Slide" intern="cases/" />
-    <NavLink text="Hideout" intern="cases/" />
-    <NavLink text="Middle Ground" intern="cases/" />
-    <NavLink text="Frontier" intern="cases/" />
+    <NavLink text="Slide" intern="cases/" disabled={true} />
+    <NavLink text="Hideout" intern="cases/" disabled={true} />
+    <NavLink text="Middle Ground" intern="cases/" disabled={true} />
+    <NavLink text="Frontier" intern="cases/" disabled={true} />
   </section>
 
   <section>
@@ -68,7 +69,7 @@ let { mobile = false }: Props = $props();
 
   <section>
     <NavLink text="Meta" intern="info" header={true} />
-    <NavLink text="Synopsis" intern="info/synopsis" />
+    <NavLink text="Synopsis" intern="info/synopsis" disabled={true} />
     <NavLink text="FAQ" intern="info/faq" />
     <NavLink text="Licence" intern="info/licence" />
   </section>

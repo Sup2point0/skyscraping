@@ -9,6 +9,11 @@ import { base } from "$app/paths";
 </script>
 
 
+<svelte:head>
+  <title> Skyscraping · by Sup#2.0 </title>
+</svelte:head>
+
+
 <div class="root">
   <main>
 
@@ -45,25 +50,51 @@ import { base } from "$app/paths";
 <section>
   <h2> Landmarks to Explore... </h2>
 
+  <ul class="cards">    
+    <a class="card" href="{base}/tech">
+      <h3> Techniques </h3>
+      <p> General strategies for solving Skyscrapers. </p>
+    </a>
+    
+    <a class="card" href="{base}/cases">
+      <h3> Cases </h3>
+      <p> Specific scenarios encountered when solving Skyscrapers. </p>
+    </a>
+    
+    <a class="card" href="{base}/thoughts">
+      <h3> Showerthoughts </h3>
+      <p> Reflections on the art of Skyscrapers. </p>
+    </a>
+    
+    <a class="card" href="{base}/solutions">
+      <h3> Solutions </h3>
+      <p> Walkthroughs to select Skyscrapers puzzles. </p>
+    </a>
+  </ul>
+</section>
+
+<section>
+  <h2> The Adventure </h2>
+
   <ul class="cards">
     <a class="card" href="{base}/walk/4x4">
       <h3> Setting Out: <em>4x4</em> </h3>
       <p> The easiest ones can be solved in no time, even with no prior experience. Generally trivial, but really good for building your intuition and familiarity as a beginner. </p>
     </a>
     
-    <a class="card" href="{base}/walk/4x4">
+    <a class="card" href="{base}/walk/5x5">
       <h3> Gearing Up: <em>5x5</em> </h3>
       <p> Such a wide range of difficulty levels can be achieved just 1 size above 4x4. </p>
     </a>
     
-    <a class="card" href="{base}/walk/4x4">
+    <a class="card" href="{base}/walk/6x6">
       <h3> Bring the Heat: <em>6x6</em> </h3>
       <p> Incredible openness and complexity. </p>
     </a>
     
-    <a class="card" href="{base}/thoughts">
-      <h3> Showerthoughts </h3>
-      <p> Reflections on the art of Skyscrapers. </p>
+    <a class="card" href="{base}/walk/7x7">
+      <h3> Gateway to Chaos: <em>7x7</em> </h3>
+      <p>  </p>
     </a>
   </ul>
 </section>
@@ -78,7 +109,7 @@ import { base } from "$app/paths";
 <section>
   <blockquote>
     <h3> Do you like integration? </h3>
-    <p> If you’re here cuz you like Skyscrapers puzzles, you’re probabilistically much more likely to be a maths fan as well. If you happen to like integration, I’ve written over 250 integrals which are on my site <a target="_blank" href="https://sup2point0.github.io/integrity">Integrity<sup>↗</sup></a>. </p>
+    <p> If you’re here cuz you like Skyscrapers puzzles, you’re probabilistically much more likely to be a maths fan as well. If you happen to like integration, I’ve written over 300 integrals which are on my site <a target="_blank" href="https://sup2point0.github.io/integrity">Integrity<sup>↗</sup></a>. </p>
   </blockquote>
 </section>
 
@@ -178,7 +209,7 @@ ul {
 .card {
   flex: 1 1 15em;
   min-width: 15em;
-  max-width: 40vw;
+  max-width: 30vw;
   padding: 1rem 1.5rem;
   color: unset;
   text-decoration: none;
