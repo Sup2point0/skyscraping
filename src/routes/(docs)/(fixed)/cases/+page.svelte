@@ -13,6 +13,11 @@ const paths: string[] = Site.index.cases.pages;
 </script>
 
 
+<svelte:head>
+  <title> Cases · Skyscraping </title>
+</svelte:head>
+
+
 <article>
   <Header title="Cases" capt="Specific strategies in specific scenarios" />
 

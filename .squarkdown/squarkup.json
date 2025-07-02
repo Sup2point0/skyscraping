@@ -1,7 +1,7 @@
 {
   "$schema": "https://sup2point0.github.io/stranger-quarkdown/squarkup-schema/latest.json",
 
-  "repo": "skyscraping",
+  "repo": "Skyscraping",
 
   "paths / site": "./",
   "paths / sources": [
