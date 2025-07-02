@@ -12,14 +12,15 @@ interface Props {
   link?: string;
     intern?: string;
   header?: boolean;
+  disabled?: boolean;
 }
 
-let { text, link, intern, header = false }: Props = $props();
+let { text, link, intern, header = false, disabled = false }: Props = $props();
 
 </script>
 
 
-<a class:header
+<a class={{ header, disabled }}
   href={link ?? `${base}/${intern}`}
 >
   {text}
@@ -63,6 +64,11 @@ a {
     font-size: 100%;
     color: $col-prot;
     @media (prefers-contrast: more) { color: $col-prot-contrast; }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 20%;
   }
 }
 
