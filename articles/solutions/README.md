@@ -9,6 +9,12 @@ Here are some Skyscrapers which were really satisfying to solve. I’ll (very sl
 
 ## *5x5*
 
+### Can’t Solve?
+<https://www.brainbashers.com/p541729>
+
+### Just a Satisfying Solve
+<https://www.brainbashers.com/p979573>
+
 ### [A Curious Crossways](../solutions/curious-crossways.md)
 
 <div class="puzzle">
@@ -99,6 +105,9 @@ Cool spot.
 
 
 ## *6x6*
+
+### 5 Pinpoints
+<https://www.brainbashers.com/p124083>
 
 ### June 24
 <https://www.brainbashers.com/p150732>
