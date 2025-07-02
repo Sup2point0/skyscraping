@@ -1,7 +1,7 @@
 # Case: Silhouette
 <!-- #SQUARK live!
 | dest = cases/silhouette
-| capt = Clue of 1
+| capt = Clue of $1$
 | index = cases
 | date = 2025 May 20
 -->

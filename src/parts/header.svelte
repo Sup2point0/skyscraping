@@ -5,6 +5,9 @@ A page header.
 
 <script lang="ts">
 
+import katex from "katex";
+
+
 interface Props {
   title?: string;
   capt?: string;
@@ -12,14 +15,43 @@ interface Props {
 
 let { title, capt }: Props = $props();
 
+
+function render_katex(title: string): string[]
+{
+  return title.split(/(\$[^$]+\$)/).map(
+    chunk => (
+        chunk.startsWith("$")
+      ? katex.renderToString(chunk.slice(1, -1), {
+          displayMode: false,
+          throwOnError: false,
+        })
+      : chunk
+    )
+  );
+}
+
 </script>
 
 
 <header>
-  <h1> {title ?? "Untitled Page"} </h1>
+  <h1>
+    {#if title}
+      {#each render_katex(title) as chunk}
+        {@html chunk}
+      {/each}
+
+    {:else}
+      Untitled Page
+
+    {/if}
+  </h1>
 
   {#if capt}
-    <p class="caption"> {capt} </p>
+    <p class="caption">
+      {#each render_katex(capt) as chunk}
+        {@html chunk}
+      {/each}
+    </p>
   {/if}
 </header>
 
