@@ -23,19 +23,19 @@ let { mobile = false }: Props = $props();
   </section>
 
   <section>
-    <NavLink text="Walkthrough" intern="walkthrough" header={true} />
+    <NavLink text="Walkthrough" intern="walk" header={true} />
     <NavLink text="Foreword" intern="walk/foreword" />
     <NavLink text="Primer" intern="walk/primer" />
-    <NavLink text="Clueless" intern="walk/clueless" />
+    <NavLink text="Clueless" intern="walk/clueless" disabled={true} />
   </section>
 
   <section>
     <NavLink text="Techniques" intern="tech" header={true} />
     <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
-    <NavLink text="Pencil Marks" intern="tech/pencil-marks" />
-    <NavLink text="Haven" intern="tech/haven" />
-    <NavLink text="Pinpoint" intern="tech/pinpoint" />
-    <NavLink text="Couples" intern="tech/couples" />
+    <NavLink text="Pencil Marks" intern="tech/pencil-marks" disabled={true} />
+    <NavLink text="Haven" intern="tech/haven" disabled={true} />
+    <NavLink text="Pinpoint" intern="tech/pinpoint" disabled={true} />
+    <NavLink text="Couples" intern="tech/couples" disabled={true} />
   </section>
 
   <section>
@@ -57,7 +57,7 @@ let { mobile = false }: Props = $props();
     <NavLink text="Showerthoughts" intern="thoughts" header={true} />
     <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
     <NavLink text="Satisfaction" intern="thoughts/satisfaction" />
-    <NavLink text="Guesswork vs Imagination" intern="thoughts/imagination-vs-guesswork" />
+    <NavLink text="Imagination vs Guesswork" intern="thoughts/imagination-vs-guesswork" />
     <NavLink text="Mistakes" intern="thoughts/mistakes" />
     <NavLink text="Nontriviality" intern="thoughts/nontriviality" />
   </section>
