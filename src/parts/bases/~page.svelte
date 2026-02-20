@@ -16,5 +16,5 @@ import { metadata as page } from "./~content.svx";
     <Content />
   </div>
 
-  <Footer date={page.date_display} path={page.path} />
+  <Footer date={page.update_display} path={page.path} />
 </article>

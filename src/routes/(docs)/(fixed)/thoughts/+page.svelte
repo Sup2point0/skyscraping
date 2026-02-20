@@ -8,17 +8,17 @@ import Footer from "#parts/footer.svelte";
 import { base } from "$app/paths";
 
 
-const paths: string[] = Site.index.cases.pages;
+const paths: string[] = Site.index.thoughts.pages;
 
 </script>
 
 
 <article>
-  <Header title="Cases" capt="Specific strategies in specific scenarios" />
+  <Header title="Showerthoughts" capt="Reflections on the art of Skyscrapers" />
 
   <div class="content">
     <p>
-      These pages cover specific scenarios which you may encounter when completing Skyscrapers.
+      These pages contain my thoughts and feelings on Skyscrapers.
     </p>
 
     <ul>
