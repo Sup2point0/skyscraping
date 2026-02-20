@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = tech/guesswork
 | index = tech
-| date = 2025 May 21
+| update = 2025 May 21
 -->
 
 A fundamental ground truth when solving Skyscrapers, or any kind of logic puzzle for that matter, is that you never guess. Every step in the solution is a logical deduction. As such, when you enter in a digit, you’re certain it’s correct. If you’re guessing a digit, you shouldn’t fill it in.

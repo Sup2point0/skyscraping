@@ -1,7 +1,7 @@
 # Great Skyscrapers
 <!-- #SQUARK live!
 | dest = solutions
-| date = 2025 June 17
+| update = 2025 June 17
 -->
 
 Here are some Skyscrapers which were really satisfying to solve. I’ll (very slowly) be making solution walkthroughs for all of them.

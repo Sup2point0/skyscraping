@@ -3,7 +3,7 @@
 | dest = cases/lighthouse
 | capt = The $N$ clue
 | index = cases
-| date = 2025 July 2
+| update = 2025 July 2
 -->
 
 In an *NxN* Skyscrapers puzzle, the skyscrapers of height $1$ and $N$ are always the most notable. In fact, the $N$ skyscraper is arguably more fundamental than the $1$, because it dictates the very shape of the Skyscrapers grid.

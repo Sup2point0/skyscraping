@@ -3,7 +3,7 @@
 | dest = cases/stairs
 | capt = Clue of $N$
 | index = cases
-| date = 2025 May 20
+| update = 2025 May 20
 -->
 
 When we have a clue of $N$, we know that lane must be in order from $1$ to $N$.

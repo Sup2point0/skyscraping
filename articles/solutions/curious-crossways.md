@@ -3,7 +3,7 @@
 | dest = solutions/curious-crossways
 | capt = 24 May 2025
 | index = solutions
-| date = 2025 May 24
+| update = 2025 May 24
 -->
 
 This was a *5x5* which I thought I could speedrun, but I ended up running into a hitch which took some careful consideration to overcome.

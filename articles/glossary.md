@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = glossary
 | capt = (Unofficial) skyscraping jargon
-| date = 2025 May 10
+| update = 2025 May 10
 -->
 
 

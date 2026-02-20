@@ -3,7 +3,7 @@
 | dest = thoughts/mistakes
 | capt = Making mistakes when solving Skyscrapers
 | index = thoughts
-| date = 26 May 2025
+| update = 2025 May 26
 -->
 
 Mistakes are fantastic for learning. When you make a mistake, what you learn from it often sticks with you far more strongly than if you hadn’t made the mistake. Whether it’s intrigue, frustration, embarrassment, a ‘good’ *or* ‘bad’ feeling... mistakes makes you *feel* something, and that helps solidify them in your memory.

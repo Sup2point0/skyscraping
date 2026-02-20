@@ -3,7 +3,7 @@
 | dest = cases/blockade
 | capt = $N$ opposite clue of $2$
 | index = cases
-| date = 2025 May 20
+| update = 2025 May 20
 -->
 
 When we have a clue of $2$, and skyscraper $N$ is at the back of that lane, then we know skyscraper $N-1$ must lie immediately in front of that clue.

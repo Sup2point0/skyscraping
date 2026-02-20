@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = walk/foreword
 | index = walk
-| date = 2025 May 21
+| update = 2025 May 21
 -->
 
 If this were a book, I suppose this would be the first (meaningful) thing you read as you open it.

@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = walk/primer
 | capt = A primer on Skyscrapers and how to solve them
-| date = 2025 May 10
+| update = 2025 May 10
 -->
 
 So, Skyscrapers.[^tt] They’re a variety of gridded puzzle similar to a Sudoku, and they look something like this:

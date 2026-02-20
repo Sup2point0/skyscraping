@@ -3,7 +3,7 @@
 | dest = cases/high-rise
 | capt = $N$ pinned between $2$ clues
 | index = cases
-| date = 2025 May 20
+| update = 2025 May 20
 -->
 
 When we have the $N$ skysfraper pinned between clues of $2$ at both ends of the lane, we know 1 end must have the $N-1$ skyscraper immediately in front of of the $2$ clue.

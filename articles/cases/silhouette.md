@@ -3,7 +3,7 @@
 | dest = cases/silhouette
 | capt = Clue of $1$
 | index = cases
-| date = 2025 May 20
+| update = 2025 May 20
 -->
 
 When we have a clue of $1$, we know the tallest skyscraper $N$ must lie immediately in front of that clue.

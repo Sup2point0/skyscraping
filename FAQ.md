@@ -3,7 +3,7 @@
 | dest = info/faq
 | capt = Fervently Anticipated Questions
 | index = info
-| date = 2025 May 15
+| update = 2025 May 15
 -->
 
 ### What’s this site for?
