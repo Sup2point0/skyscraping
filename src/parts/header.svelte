@@ -33,6 +33,14 @@ function render_katex(title: string): string[]
 </script>
 
 
+<svelte:head>
+  <title> {title} · Skyscraping </title>
+
+  {#if capt}
+    <meta name="description" content={capt} />
+  {/if}
+</svelte:head>
+
 <header>
   <h1>
     {#if title}

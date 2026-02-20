@@ -39,7 +39,7 @@ import { base } from "$app/paths";
   <h2> Never heard of Skyscrapers? </h2>
 
   <div class="para">
-    <p> Awesome. You should give one a shot. Yep, right now! It takes about, like, 30 seconds to learn. <a href="{base}/showerthoughts/why">Here’s why you’ll love Skyscrapers.</a> </p>
+    <p> Awesome. You should give one a shot. Yep, right now! It takes about, like, 30 seconds to learn. <!--<a href="{base}/showerthoughts/why">Here’s why you’ll love Skyscrapers.</a>--> </p>
   </div>
 
   <Clicky intern="walk/primer">
