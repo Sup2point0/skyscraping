@@ -82,6 +82,7 @@ article .content {
     li {
       margin-left: 1em;
       padding-left: 0.75em;
+      @include font-body;
       line-height: 175%;
       transition: all 0.1s ease-out;
 

@@ -56,10 +56,10 @@ let { mobile = false }: Props = $props();
   <section>
     <NavLink text="Showerthoughts" intern="thoughts" header={true} />
     <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
-    <NavLink text="Satisfaction" intern="thoughts/satisfaction" />
+    <NavLink text="Satisfaction" intern="thoughts/satisfaction" disabled={true} />
     <NavLink text="Imagination vs Guesswork" intern="thoughts/imagination-vs-guesswork" />
     <NavLink text="Mistakes" intern="thoughts/mistakes" />
-    <NavLink text="Nontriviality" intern="thoughts/nontriviality" />
+    <NavLink text="Nontriviality" intern="thoughts/nontriviality" disabled={true} />
   </section>
 
   <section>
