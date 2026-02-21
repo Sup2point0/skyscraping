@@ -1,12 +1,15 @@
 # Notation
 <!-- #SQUARK live!
 | dest = notation
+| capt = Syntax for Skyscrapers
 | update = 2026 February 21
 -->
 
-This page describes the syntax notating [lanes](glossary.md#lane) in a Skyscrapers puzzle through *Skyscraping*.
+This page describes the syntax notating [lanes](glossary.md#lane) in a Skyscrapers puzzle throughout *Skyscraping*.
 
-### Solved Cells
+
+## Solved Cells
+
 Take the following lane:
 
 <div class="puzzle">
@@ -50,7 +53,9 @@ For consistency, the direction of interest will always be *left-to-right*. So wh
 
 The direction of the original lane is irrelevant – it very well could be a column! Here, $\text{1 | 4 1 3 2 | 3}$ means we’re looking up the column, while $\text{3 | 2 3 1 4 | 1}$ means we’re looking down the lane.
 
-### Pencil Marks
+
+## Pencil Marks
+
 For a lane with [pencil marks](glossary.md#pencil-marks):
 
 <div class="puzzle">
@@ -69,7 +74,9 @@ We surround the [candidates](glossary.md#candidates) with square brackets “$[]
 \text{4 | [12] [23] [34] 5 [1234] | 2}
 ```
 
-### Unsolved Cells
+
+## Unsolved Cells
+
 Too many pencil marks gets a bit unwieldy, though. Sometimes, we may just want to ignore the candidates, if they’re not relevant to our current focus.
 
 In this lane, we’re focusing on the $3$-clue [half-lane](glossary.md#half-lane). What goes between the $5$ and $4$ isn’t currently of interest to us.
@@ -92,7 +99,9 @@ We use underscore “$\_$” to denote an [unsolved cell](glossary.md#unsolved-c
 
 This helps us keep the notation clean and focused!
 
-### Half-Lane
+
+## Half-Lane
+
 If we don’t care what’s beyond the [lane peak](glossary.md#lane-peak) *at all* – though this is rare, since usually we need to consider the whole lane to perform deductions – we can just omit it:
 
 ```math
