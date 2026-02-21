@@ -77,22 +77,22 @@ import { base } from "$app/paths";
   <h2> The Adventure </h2>
 
   <ul class="cards">
-    <a class="card" href="{base}/walk/4x4">
+    <a class="card" href="{base}/walk">
       <h3> Setting Out: <em>4x4</em> </h3>
       <p> The easiest ones can be solved in no time, even with no prior experience. Generally trivial, but really good for building your intuition and familiarity as a beginner. </p>
     </a>
     
-    <a class="card" href="{base}/walk/5x5">
+    <a class="card" href="{base}/walk">
       <h3> Gearing Up: <em>5x5</em> </h3>
       <p> Such a wide range of difficulty levels can be achieved just 1 size above 4x4. </p>
     </a>
     
-    <a class="card" href="{base}/walk/6x6">
+    <a class="card" href="{base}/walk">
       <h3> Bring the Heat: <em>6x6</em> </h3>
       <p> Incredible openness and complexity. </p>
     </a>
     
-    <a class="card" href="{base}/walk/7x7">
+    <a class="card" href="{base}/walk">
       <h3> Gateway to Chaos: <em>7x7</em> </h3>
       <p>  </p>
     </a>

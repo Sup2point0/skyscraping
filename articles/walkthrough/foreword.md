@@ -1,6 +1,7 @@
 # Foreword
 <!-- #SQUARK live!
 | dest = walk/foreword
+| capt = Wait, Skyscrapers?
 | index = walk
 | update = 2025 May 21
 -->

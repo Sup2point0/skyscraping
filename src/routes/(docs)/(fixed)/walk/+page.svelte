@@ -20,20 +20,60 @@ const paths = [
   <Header title="Walkthrough" capt="A guided tour through the art of skyscraping" />
 
   <div class="content">
-    <p>
-      These pages build up an understanding of how to tackle Skyscrapers.
-    </p>
+    <p> Welcome to skyscraping! </p>
+    <p> While there’s no compulsory “order” to any of this, this page collates the page of this website into a somewhat digestable order, switching between different types of pages to keep things dynamic and engaging. </p>
+    <p> Nothing more to say. Enjoy! </p>
+
+    <br>
 
     <ul>
-      {#each paths as path}
-        {@const page = Site.pages[path]}
+      <li>
+        <a href="{base}/walk/foreword">Foreword</a>
+        <ul>
+          <li><a href="{base}/walk/primer">Adventure Awaits</a></li>
+        </ul>
+      </li>
 
-        {#if page}
-          <li>
-            <a href="{base}/{page.dest}">{page.title}</a>
-          </li>
-        {/if}
-      {/each}
+      <li>
+        <a href="{base}/walk">Setting Out: <em>4x4</em></a>
+        <ul>
+          <li><a href="{base}/">The Game Plan</a></li>
+          <li><a href="{base}/cases/stairs">Case: Stairs</a></li>
+          <li><a href="{base}/cases/silhouette">Case: Silhouette</a></li>
+          <li><a href="{base}/tech/pencil-marks">Technique: Pencil Marks</a></li>
+          <li><a href="{base}/cases/blockade">Case: Blockade</a></li>
+          <li><a href="{base}/">Clueless</a></li>
+          <li><a href="{base}/tech/guesswork">Technique: Guesswork, I’m Guessing?</a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="{base}/walk">Gearing Up: <em>5x5</em></a>
+        <ul>
+          <li><a href="{base}/"></a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="{base}/walk">Bring the Heat: <em>6x6</em></a>
+        <ul>
+          <li><a href="{base}/"></a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="{base}/walk">Gateway to Chaos: <em>7x7</em></a>
+        <ul>
+          <li><a href="{base}/"></a></li>
+        </ul>
+      </li>
+      
+      <li>
+        <a href="{base}/walk">In the Deep End: <em>8x8</em></a>
+        <ul>
+          <li><a href="{base}/"></a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 
