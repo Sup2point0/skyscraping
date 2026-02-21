@@ -12,7 +12,7 @@ This page defines all of the technical quasi-jargon I use throughout this site. 
 
 > *$1$ and $2$ are the only candidates for this cell.*
 
-The numbers in [pencil marks](tech/pencil-marks.md), indicating which [skyscrapers](#skyscraper) could be placed in that cell.
+The numbers in [pencilmarks](tech/pencilmarks.md), indicating which [skyscrapers](#skyscraper) could be placed in that cell.
 
 
 ## closed
@@ -185,9 +185,9 @@ To avoid ambiguity I may sometimes use the fully qualified “Skyscrapers puzzle
 
 ## solved cell
 
-> *We’ve got loads of [pencil marks](#pencil-marks), but not many solved cells =(*
+> *We’ve got loads of [pencil marks](#pencilmarks), but not many solved cells =(*
 
-A cell which has a definitive [skyscraper](#skyscraper) placed in it – as opposed to an [unsolved cell](#unsolved-cell), which may have multiple [candidates](#candidates) indicated with [pencil marks](#pencil-marks).
+A cell which has a definitive [skyscraper](#skyscraper) placed in it – as opposed to an [unsolved cell](#unsolved-cell), which may have multiple [candidates](#candidates) indicated with [pencil marks](#pencilmarks).
 
 
 ## tail cell

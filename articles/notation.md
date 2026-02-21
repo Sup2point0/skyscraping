@@ -56,7 +56,7 @@ The direction of the original lane is irrelevant – it very well could be a col
 
 ## Pencil Marks
 
-For a lane with [pencil marks](glossary.md#pencil-marks):
+For a lane with [pencil marks](glossary.md#pencilmarks):
 
 <div class="puzzle">
 

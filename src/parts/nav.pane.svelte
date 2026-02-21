@@ -33,7 +33,7 @@ let { mobile = false }: Props = $props();
   <section>
     <NavLink text="Techniques" intern="tech" header={true} />
     <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
-    <NavLink text="Pencil Marks" intern="tech/pencil-marks" disabled={true} />
+    <NavLink text="Pencil Marks" intern="tech/pencilmarks" disabled={true} />
     <NavLink text="Haven" intern="tech/haven" disabled={true} />
     <NavLink text="Pinpoint" intern="tech/pinpoint" disabled={true} />
     <NavLink text="Couples" intern="tech/couples" disabled={true} />

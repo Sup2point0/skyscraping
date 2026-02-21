@@ -1,5 +1,5 @@
 # Look Past The Numbers
-<!-- #SQUARK live!
+<!-- #SQUARK live! dev!
 | dest = tech/recursion-and-abstraction
 | index = tech
 | update = 2026 February 21
