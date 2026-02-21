@@ -152,8 +152,26 @@ article .content {
       }
     }
 
-    &:has(strong) {
-      &::after {
+    &:has(strong)::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $col-prot;
+      opacity: 5%;
+      z-index: 0;
+    }
+
+    del {
+      font-weight: normal;
+      color: $col-deut;
+      text-decoration: none;
+    }
+
+    &:has(del)::after {
         content: '';
         width: 100%;
         height: 100%;
@@ -161,10 +179,9 @@ article .content {
         position: absolute;
         top: 0;
         left: 0;
-        background: $col-prot;
+        background: $col-deut;
         opacity: 5%;
         z-index: 0;
-      }
     }
   }
 

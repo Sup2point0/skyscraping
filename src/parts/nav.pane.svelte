@@ -46,10 +46,10 @@ let { mobile = false }: Props = $props();
     <NavLink text="Blockade" intern="cases/blockade" />
     <NavLink text="Slide" intern="cases/" disabled={true} />
     <NavLink text="Leap of Faith" intern="cases/" disabled={true} />
-    <NavLink text="High-Rise" intern="cases/" />
+    <NavLink text="High-Rise" intern="cases/high-rise" />
     <NavLink text="Slide" intern="cases/" disabled={true} />
     <NavLink text="Hideout" intern="cases/" disabled={true} />
-    <NavLink text="Middle Ground" intern="cases/" disabled={true} />
+    <NavLink text="Middle Ground" intern="cases/middle-ground" />
     <NavLink text="Frontier" intern="cases/" disabled={true} />
   </section>
 
