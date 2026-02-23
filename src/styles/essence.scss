@@ -188,11 +188,24 @@ article .content {
         z-index: 0;
     }
   }
+}
 
+.puzzle:not(.lane) table {
   td:first-child,
   tr:first-child td,
   td:last-child,
-  tr:last-child td {
+  tr:last-child td
+  {
+    font-weight: 400;
+    border: none;
+  }
+}
+.puzzle.lane table {
+  margin: 2em 0;
+
+  td:first-child,
+  td:last-child
+  {
     font-weight: 400;
     border: none;
   }
