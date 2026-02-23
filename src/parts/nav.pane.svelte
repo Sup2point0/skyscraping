@@ -45,6 +45,7 @@ let { mobile = false }: Props = $props();
     <NavLink text="Stairs" intern="cases/stairs" />
     <NavLink text="Lighthouse" intern="cases/lighthouse" />
     <NavLink text="Blockade" intern="cases/blockade" />
+    <NavLink text="Meet in the Middle" intern="cases/meet-in-the-middle" />
     <NavLink text="Slide" intern="cases/" disabled={true} />
     <NavLink text="Leap of Faith" intern="cases/" disabled={true} />
     <NavLink text="High-Rise" intern="cases/high-rise" />
