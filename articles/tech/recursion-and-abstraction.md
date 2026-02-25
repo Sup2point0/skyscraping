@@ -68,9 +68,9 @@ The skyscraper in the 1st cell obscures that in the 2nd cell. So we’ve got a �
 
 Aha! Now you can very apparently tell, fundamentally these are *the same problem*. The numbers may be a little different, but the underlying constraint is the same in both lanes.
 
-Why exactly is that? Well, we’ve guaranteed 2/3 of the peaks the $3$-clue half-lane needs, so we need exactly 1 more peak. And we've guaranteed 1/2 of the skyscrapers the $2$-clue half-lane needs, so we... also need exactly 1 more peak.
+Why exactly is that? Well, we’ve guaranteed 2/3 of the peaks the $3$-clue half-lane needs, so we need exactly 1 more peak. And we’ve guaranteed 1/2 of the skyscrapers the $2$-clue half-lane needs, so we... also need exactly 1 more peak.
 
-Solving a 2/3 half-lane is the same as solving a 1/2 half-lane. Or a 4/5 half-lane. Or a 6/7 half-lane.[^67] Or a 69/70 half-lane. In all these cases we only need 1 more visible skyscraper before the current first peak, so they've all been *reduced* into solving a $2$-clue half-lane.
+Solving a 2/3 half-lane is the same as solving a 1/2 half-lane. Or a 4/5 half-lane. Or a 6/7 half-lane.[^67] Or a 69/70 half-lane. In all these cases we only need 1 more visible skyscraper before the current first peak, so they’ve all been *reduced* into solving a $2$-clue half-lane.
 
 [^67]: stfu.
 
@@ -122,10 +122,10 @@ And as we find another peak, meaning we only need 1 more, it now ‘feels like�
 
 </div>
 
-So as we find more peaks, the problem reduces into a smaller version of itself. We're solving *recursively*.
+So as we find more peaks, the problem reduces into a smaller version of itself. We’re solving *recursively*.
 
 <!-- FIXME: Technically the 1st peak is guaranteed to be visible too, so we should ignore them all -->
-The recursion happens because we *don't care* what comes after the first current peak. These peaks can't change:
+The recursion happens because we *don’t care* what comes after the first current peak. These peaks can’t change:
 
 <div class="puzzle lane">
 
@@ -145,18 +145,18 @@ So, we can ‘mentally ignore’ those later skyscrapers, and treat the current 
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |**2**|     |     |     |  N  |  -  |  -  |     |
 
-> Of course, it's not actually the $N$-skyscraper, but we can think of it as the lane peak.
+> Of course, it’s not actually the $N$-skyscraper, but we can think of it as the lane peak.
 
 </div>
 
 Now we have a much simpler problem on our hands.
 
 > [!Note]
-> I'm not saying you need to write this out explicitly – I personally visualise this process in my head. But actually, you totally could write it out! Then you're just keeping track of “how many more skyscrapers do I need visible”?[^more-visible]
+> I’m not saying you need to write this out explicitly – I personally visualise this process in my head. But actually, you totally could write it out! Then you’re just keeping track of “how many more skyscrapers do I need visible”?[^more-visible]
 
 [^more-visible]: How many more *+1*, technically. Damn off-by-one errors.
 
-The important part is, we can leverage all the deductions we already know that apply to $2$-clues. This isn't a *literal* $2$-clue, but it's *effectively* a $2$-clue.
+The important part is, we can leverage all the deductions we already know that apply to $2$-clues. This isn’t a *literal* $2$-clue, but it’s *effectively* a $2$-clue.
 
 For instance, in this particular case we know $3$ must go in the head cell (via [Blockade](../cases/blockade.md)):
 
@@ -168,7 +168,7 @@ For instance, in this particular case we know $3$ must go in the head cell (via 
 
 </div>
 
-There's a good chance you already knew this intuitively, but now you can see why it works. You're not applying a special-case deduction for $4$-clues with 3 solved peaks; you're using the simple rules you already know in an originally complex situation that has been simplified.[^reuse]
+There’s a good chance you already knew this intuitively, but now you can see why it works. You’re not applying a special-case deduction for $4$-clues with 3 solved peaks; you’re using the simple rules you already know in an originally complex situation that has been simplified.[^reuse]
 
 [^reuse]: Something something mathematics is the art of giving the same name to different things ;)
 
@@ -188,7 +188,7 @@ The numbers are just symbols for an underlying logical structure. Looking back a
 
 </div>
 
-Regardless of what the concrete numbers may be, the abstract structure remains the same. It's that structure which we work with, reason about, and perform logical deductions on.
+Regardless of what the concrete numbers may be, the abstract structure remains the same. It’s that structure which we work with, reason about, and perform logical deductions on.
 
 We might as well use emojis for our skyscrapers! – though that would make puzzle-solving pretty painful.
 
@@ -211,9 +211,9 @@ In fact, who said our skyscrapers even needed to have consecutive heights? We co
 
 </div>
 
-Having consecutive numbers just makes checking which numbers have and haven't been used significantly faster.
+Having consecutive numbers just makes checking which numbers have and haven’t been used significantly faster.
 
-Anyway, all this is to say – remind yourself to not get too lost in the numbers sometimes. They're great for us as humans; we can use them as a crux to speed up a lot of logic and facilitate intuition. But at the end of the day, they're only a syntax for describing the true underlying logical constraints.
+Anyway, all this is to say – remind yourself to not get too lost in the numbers sometimes. They’re great for us as humans; we can use them as a crux to speed up a lot of logic and facilitate intuition. But at the end of the day, they’re only a syntax for describing the true underlying logical constraints.
 
 To truly *feel* a Skyscrapers puzzle, look past the numbers and immerse yourself in the abstract structure hidden within.
 
