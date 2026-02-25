@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = glossary
 | capt = (Unofficial) skyscraping jargon
-| update = 2026 February 23
+| update = 2026 February 24
 -->
 
 This page defines all of the technical quasi-jargon I use throughout *Skyscraping*.
@@ -40,6 +40,8 @@ A cell is either:
 
 - [solved](#solved-cell), containing one [skyscraper](#skyscraper)
 - [unsolved](#unsolved-cell), containing many [candidates](#candidates), which may be indicated with [pencil marks](#pencil-marks)
+
+I'll also often use “Cell” to refer to the [skyscraper](#skysrcaper) *inside* it ([metonymy!<sup>↗</sup>](https://wikipedia.org/wiki/Metonymy)).
 
 
 ## closed
@@ -102,14 +104,16 @@ Reaching a contradiction when performing [concrete](#concrete-deduction) deducti
 
 > *We've found a counterexample, so we know this [cell](#cell) can't contain a $3$-[skyscraper](#skyscraper).*
 
-A potential configuration of candidates which leads to a [contradiction](#contradiction).
+A potential configuration of candidates which leads to a [contradiction](#contradiction), which disproves the possibility of that configuration.
+
+This is usually relevant while performing [hypothetical deductions](#hypothetical-deduction).
 
 
 ## couple
 
-> Main article: [Technique: Couples](tech/couples)
+*Main article: [Technique: Couples](tech/couples)*
 
-Pencil marks in 2 cells in a lane, which contain the same pair of digits. 
+2 [unsolved cells](#unsolved-cell) in the same lane [lane](#lane) which contain the same 2 [candidates](#candidates).
 
 <div class="puzzle">
 
@@ -118,12 +122,14 @@ Pencil marks in 2 cells in a lane, which contain the same pair of digits.
 |     |     |     |        |        |        |     |
 |     |     |     |    1   |        |        |     |
 |     |     |     |    2   |        |        |     |
-|     |     |     |  *34*  |        |        |     |
-|     |     |     |  *34*  |        |        |     |
+|     |     |     |***34***|        |        |     |
+|     |     |     |***34***|        |        |     |
 |     |  3  |  4  |    5   |***12***|***12***|     |
 |     |     |     |        |        |        |     |
 
 </div>
+
+In the grid above, the $[34]$ cells are couples, as are the $[12]$ cells.
 
 *Also called “twins” and “pairs”.*
 
@@ -146,7 +152,7 @@ Another name for a [closed](closed) Skyscrapers.
 
 ## half-lane
 
-One ‘side’ of a [lane](#lane) – the cells from the head cell up to and including the lane peak.
+One ‘side’ of a [lane](#lane) – the cells from the head cell up to and including the lane peak, as well as the clue (if any) on that side.
 
 <div class="puzzle">
 
@@ -158,7 +164,7 @@ One ‘side’ of a [lane](#lane) – the cells from the head cell up to and inc
 
 </div>
 
-The half-lanes in the above lane are $\left[ [12], [23], 5 \right]$ and $\left[ 4, [123], 5 \right]$.
+The 2 half-lanes in the above lane are $\text{3 | [12] [23] 5}$ (from the left) and $\text{2 | 4 [123] 5}$ (from the right).
 
 
 ## head cell
@@ -204,7 +210,21 @@ If solving Skyscrapers [‘properly’](thoughts/imagination-vs-guesswork.md), t
 
 > *Now that we’ve found where the $6$-skyscraper goes in this lane, solving the rest of the lane becomes much easier.*
 
-A general term for either a **row** or **column**; any line of skyscrapers in the puzzle grid.
+A general term for either a **row** or **column** of a puzzle, as well as the [clues](#clue) adjacent to it.
+
+For instance, this is the lane $\text{5 | 1 2 3 4 5 | 1}$:
+
+<div class="puzzle lane">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |
+|  5  |  1  |  2  |  3  |  4  |  5  |  1  |
+|     |     |     |     |     |     |     |
+
+</div>
+
+*See also: [half-lane](#half-lane)*
 
 
 ## lane peak
@@ -219,6 +239,11 @@ An $N$-skyscraper in a *NxN* Skyscrapers puzzle.
 “Look” is used abstractly to describe considering the cells in a lane.
 
 Pretty difficult to describe technically, but I’m sure you already understand it! For an intuitive explanation, please see the [Skyscraping primer](walkthrough/primer.md).
+
+
+## obscured
+
+In contrast to a [*visible* skyscraper](#visible).
 
 
 ## open
@@ -350,3 +375,8 @@ In this lane, the tail cell is the one containing the $4$-[skyscraper](#skyscrap
 A cell which has not been definitively assigned a [skyscraper](#skyscraper), and may have multiple [candidates](#candidates) indicated with [pencil marks](#pencilmarks).
 
 In contrast to a [*solved* cell](#solved-cell).
+
+
+## visible
+
+In contrast to an [*obscured* skyscraper](#obscured).
