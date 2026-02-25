@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = glossary
 | capt = (Unofficial) skyscraping jargon
-| update = 2026 February 24
+| update = 2026 February 25
 -->
 
 This page defines all of the technical quasi-jargon I use throughout *Skyscraping*.
@@ -39,7 +39,7 @@ A single square in the puzzle [grid](#grid).
 A cell is either:
 
 - [solved](#solved-cell), containing one [skyscraper](#skyscraper)
-- [unsolved](#unsolved-cell), containing many [candidates](#candidates), which may be indicated with [pencil marks](#pencil-marks)
+- [unsolved](#unsolved-cell), containing many [candidates](#candidates), which may be indicated with [pencilmarks](#pencilmarks)
 
 I'll also often use “Cell” to refer to the [skyscraper](#skysrcaper) *inside* it ([metonymy!<sup>↗</sup>](https://wikipedia.org/wiki/Metonymy)).
 
@@ -185,7 +185,7 @@ The first cell in a lane.
 
 </div>
 
-In this lane, the head cell is the one containing the [pencil marks](#pencil-marks) $[123]$.
+In this lane, the head cell is the one containing the [pencilmarks](#pencilmarks) $[123]$.
 
 *See also: [tail cell](#tail-cell)*
 
@@ -280,9 +280,9 @@ A [skyscraper](#skyscraper) that is guaranteed to be visible.
 Akin to a “maximum” in mathematics.
 
 
-## pencil marks
+## pencilmarks
 
-> *This cell could contain a $1$ or $2$, so we’ll write those [candidates](#candidates) in as pencil marks.*
+> *This cell could contain a $1$ or $2$, so we’ll write those [candidates](#candidates) in as pencilmarks.*
 
 Small numbers placed in a cell to indicate what [candidates](#candidate) *could* go in there:
 
@@ -335,7 +335,7 @@ To avoid ambiguity I may sometimes use the fully qualified form “Skyscrapers p
 
 ## solved cell
 
-> *We’ve got loads of [pencil marks](#pencilmarks), but not many solved cells =(*
+> *We’ve got loads of [pencilmarks](#pencilmarks), but not many solved cells =(*
 
 A cell which has been definitively assigned a [skyscraper](#skyscraper).
 
@@ -372,7 +372,7 @@ In this lane, the tail cell is the one containing the $4$-[skyscraper](#skyscrap
 
 ## unsolved cell
 
-A cell which has not been definitively assigned a [skyscraper](#skyscraper), and may have multiple [candidates](#candidates) indicated with [pencil marks](#pencilmarks).
+A cell which has not been definitively assigned a [skyscraper](#skyscraper), and may have multiple [candidates](#candidates) indicated with [pencilmarks](#pencilmarks).
 
 In contrast to a [*solved* cell](#solved-cell).
 

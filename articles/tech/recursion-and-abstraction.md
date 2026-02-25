@@ -53,7 +53,7 @@ Now look at $\text{2 | \_ \_ 6 \_ \_ \_ |}$. We know there’s 1 more peak befor
 
 Now, I want you to look past the numbers. What kind of *structure* did we deduce here?
 
-The skyscraper in the 1st cell obscures that in the 2nd cell. So we’ve got a “high” followed by a “low”. Let’s replace our pencil marks with just those indicators:
+The skyscraper in the 1st cell obscures that in the 2nd cell. So we’ve got a “high” followed by a “low”. Let’s replace our pencilmarks with just those indicators:
 
 <div class="puzzle">
 

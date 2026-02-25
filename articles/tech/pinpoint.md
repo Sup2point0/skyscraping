@@ -63,7 +63,7 @@ Because a lane can only contain one $5$, this eliminates $5$ as a [candidate](..
 
 </div>
 
-Suppose we keep going and manage to deduce 3 more [lane peaks](../glossary.md#lane-peak) ([pencil marks](../glossary.md#pencil-marks) ommitted for clarity):
+Suppose we keep going and manage to deduce 3 more [lane peaks](../glossary.md#lane-peak) ([pencilmarks](../glossary.md#pencilmarks) ommitted for clarity):
 
 <div class="puzzle">
 
@@ -219,7 +219,7 @@ This example also happens to illustrate why [pencilmarking](pencilmarking.md) ca
 
 </div>
 
-Once we have pencil marks in all cells of a row, we might notice there’s a skyscraper we can pinpoint which we didn’t see before...
+Once we have pencilmarks in all cells of a row, we might notice there’s a skyscraper we can pinpoint which we didn’t see before...
 
 <div class="puzzle">
 
