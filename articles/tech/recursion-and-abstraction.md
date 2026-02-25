@@ -66,11 +66,13 @@ The skyscraper in the 1st cell obscures that in the 2nd cell. So we’ve got a �
 
 </div>
 
-Aha! Now you see, really, these are *the same problem*. The numbers are a little different, of course, but the underlying constraint is the same – even though the clues and lanes are different.
+Aha! Now you can very apparently tell, fundamentally these are *the same problem*. The numbers may be a little different, but the underlying constraint is the same in both lanes.
 
 Why exactly is that? Well, we’ve guaranteed 2/3 of the peaks the $3$-clue half-lane needs, so we need exactly 1 more peak. And we've guaranteed 1/2 of the skyscrapers the $2$-clue half-lane needs, so we... also need exactly 1 more peak.
 
-Once we've deduced enough peaks in the $3$-clue lane, it *reduces into* a $2$-clue lane.
+Solving a 2/3 half-lane is the same as solving a 1/2 half-lane. Or a 4/5 half-lane. Or a 6/7 half-lane.[^67] Or a 69/70 half-lane. In all these cases we only need 1 more visible skyscraper before the current first peak, so they've all been *reduced* into solving a $2$-clue half-lane.
+
+[^67]: stfu.
 
 We can illustrate this even clearer with a higher clue:
 
@@ -78,9 +80,7 @@ We can illustrate this even clearer with a higher clue:
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
 |  4  |     |     |     |     |     |  6  |     |
-|     |     |     |     |     |     |     |     |
 
 </div>
 
@@ -92,9 +92,7 @@ Suppose we find another peak:
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
 |  4  |     |     |     |     |**5**|  6  |     |
-|     |     |     |     |     |     |     |     |
 
 </div>
 
@@ -104,12 +102,10 @@ Now we have 2 skyscrapers guaranteed to be visible, so we need 2 more. Notice th
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
 |  4  |     |     |     |     |  5  |  6  |     |
 |**3**|     |     |     |     |  6  |     |     |
-|     |     |     |     |     |     |     |     |
 
-> In both half-lanes, we need 2 peaks.
+> In both half-lanes, we need 2 more peaks.
 
 </div>
 
@@ -119,24 +115,23 @@ And as we find another peak, meaning we only need 1 more, it now ‘feels like�
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
 |  4  |     |     |     |**4**|  5  |  6  |     |
 |**2**|     |     |     |  6  |     |     |     |
-|     |     |     |     |     |     |     |     |
+
+> In both half-lanes, we need 1 more peak.
 
 </div>
 
-So as we find more peaks, the problem reduces into a smaller version of itself, which we can solve recursively.
+So as we find more peaks, the problem reduces into a smaller version of itself. We're solving *recursively*.
 
-We don't *care* what comes after the first current peak, because they can't change:
+<!-- FIXME: Technically the 1st peak is guaranteed to be visible too, so we should ignore them all -->
+The recursion happens because we *don't care* what comes after the first current peak. These peaks can't change:
 
 <div class="puzzle lane">
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
 |  4  |     |     |     |  4  |**5**|**6**|     |
-|     |     |     |     |     |     |     |     |
 
 > The $5$ and $6$ are gonna be visible no matter where we go from here.
 
@@ -148,9 +143,7 @@ So, we can ‘mentally ignore’ those later skyscrapers, and treat the current 
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
 |**2**|     |     |     |  N  |  -  |  -  |     |
-|     |     |     |     |     |     |     |     |
 
 > Of course, it's not actually the $N$-skyscraper, but we can think of it as the lane peak.
 
@@ -171,50 +164,48 @@ For instance, in this particular case we know $3$ must go in the head cell (via 
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
 |  2  |**3**|     |     |  4  |  5  |  6  |     |
-|     |     |     |     |     |     |     |     |
 
 </div>
 
-There's a good chance you already knew this intuitively, but now you can see why it works. You're not applying a special-case deduction for $4$-clues with 3 solved peaks; you're using the simple rules you already know in an originally complex situation that has been simplified!
+There's a good chance you already knew this intuitively, but now you can see why it works. You're not applying a special-case deduction for $4$-clues with 3 solved peaks; you're using the simple rules you already know in an originally complex situation that has been simplified.[^reuse]
+
+[^reuse]: Something something mathematics is the art of giving the same name to different things ;)
 
 
 ## Abstraction
 
-Recursion also illuminates a closely entangled idea: when solving Skyscrapers, it’s not the numbers that are important, it’s the structure.
+Recursion also illuminates a closely entangled idea: when solving Skyscrapers, it’s not the numbers that are important, it’s the *structure*.
 
-The numbers are just symbols for the underlying structure. Looking back at the *high* and *low* we had earlier, it’d be no different if we had a 99x99 Skyscrapers:
+The numbers are just symbols for an underlying logical structure. Looking back at the $\text{high}$ and $\text{low}$ we had earlier, it’d be no different if we had a *99x99* Skyscrapers:
 
-<div class="puzzle">
+<div class="puzzle lane">
 
 ||||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |     |
 |  3  |*high*|*low*|  98  |     |     | ... |  99 |     |
 |  2  |*high*|*low*|  99  |     |     | ... |     |     |
-|     |     |     |     |     |     |     |     |     |
 
 </div>
 
-Regardless of what the concrete numbers may be, the abstract structure remains the same. It's the abstract structure that we work with, reason about, and perform logical deductions with.
+Regardless of what the concrete numbers may be, the abstract structure remains the same. It's that structure which we work with, reason about, and perform logical deductions on.
 
-We might as well use emojis for our skyscrapers, though that would make puzzle-solving pretty painful.
+We might as well use emojis for our skyscrapers! – though that would make puzzle-solving pretty painful.
 
-In fact, who said our skyscrapers even needed to have consecutive heights?! We could have a *6x6* Skyscrapers with the digits $\{013679\}$. It’s irrelevant, really, the only necessity is that they’re unique so that the rules of Sudoku can be applied.
+In fact, who said our skyscrapers even needed to have consecutive heights? We could have a *6x6* Skyscrapers with the digits $\{013679\}$. It’s irrelevant, really, the only necessity is that they’re unique so that the rules of Sudoku can be applied.
 
 <div class="puzzle">
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |     |
+|     |     |     |  2  |  2  |  3  |     |     |
 |     |  6  |  9  |  3  |  7  |  1  |  0  |     |
 |     |  1  |  3  |  0  |  6  |  7  |  9  |     |
-|     |  5  |  7  |  1  |  0  |  6  |  3  |     |
+|  2  |  5  |  7  |  1  |  0  |  6  |  3  |     |
 |     |  2  |  6  |  9  |  3  |  0  |  1  |     |
 |     |  3  |  0  |  7  |  1  |  9  |  6  |     |
 |     |  4  |  1  |  6  |  9  |  3  |  7  |     |
-|     |     |     |     |     |     |     |     |
+|     |  3  |     |     |  1  |     |     |     |
 
 > Cursed, lmao.
 
