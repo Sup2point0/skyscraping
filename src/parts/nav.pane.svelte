@@ -41,9 +41,9 @@ let { mobile = false }: Props = $props();
     <NavLink text="Techniques" intern="tech" header={true} />
     <NavLink text="Recursion & Abstraction" intern="tech/recursion-and-abstraction" />
     <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
-    <NavLink text="Pencil Marks" intern="tech/pencilmarks" disabled={true} />
+    <NavLink text="Pencilmarks" intern="tech/pencilmarks" disabled={true} />
     <NavLink text="Haven" intern="tech/haven" disabled={true} />
-    <NavLink text="Pinpoint" intern="tech/pinpoint" disabled={true} />
+    <NavLink text="Pinpoint" intern="tech/pinpoint" />
     <NavLink text="Couples" intern="tech/couples" disabled={true} />
   </section>
 
