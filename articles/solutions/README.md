@@ -158,3 +158,8 @@ Cool spot.
 </div>
 
 My first ever 7x7 (hard). Completed it over about 2 days.
+
+### 2026 February 23
+<https://www.brainbashers.com/skyscrapers312721>
+
+Solved in ~35:40, so satisfying towards the end. Whew!
