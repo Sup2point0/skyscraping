@@ -7,6 +7,9 @@ The global side navigation pane.
 
 import NavLink from "#parts/nav.link.svelte";
 
+import { base } from "$app/paths";
+
+
 interface Props {
   mobile?: boolean;
 }
@@ -18,7 +21,11 @@ let { mobile = false }: Props = $props();
 
 <nav class:mobile>
   <section>
-    <NavLink text="Skyscraping" link="https://sup2point0.github.io/skyscraping" />
+    <a class="root" href="https://sup2point0.github.io/skyscraping">
+      <img alt="" src="{base}/skyscraping-icon.svg">
+      <em> Skyscraping </em>
+    </a>
+
     <NavLink text="Notation" intern="notation" />
     <NavLink text="Glossary" intern="glossary" />
   </section>
@@ -32,6 +39,7 @@ let { mobile = false }: Props = $props();
 
   <section>
     <NavLink text="Techniques" intern="tech" header={true} />
+    <NavLink text="Recursion & Abstraction" intern="tech/recursion-and-abstraction" />
     <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
     <NavLink text="Pencil Marks" intern="tech/pencilmarks" disabled={true} />
     <NavLink text="Haven" intern="tech/haven" disabled={true} />
@@ -83,7 +91,7 @@ let { mobile = false }: Props = $props();
 nav {
   flex-grow: 1;
   max-width: 25vw;
-  padding: 2.5rem 1vw 4rem;
+  padding: 1rem 1vw 4rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 1.5rem;
@@ -101,6 +109,51 @@ nav {
 section {
   display: flex;
   flex-flow: column nowrap;
+
+  a.root {
+    padding: 0.2em 0.1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.5em;
+    @include font-body;
+    font-size: 125%;
+    color: $col-text-highlight;
+    text-decoration: none;
+    transition: all 0.1s ease-out;
+
+    img {
+      max-height: 2.5rem;
+      aspect-ratio: 1;
+      transition: filter 0.1s ease-out;
+    }
+    &:hover, &:focus-visible,
+    &.header:hover, &.header:focus-visible {
+      color: $col-deut;
+      background: light-dark(
+        rgb(black, 4%),
+        rgb(white, 8%));
+
+        @media (prefers-contrast: more) {
+          color: $col-deut-contrast;
+        }
+
+      img {
+        filter: brightness(90%);
+      }
+    }
+
+    &:active, &.header:active {
+      background: light-dark(
+        rgb(black, 8%),
+        rgb(white, 16%));
+
+      img {
+        filter: brightness(90%);
+      }
+    }
+  }
 }
 
 </style>

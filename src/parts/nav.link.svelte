@@ -42,7 +42,7 @@ a {
   &.header:hover, &.header:focus-visible {
     color: $col-deut;
     background: light-dark(
-      rgb(black, 2%),
+      rgb(black, 4%),
       rgb(white, 8%));
 
       @media (prefers-contrast: more) {
@@ -52,7 +52,7 @@ a {
 
   &:active, &.header:active {
     background: light-dark(
-      rgb(black, 5%),
+      rgb(black, 8%),
       rgb(white, 16%));
   }
 
