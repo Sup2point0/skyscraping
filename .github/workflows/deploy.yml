@@ -21,7 +21,7 @@ jobs:
       - name: 'ruby / setup'
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3
+          ruby-version: 3.4
           bundler-cache: true
 
       - name: 'ruby / install'
@@ -34,10 +34,10 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './package-lock.json'
 
-      - name: 'node / install'
+      - name: 'svelte / npm run install'
         run: npm install
 
-      - name: 'svelte / build'
+      - name: 'svelte / npm run build'
         run: |
           npm run build
 
