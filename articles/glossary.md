@@ -44,6 +44,9 @@ A cell is either:
 I'll also often use “Cell” to refer to the [skyscraper](#skysrcaper) *inside* it ([metonymy!<sup>↗</sup>](https://wikipedia.org/wiki/Metonymy)).
 
 
+## chained deductions
+
+
 ## closed
 
 > *Solving closed Skyscrapers is fairly trivial, but solving open Skyscrapers is something else entirely*.
@@ -239,6 +242,11 @@ An $N$-skyscraper in a *NxN* Skyscrapers puzzle.
 “Look” is used abstractly to describe considering the cells in a lane.
 
 Pretty difficult to describe technically, but I’m sure you already understand it! For an intuitive explanation, please see the [Skyscraping primer](walkthrough/primer.md).
+
+
+## low
+
+One of the smaller [skyscrapers](#skyscraper) in a puzzle, usually the $1$, $2$ and possibly $3$ skyscrapers (depending on size).
 
 
 ## obscured

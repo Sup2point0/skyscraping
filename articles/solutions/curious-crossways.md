@@ -1,9 +1,8 @@
-# A Curious Crossways
+# Solution: A Curious Crossways
 <!-- #SQUARK live!
 | dest = solutions/curious-crossways
-| capt = 24 May 2025
 | index = solutions
-| update = 2025 May 24
+| update = 2026 March 15
 -->
 
 This was a *5x5* which I thought I could speedrun, but I ended up running into a hitch which took some careful consideration to overcome.
@@ -21,8 +20,6 @@ This was a *5x5* which I thought I could speedrun, but I ended up running into a
 |     |     |     |     |  2  |     |     |
 
 </div>
-
-Original puzzle is from [brainbashers.com<sup>↗</sup>](https://www.brainbashers.com/p566608).
 
 
 ## Opening
@@ -140,7 +137,7 @@ From the upwards $2$ clue we can deduce it has to be $[2, 1]$, and this fills th
 </div>
 
 
-## Marking
+## Pencilmarking
 
 Now we start making marks, except... nothing really pops up?
 
@@ -175,7 +172,7 @@ With nothing to really go off, I just marked up some more of the grid. The inter
 </div>
 
 
-## Crux
+## The Crux
 
 At this point I was stuck. The lower $4$ and $3$ clues don’t really give anything, so we know the secret must lie in the interaction of the two $3$ clues.
 
@@ -280,7 +277,7 @@ Now there’s only one place for the $2$ in that column!
 After that fiddly deduction it’s plain sailing, and we clear the rest with Sudoku deductions.
 
 
-## Solve
+## Home Straight
 
 <div class="puzzle">
 

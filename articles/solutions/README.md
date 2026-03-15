@@ -9,13 +9,7 @@ Here are some Skyscrapers which were really satisfying to solve. I’ll (very sl
 
 ## *5x5*
 
-### Can’t Solve?
-<https://www.brainbashers.com/p541729>
-
-### Just a Satisfying Solve
-<https://www.brainbashers.com/p979573>
-
-### [A Curious Crossways](../solutions/curious-crossways.md)
+### [A Curious Crossways](solutions/curious-crossways.md)
 
 <div class="puzzle">
 
@@ -30,6 +24,12 @@ Here are some Skyscrapers which were really satisfying to solve. I’ll (very sl
 |     |     |     |     |  2  |     |     |
 
 </div>
+
+### Can’t Solve?
+<https://www.brainbashers.com/p541729>
+
+### Just a Satisfying Solve
+<https://www.brainbashers.com/p979573>
 
 ### March 4
 
@@ -105,6 +105,23 @@ Cool spot.
 
 
 ## *6x6*
+
+### [The Power of Sudoku](solutions/power-of-sudoku.md)
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |  3  |     |  5  |     |
+|     |     |     |     |     |     |     |  3  |
+|     |     |     |     |     |  2  |     |  4  |
+|     |     |     |     |     |     |     |     |
+|     |     |  3  |     |     |     |     |     |
+|  3  |  2  |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |  3  |
+|     |     |  2  |     |     |     |     |     |
+
+</div>
 
 ### 5 Pinpoints
 <https://www.brainbashers.com/p124083>
