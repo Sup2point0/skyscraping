@@ -32,56 +32,58 @@ let { mobile = false }: Props = $props();
 
   <section>
     <NavLink text="Walkthrough" intern="walk" header={true} />
-    <NavLink text="Foreword" intern="walk/foreword" />
-    <NavLink text="Primer" intern="walk/primer" />
-    <NavLink text="Clueless" intern="walk/clueless" disabled={true} />
+      <NavLink text="Foreword" intern="walk/foreword" />
+      <NavLink text="Primer" intern="walk/primer" />
+      <NavLink text="Clueless" intern="walk/clueless" disabled={true} />
   </section>
 
   <section>
     <NavLink text="Techniques" intern="tech" header={true} />
-    <NavLink text="Recursion & Abstraction" intern="tech/recursion-and-abstraction" />
-    <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
-    <NavLink text="Pencilmarks" intern="tech/pencilmarks" disabled={true} />
-    <NavLink text="Haven" intern="tech/haven" disabled={true} />
-    <NavLink text="Pinpoint" intern="tech/pinpoint" />
-    <NavLink text="Couples" intern="tech/couples" disabled={true} />
+      <NavLink text="Guesswork, I’m Guessing?" intern="tech/guesswork" />
+      <NavLink text="Pencilmarks" intern="tech/pencilmarks" disabled={true} />
+      <NavLink text="Haven" intern="tech/haven" disabled={true} />
+      <NavLink text="Couples" intern="tech/couples" disabled={true} />
+      <NavLink text="Pinpoint" intern="tech/pinpoint" />
+      <NavLink text="Firing Range" intern="tech/firing-range" disabled={true} />
+      <NavLink text="Recursion & Abstraction" intern="tech/recursion-and-abstraction" />
   </section>
 
   <section>
     <NavLink text="Cases" intern="cases" header={true} />
-    <NavLink text="Silhouette" intern="cases/silhouette" />
-    <NavLink text="Stairs" intern="cases/stairs" />
-    <NavLink text="Lighthouse" intern="cases/lighthouse" />
-    <NavLink text="Blockade" intern="cases/blockade" />
-    <NavLink text="Meet in the Middle" intern="cases/meet-in-the-middle" />
-    <NavLink text="Slide" intern="cases/" disabled={true} />
-    <NavLink text="Leap of Faith" intern="cases/leap-of-faith" />
-    <NavLink text="High-Rise" intern="cases/high-rise" />
-    <NavLink text="Slide" intern="cases/" disabled={true} />
-    <NavLink text="Hideout" intern="cases/" disabled={true} />
-    <NavLink text="Middle Ground" intern="cases/middle-ground" />
-    <NavLink text="Frontier" intern="cases/" disabled={true} />
+      <NavLink text="Silhouette" intern="cases/silhouette" />
+      <NavLink text="Stairs" intern="cases/stairs" />
+      <NavLink text="Lighthouse" intern="cases/lighthouse" />
+      <NavLink text="Blockade" intern="cases/blockade" />
+      <NavLink text="Meet in the Middle" intern="cases/meet-in-the-middle" />
+      <NavLink text="Slide" intern="cases/" disabled={true} />
+      <NavLink text="Leap of Faith" intern="cases/leap-of-faith" />
+      <NavLink text="High-Rise" intern="cases/high-rise" />
+      <NavLink text="Slide" intern="cases/" disabled={true} />
+      <NavLink text="Hideout" intern="cases/" disabled={true} />
+      <NavLink text="Middle Ground" intern="cases/middle-ground" />
+      <NavLink text="Frontier" intern="cases/" disabled={true} />
   </section>
 
   <section>
     <NavLink text="Showerthoughts" intern="thoughts" header={true} />
-    <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
-    <NavLink text="Satisfaction" intern="thoughts/satisfaction" disabled={true} />
-    <NavLink text="Imagination vs Guesswork" intern="thoughts/imagination-vs-guesswork" />
-    <NavLink text="Mistakes" intern="thoughts/mistakes" />
-    <NavLink text="Nontriviality" intern="thoughts/nontriviality" disabled={true} />
+      <NavLink text="The Discrete Difficulty of Size" intern="thoughts/size" />
+      <NavLink text="Satisfaction" intern="thoughts/satisfaction" disabled={true} />
+      <NavLink text="Imagination vs Guesswork" intern="thoughts/imagination-vs-guesswork" />
+      <NavLink text="Mistakes" intern="thoughts/mistakes" />
+      <NavLink text="Nontriviality" intern="thoughts/nontriviality" disabled={true} />
   </section>
 
   <section>
     <NavLink text="Solutions" intern="solutions" header={true} />
-    <NavLink text="A Curious Crossways" intern="solutions/curious-crossways" />
+      <NavLink text="A Curious Crossways" intern="solutions/curious-crossways" />
+      <NavLink text="The Power of Sudoku" intern="solutions/power-of-sudoku" />
   </section>
 
   <section>
     <NavLink text="Meta" intern="info" header={true} />
-    <NavLink text="Synopsis" intern="info/synopsis" disabled={true} />
-    <NavLink text="FAQ" intern="info/faq" />
-    <NavLink text="Licence" intern="info/licence" />
+      <NavLink text="Synopsis" intern="info/synopsis" disabled={true} />
+      <NavLink text="FAQ" intern="info/faq" />
+      <NavLink text="Licence" intern="info/licence" />
   </section>
 </nav>
 
@@ -130,7 +132,6 @@ section {
     }
     &:hover, &:focus-visible,
     &.header:hover, &.header:focus-visible {
-      color: $col-deut;
       background: light-dark(
         rgb(black, 4%),
         rgb(white, 8%));

@@ -23,14 +23,14 @@ let shown = $state(false);
     </a>
 
     <button id="nav" onclick={() => { shown = !shown; }}>
-      =
+      ≡
     </button>
   </nav>
 
   {#if shown}
     <div class="nav-pane"
-      in:slide={{ duration: 600, easing: expoIn }}
-      out:slide={{ duration: 600, easing: expoOut }}
+      in:slide={{ duration: 500, easing: expoIn }}
+      out:slide={{ duration: 500, easing: expoOut }}
     >
       <NavPane mobile={true} />
     </div>
@@ -71,9 +71,11 @@ img {
 }
 
 button#nav {
-  padding: 0 0.35em;
+  padding: 0 0.25em 0.05em;
   @include font-ui;
   font-size: 200%;
+  color: rgb(black, 30%);
+  line-height: 100%;
   background: none;
   border: none;
   transition: all 0.1s ease-out;
