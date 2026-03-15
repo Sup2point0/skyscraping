@@ -4,7 +4,7 @@
 | capt = Look Past The Numbers
 | index = tech
 | date = 2026 February 21
-| update = 2026 February 25
+| update = 2026 March 15
 -->
 
 
@@ -164,11 +164,11 @@ For instance, in this particular case we know $3$ must go in the head cell (via 
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|  2  |**3**|     |     |  4  |  5  |  6  |     |
+|  4  |**3**|     |     |  4  |  5  |  6  |     |
 
 </div>
 
-There’s a good chance you already knew this intuitively, but now you can see why it works. You’re not applying a special-case deduction for $4$-clues with 3 solved peaks; you’re using the simple rules you already know in an originally complex situation that has been simplified.[^reuse]
+There’s a good chance you already knew this intuitively, but now you can see why it works. You’re not applying a special-case deduction for $4$-clues with 3 solved peaks; you’re using the simple rules you already know, but in a more complex situation that you’ve simplified.[^reuse]
 
 [^reuse]: Something something mathematics is the art of giving the same name to different things ;)
 
