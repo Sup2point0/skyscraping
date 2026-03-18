@@ -43,7 +43,7 @@ The opening is fairly long and painful. We'll start by [skylining](../tech/skyli
 
 </div>
 
-By [Meet in the Middle](../cases/meet-in-the-middle.md) we can find another [lane peak]().
+By [Meet in the Middle](../cases/meet-in-the-middle.md) we can find another [lane peak](../glossary.md#lane-peak).
 
 <div class="puzzle">
 
@@ -139,7 +139,7 @@ Oh wait, notice in that lane there's only one place for the $5$.
 |     |  2  |  3  |  1  |     |     |     |     |
 |     |  5  |     |  6  |     |     |  3  |     |
 |     |     |     |     |     |     |     |     |
-|     |     |  6  |**5**|***34***|***23***|***12***|  5  |
+|     |     |  6  |**5**| *34*| *23*| *12*|  5  |
 |     |     |     |     |     |     |     |     |
 |  4  |     |     |  3  |     |     |  6  |     |
 |     |  6  |     |     |     |     |     |     |
@@ -156,7 +156,7 @@ Chasing on from there, this also puts the $5$ in the lower-right for the lower r
 |     |  2  |  3  |  1  |     |     |     |     |
 |     |  5  |     |  6  |     |     |  3  |     |
 |     |     |     |     |     |     |     |     |
-|     |     |  6  |  5  |***34***|***23***|***12***|  5  |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
 |     |     |     |     |     |     |     |     |
 |  4  |     |     |  3  |     |     |  6  |     |
 |     |  6  |     |     |     |     |**5**|     |
@@ -164,7 +164,7 @@ Chasing on from there, this also puts the $5$ in the lower-right for the lower r
 
 </div>
 
-This wraps up the opening, and now we look for the non-obvious!
+This wraps up the opening, and now we look for the non-obvious.
 
 
 ## The Long Road Ahead
@@ -239,7 +239,7 @@ We're now going to make our first hypothetical deductions, to try eliminate some
 
 </div>
 
-Could this work? Yeah, we could just put $(x456)$ in each of the $4$-clue half-lanes.
+Could this work? Yeah, we could just put $(\_ 456)$ in each of the $4$-clue half-lanes.
 
 <div class="puzzle">
 
@@ -250,8 +250,8 @@ Could this work? Yeah, we could just put $(x456)$ in each of the $4$-clue half-l
 |     |     |     |     |     |     |     |     |
 |     |     |  6  |  5  | *34*| *23*| *12*|  5  |
 |     |     |***5***|     |     |     |     |     |
-|  4  |*low*| *4* |  3  |***5***|     |  6  |     |
-|     |  6  |*low*|     |     |     |     |     |
+|  4  |***low***| *4* |  3  |***5***|     |  6  |     |
+|     |  6  |***low***|     |     |     |     |     |
 |     |     |  4  |     |  3  |  3  |     |     |
 
 </div>
@@ -292,7 +292,7 @@ This would force the head cell to be $1$.
 
 </div>
 
-Ah. But now we have a problem. This $4$-clue row is going to see *more* than 4 skyscrapers, since either the $4$ or $5$-skyscrapers (or both) will be a peak between the $3$ and $6$
+Ah. But now we have a problem. This $4$-clue row is going to see *more* than 4 skyscrapers, since either the $4$ or $5$-skyscraper (or both) will be a peak between the $3$ and $6$.
 
 <div class="puzzle">
 
@@ -309,7 +309,7 @@ Ah. But now we have a problem. This $4$-clue row is going to see *more* than 4 s
 
 </div>
 
-Hence we can deduce $2$ is invalid and eliminate it from the candidates. Finally, let's consider $1$.
+Hence we can deduce $2$ is invalid. Finally, let's consider $1$.
 
 <div class="puzzle">
 
@@ -411,6 +411,21 @@ So, after much deliberation, the only sensible choice is to look at the two $3$-
 
 Well well, what's going on here? Whatever it is, there is a *lot of structure* here, because of the constraints already placed on some of the cells.
 
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |     |     |     |     |
+|  4  | *12*|  4  |  3  |*125*|*125*|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |**3**|**3**|     |     |
+
+</div>
+
 The first thing to notice is that we only have 2 lane peaks left unsolved.
 
 <div class="puzzle">
@@ -447,7 +462,7 @@ This means the final 2 form a [diagonal matrix](../tech/matrices.md).
 
 </div>
 
-There's more. Notice the same applies to the $5$-skyscrapers.
+There's more. The same also applies to the $5$-skyscrapers.
 
 <div class="puzzle">
 
@@ -483,7 +498,7 @@ This means the remaining $5$-skyscrapers also form a diagonal matrix.
 
 Crucially, the matrices of $6$ and $5$ overlap. That is *super* interesting. There's definitely something to be said here.
 
-Time to pull out the hypothetical deductions again. [WLOG](), suppose we have this permutation:
+Time to pull out the hypothetical deductions again. [WLOG](../glossary.md#wlog), suppose we have this permutation:
 
 <div class="puzzle hypothetical">
 
@@ -541,13 +556,13 @@ Take note of the structure here. We have something that looks like this:
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |
-|     |     |  5  |  6  |     |     |
-|     |     |     |     |     |     |
-|     |     |  6  |     |     |     |
-|     |     |     |  5  |     |     |
-|     |     |     |     |     |     |
+| :-- | :-- | :-- | :-- |
+|     |     |     |     |
+|     |  5  |  6  |     |
+|     |     |     |     |
+|     |  6  |     |     |
+|     |     |  5  |     |
+|     |  3  |  3  |     |
 
 </div>
 
@@ -556,13 +571,13 @@ And importantly, even if we had the opposite permutation of $6$-skyscrapers, it 
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |
-|     |     |  6  |  5  |     |     |
-|     |     |     |     |     |     |
-|     |     |     |  6  |     |     |
-|     |     |  5  |     |     |     |
-|     |     |     |     |     |     |
+| :-- | :-- | :-- | :-- |
+|     |     |     |     |
+|     |  6  |  5  |     |
+|     |     |     |     |
+|     |     |  6  |     |
+|     |  5  |     |     |
+|     |  3  |  3  |     |
 
 </div>
 
@@ -574,26 +589,26 @@ Firstly, notice in both configurations those upper two cells use $5$ and $6$ bet
   <div class="puzzle" style="display: inline-block">
 
   |||||||
-  | :-- | :-- | :-- | :-- | :-- | :-- |
-  |     |     |     |     |     |     |
-  |     |     |**5**|**6**|     |     |
-  |     |     |     |     |     |     |
-  |     |     |  6  |     |     |     |
-  |     |     |     |  5  |     |     |
-  |     |     |     |     |     |     |
+  | :-- | :-- | :-- | :-- |
+  |     |     |     |     |
+  |     |**5**|**6**|     |
+  |     |     |     |     |
+  |     |  6  |     |     |
+  |     |     |  5  |     |
+  |     |  3  |  3  |     |
 
   </div>
 
   <div class="puzzle" style="display: inline-block">
 
   |||||||
-  | :-- | :-- | :-- | :-- | :-- | :-- |
-  |     |     |     |     |     |     |
-  |     |     |**6**|**5**|     |     |
-  |     |     |     |     |     |     |
-  |     |     |     |  6  |     |     |
-  |     |     |  5  |     |     |     |
-  |     |     |     |     |     |     |
+  | :-- | :-- | :-- | :-- |
+  |     |     |     |     |
+  |     |**6**|**5**|     |
+  |     |     |     |     |
+  |     |     |  6  |     |
+  |     |  5  |     |     |
+  |     |  3  |  3  |     |
 
   </div>
 </div>
@@ -781,7 +796,7 @@ Which now eliminates $1$ from its column.
 
 </div>
 
-This is great, but even better, all this chasing has led to us discovering a couple – notice the two $[24]$ cells in the 4th row.
+This is great, but even better, all this chasing has led to us discovering a couple! – notice the two $[24]$ cells in the 4th row.
 
 <div class="puzzle">
 
@@ -1214,6 +1229,8 @@ Almost there...
 |     |     |  4  |     |  3  |  3  |     |     |
 
 </div>
+
+A very satisfying solve :]
 
 <div class="puzzle solved">
 
