@@ -130,7 +130,41 @@ Finally, we'll fill in the candidates for the $5$-clue half-lane.
 
 </div>
 
-That wraps up the opening, and now we look for the non-obvious!
+Oh wait, notice in that lane there's only one place for the $5$.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |**5**|***34***|***23***|***12***|  5  |
+|     |     |     |     |     |     |     |     |
+|  4  |     |     |  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |     |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+Chasing on from there, this also puts the $5$ in the lower-right for the lower row. Neat!
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  |***34***|***23***|***12***|  5  |
+|     |     |     |     |     |     |     |     |
+|  4  |     |     |  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |**5**|     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+This wraps up the opening, and now we look for the non-obvious!
 
 
 ## The Long Road Ahead
@@ -144,10 +178,10 @@ The most fruitful lane here will be the $4$-clue row. First, we know the [head c
 |     |  2  |  3  |  1  |     |     |     |     |
 |     |  5  |     |  6  |     |     |  3  |     |
 |     |     |     |     |     |     |     |     |
-|     |     |  6  | *45*| *34*| *23*| *12*|  5  |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
 |     |     |     |     |     |     |     |     |
 |  4  |***123***|     |  3  |     |     |  6  |     |
-|     |  6  |     |     |     |     |     |     |
+|     |  6  |     |     |     |     |  5  |     |
 |     |     |  4  |     |  3  |  3  |     |     |
 
 </div>
@@ -161,10 +195,10 @@ However, $3$ is already taken in the lane, so we're left with $[12]$.
 |     |  2  |  3  |  1  |     |     |     |     |
 |     |  5  |     |  6  |     |     |  3  |     |
 |     |     |     |     |     |     |     |     |
-|     |     |  6  | *45*| *34*| *23*| *12*|  5  |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
 |     |     |     |     |     |     |     |     |
 |  4  |***12***|     |  3  |     |     |  6  |     |
-|     |  6  |     |     |     |     |     |     |
+|     |  6  |     |     |     |     |  5  |     |
 |     |     |  4  |     |  3  |  3  |     |     |
 
 </div>
@@ -178,12 +212,485 @@ Now consider the second cell. Continuing the sequence, the candidates are $[1234
 |     |  2  |  3  |  1  |     |     |     |     |
 |     |  5  |     |  6  |     |     |  3  |     |
 |     |     |     |     |     |     |     |     |
-|     |     |  6  | *45*| *34*| *23*| *12*|  5  |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
 |     |     |     |     |     |     |     |     |
 |  4  | *12*|***124***|  3  |     |     |  6  |     |
-|     |  6  |     |     |     |     |     |     |
+|     |  6  |     |     |     |     |  5  |     |
 |     |     |  4  |     |  3  |  3  |     |     |
 
 </div>
 
+We're now going to make our first hypothetical deductions, to try eliminate some of these candidates. Let's take $4$ first.
 
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |     |     |     |     |     |     |
+|  4  | *12*|***4***|  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+> What can we deduce if we place a $4$ in the second cell?
+
+</div>
+
+Could this work? Yeah, we could just put $(x456)$ in each of the $4$-clue half-lanes.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |***5***|     |     |     |     |     |
+|  4  |*low*| *4* |  3  |***5***|     |  6  |     |
+|     |  6  |*low*|     |     |     |     |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+So $4$ is possible. Let's consider $2$.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |     |     |     |     |     |     |
+|  4  | *12*|***2***|  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+This would force the head cell to be $1$.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |     |     |     |     |     |     |
+|  4  |***1***| *2* |  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+> What can we deduce if we place a $2$ in the second cell?
+
+</div>
+
+Ah. But now we have a problem. This $4$-clue row is going to see *more* than 4 skyscrapers, since either the $4$ or $5$-skyscrapers (or both) will be a peak between the $3$ and $6$
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |     |     |     |     |     |     |
+|~~4~~| *1* | *2* |  3  |~~*45*~~|     |  6  |     |
+|     |  6  |     |     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+Hence we can deduce $2$ is invalid and eliminate it from the candidates. Finally, let's consider $1$.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |     |     |     |     |     |     |
+|  4  | *12*|***1***|  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+> What can we deduce if we place a $1$ in the second cell?
+
+</div>
+
+Now an issue arises with the $4$-clue column. This is a [dense sequence](), so having a $1$ here is definitely not allowed. No matter what we do, we can't have 4 skyscrapers visible.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |***3***|     |     |     |     |     |
+|  4  | *12*| *1* |  3  |     |     |  6  |     |
+|     |  6  |***2***|     |     |     |  5  |     |
+|     |     |~~4~~|     |  3  |  3  |     |     |
+
+> $1$ cannot be a peak, so we can only attain a maximum of 3 peaks, not 4 as required.
+
+</div>
+
+So it can't be $1$ either.
+
+We checked $4, 2, 1$ and found that $2$ and $1$ would lead to unsolvable situations. Hence we can eliminate $1$ and $2$ as candidates, and conclude the second cell must contain a $4$. Nice!
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |     |     |     |     |     |     |
+|  4  | *12*|**4**|  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+In order to fulfil the sequence, we also now know this cell must be a $5$, since it's the only skyscraper between $4$ and $6$.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |     |  6  |     |     |  3  |     |
+|     |     |     |     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |**5**|     |     |     |     |     |
+|  4  | *12*|  4  |  3  |     |     |  6  |     |
+|     |  6  |     |     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+Now for some [pencilmarking](../tech/pencilmarks.md). In the $3$-clue half-lane we'll need a sequence.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  |***12***|  6  |     |     |  3  |     |
+|     |     |***23***|     |     |     |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |     |     |     |     |
+|  4  | *12*|  4  |  3  |***125***|***125***|  6  |     |
+|     |  6  |***123***|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+At this point, none of the half-lanes we've looked at so far can really offer us anything. There's nothing further to help us narrow down what they could be.
+
+> We can try more pencilmarking, but it doesn't really lead anywhere here.
+
+So, after much deliberation, the only sensible choice is to look at the two $3$-clue upwards columns.
+
+
+## Absolute Madness, Part 1
+
+Well well, what's going on here? Whatever it is, there is a *lot of structure* here, because of the constraints already placed on some of the cells.
+
+The first thing to notice is that we only have 2 lane peaks left unsolved.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|**6**|     |     |  3  |     |
+|     |     | *23*|     |     |     |     |     |
+|     |     |**6**|  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |     |     |     |     |
+|  4  | *12*|  4  |  3  |*125*|*125*|**6**|     |
+|     |**6**|*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+> So far, we've found 4/6 of the lane peaks.
+
+</div>
+
+This means the final 2 form a [diagonal matrix](../tech/matrices.md).
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |***6***|***6***|     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |***6***|***6***|     |     |
+|  4  | *12*|  4  |  3  |*125*|*125*|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+There's more. Notice the same applies to the $5$-skyscrapers.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |**5**| *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     | *6* | *6* |     |     |
+|     |     |  6  |**5**| *34*| *23*| *12*|  5  |
+|     |     |**5**|     | *6* | *6* |     |     |
+|  4  | *12*|  4  |  3  |*125*|*125*|  6  |     |
+|     |  6  |*123*|     |     |     |**5**|     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+This means the remaining $5$-skyscrapers also form a diagonal matrix.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |***56***|***56***|     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     | *6* | *6* |     |     |
+|  4  | *12*|  4  |  3  |***125***|***125***|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+Crucially, the matrices of $6$ and $5$ overlap. That is *super* interesting. There's definitely something to be said here.
+
+Time to pull out the hypothetical deductions again. [WLOG](), suppose we have this permutation:
+
+<div class="puzzle hypothetical">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |     |**6**|     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |**6**|     |     |     |
+|  4  | *12*|  4  |  3  |*125*|*125*|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+> Although the two lanes differ in the candidates $[34]$ and $[23]$, these are effectively irrelevant in our current considerations, so we can safely treat the lanes as indistinguishable.
+
+</div>
+
+In the right lane, this pinpoints the $5$.
+
+<div class="puzzle hypothetical">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |     |  6  |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |  6  |     |     |     |
+|  4  | *12*|  4  |  3  |*125*|**5**|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+This, in turn, pinpoints the $5$ in the left lane.
+
+<div class="puzzle hypothetical">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |**5**|  6  |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |  6  |     |     |     |
+|  4  | *12*|  4  |  3  | *12*|  5  |  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+Take note of the structure here. We have something that looks like this:
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |  5  |  6  |     |     |
+|     |     |     |     |     |     |
+|     |     |  6  |     |     |     |
+|     |     |     |  5  |     |     |
+|     |     |     |     |     |     |
+
+</div>
+
+And importantly, even if we had the opposite permutation of $6$-skyscrapers, it would be the same configuration reflected:
+
+<div class="puzzle">
+
+|||||||
+| :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |
+|     |     |  6  |  5  |     |     |
+|     |     |     |     |     |     |
+|     |     |     |  6  |     |     |
+|     |     |  5  |     |     |     |
+|     |     |     |     |     |     |
+
+</div>
+
+This allows us to make some powerful deductions.
+
+Firstly, notice in both configurations those upper two cells use $5$ and $6$ between them.
+
+<div>
+  <div class="puzzle" style="display: inline-block">
+
+  |||||||
+  | :-- | :-- | :-- | :-- | :-- | :-- |
+  |     |     |     |     |     |     |
+  |     |     |**5**|**6**|     |     |
+  |     |     |     |     |     |     |
+  |     |     |  6  |     |     |     |
+  |     |     |     |  5  |     |     |
+  |     |     |     |     |     |     |
+
+  </div>
+
+  <div class="puzzle" style="display: inline-block">
+
+  |||||||
+  | :-- | :-- | :-- | :-- | :-- | :-- |
+  |     |     |     |     |     |     |
+  |     |     |**6**|**5**|     |     |
+  |     |     |     |     |     |     |
+  |     |     |     |  6  |     |     |
+  |     |     |  5  |     |     |     |
+  |     |     |     |     |     |     |
+
+  </div>
+</div>
+
+In other words, these upper 2 cells must form a [couple](../tech/couples.md) of $[56]$.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |***56***|***56***|     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     | *6* | *6* |     |     |
+|  4  | *12*|  4  |  3  |*125*|*125*|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+Secondly, going back to our hypothetical scenario, focus on the $3$-clue half-lane with the closer lane peak:
+
+<div class="puzzle hypothetical">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |  5  |  6  |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |  6  |     |     |     |
+|  4  | *12*|  4  |  3  | *12*|  5  |  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |**3**|  3  |     |     |
+
+</div>
+
+The second cell here can't be $1$, because then we couldn't have $3$ skyscrapers visible.
+
+<div class="puzzle hypothetical">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     |  5  |  6  |     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     |  6  |     |     |     |
+|  4  | *12*|  4  |  3  |~~**1**~~|  5  |  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |~~3~~|  3  |     |     |
+
+> In other words, the only possible way to fulfil the $3$-clue is for the half-lane to be $\text{3 | 1 2 6}$.
+
+</div>
+
+Again, since this is WLOG we can say the same for the other permutation. Overall, we deduce that the second cell can't contain a $1$-skyscraper, in *both* lanes.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     | *56*| *56*|     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     | *6* | *6* |     |     |
+|  4  | *12*|  4  |  3  |~~1~~|~~1~~|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+</div>
+
+Well, now that means there's only one place left for the $1$ to go in this row. Hence we can solve the head cell of that $4$-clue half-lane!
+
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  2  |  3  |  1  |     |     |     |     |
+|     |  5  | *12*|  6  |     |     |  3  |     |
+|     |     | *23*|     | *56*| *56*|     |     |
+|     |     |  6  |  5  | *34*| *23*| *12*|  5  |
+|     |     |  5  |     | *6* | *6* |     |     |
+|  4  |**1**|  4  |  3  |***25***|***25***|  6  |     |
+|     |  6  |*123*|     |     |     |  5  |     |
+|     |     |  4  |     |  3  |  3  |     |     |
+
+> That's pretty wild, isn't it?
+
+</div>
+
+This $1$ is critical. It's going to open a whole lot more deductions for us!
+
+
+## The Road in Sight
+
+Let's start by pencilmarking some more.
