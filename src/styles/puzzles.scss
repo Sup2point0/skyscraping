@@ -1,0 +1,159 @@
+@use 'src/styles/mixins/colours' as *;
+@use 'src/styles/mixins/fonts' as *;
+
+
+.puzzle {
+  margin: 1em 0;
+}
+
+.puzzle table {
+  $size: 2em;
+  margin: 0 auto;
+  border-collapse: collapse;
+
+  th {
+    display: none;
+  }
+
+  td {
+    width: $size;
+    height: $size;
+    margin: 0;
+    position: relative;
+    @include font-ui;
+    font-weight: 300;
+    font-size: 150%;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid $col-line;
+
+    em {
+      font-size: 50%;
+      font-style: normal;
+      line-height: 275%;
+    }
+
+    strong {
+      font-weight: normal;
+      color: $col-prot;
+    }
+
+    strong:has(em) {
+      font-size: 50%;
+
+      em {
+        font-size: 100%;
+      }
+    }
+
+    &:has(strong)::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $col-prot;
+      opacity: 5%;
+      z-index: 0;
+    }
+
+    del {
+      font-weight: normal;
+      color: $col-deut;
+      text-decoration: none;
+    }
+
+    &:has(del)::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $col-deut;
+        opacity: 5%;
+        z-index: 0;
+    }
+  }
+}
+
+.puzzle:not(.lane) {
+  td:first-child, tr:first-child td,
+  td:last-child, tr:last-child td
+  {
+    font-weight: 400;
+    border: none;
+  }
+}
+.puzzle.lane {
+  margin: 2em 0;
+
+  td:first-child,
+  td:last-child
+  {
+    font-weight: 400;
+    border: none;
+  }
+}
+
+.puzzle.hypothetical {
+  td {
+    background: rgb(black, 1%);
+  }
+
+  table {
+    position: relative;
+  }
+
+  table::after {
+    content: 'hypothetical';
+    display: block;
+    position: absolute;
+    top: -0.25em;
+    right: -1em;
+    @include font-ui;
+    color: $col-prot;
+    font-size: 100%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+  }
+
+  &:hover table::after {
+    opacity: 1;
+  }
+}
+
+.puzzle.solved td:not(:where(
+  td:first-child,
+  tr:first-child td,
+  td:last-child,
+  tr:last-child td
+)) {
+  color: $col-prot;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $col-prot;
+    opacity: 5%;
+    z-index: 0;
+  }
+}
+
+
+.puzzle blockquote {
+  max-width: 100%;
+  margin: -0.5em 0 2em;
+  font-size: 90%;
+  text-align: center;
+  border-left: none !important;
+}

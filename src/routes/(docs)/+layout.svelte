@@ -1,6 +1,7 @@
 <script>
 
 import "#styles/essence.scss";
+import "#styles/puzzles.scss";
 
 import NavPane from "#parts/nav.pane.svelte";
 import NavBar from "#parts/nav.bar.svelte";
