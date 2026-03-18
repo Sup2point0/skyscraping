@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = glossary
 | capt = (Unofficial) skyscraping jargon
-| update = 2026 February 25
+| update = 2026 March 18
 -->
 
 This page defines all of the technical quasi-jargon I use throughout *Skyscraping*.
@@ -200,13 +200,32 @@ Refers specifically to the [cells](#cell) of the puzzle, without the clues.
 An *NxN* Skyscrapers puzzle has a grid with dimensions $N \times N$.
 
 
+## high
+
+In isolation, this refers to one of the taller [skyscrapers](#skyscraper) in a puzzle, usually the $N$, $N-1$ and possibly $N-2$ skyscrapers (depending on size).
+
+In context, it refers to a skyscraper that is taller than another (usually denoted “[low](#low)”). For instance:
+
+<div class="puzzle lane">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  3  |***high***|*low*|  4  |     |  5  |     |
+
+</div>
+
+We might use this instead of specific skyscrapers ($[23]$ above) to emphasise the [structure](#structure), which is often more important for reasoning than the concrete numbers.
+
+
 ## hypothetical deduction
 
 > *my mind needs more RAM to handle these long-chain hypothetical deductions TvT*
 
-A deduction which we most likely will have to [backtrack](#backtrack) on.
+A deduction which we perform ‘hypothetically’ without comitting to; we will most likely have to [backtrack](#backtrack) on it.
 
 If solving Skyscrapers [‘properly’](thoughts/imagination-vs-guesswork.md), this means we are ‘imagining’ the deductions in our mind. If they lead to a [contradiction](#contradiction), then we can rule out this hypothetical solution as invalid.
+
+> *See also: [Imagination vs Guesswork](thoughts/imagination-vs-guesswork.md)*
 
 
 ## lane
@@ -246,7 +265,19 @@ Pretty difficult to describe technically, but I’m sure you already understand 
 
 ## low
 
-One of the smaller [skyscrapers](#skyscraper) in a puzzle, usually the $1$, $2$ and possibly $3$ skyscrapers (depending on size).
+In isolation, this refers to one of the shorter [skyscrapers](#skyscraper) in a puzzle, usually the $1$, $2$ and possibly $3$ skyscrapers (depending on size).
+
+In context, it refers to a skyscraper that is shorter than another (usually denoted “[high](#high)”). For instance:
+
+<div class="puzzle lane">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  3  |*high*|***low***|  4  |     |  5  |     |
+
+</div>
+
+We might use this instead of specific skyscrapers ($[12]$ above) to emphasise the [structure](#structure), which is often more important for reasoning than the concrete numbers.
 
 
 ## obscured
@@ -388,3 +419,14 @@ In contrast to a [*solved* cell](#solved-cell).
 ## visible
 
 In contrast to an [*obscured* skyscraper](#obscured).
+
+
+## wlog
+
+<!-- TODO: main article? -->
+
+“Without loss of generality”. In short, in a situation where they may be many possible [configurations](#configuration), we can consider 1 *specific* configuration and make deductions that apply to *all* configurations – so long as we can show it's arbitrary, and doesn't depend on the particular configuration we choose.
+
+Usually, the most common scenario where this applies is where we have 2+ similar or identical lanes – the same structure, [solved cells](#solved-cell) and/or [candidates](#candidates) in [unsolved cells](#unsolved-cell) – and no restrictions coming from the sides that could influence them.
+
+> See also: [WLOG – Wikipedia<sup>↗</sup>](https://en.wikipedia.org/wiki/Without_loss_of_generality)

@@ -75,9 +75,9 @@ let { mobile = false }: Props = $props();
 
   <section>
     <NavLink text="Solutions" intern="solutions" header={true} />
-      <NavLink text="Hyperthetical" intern="solutions/hyperthetical" />
-      <NavLink text="The Power of Sudoku" intern="solutions/power-of-sudoku" />
-      <NavLink text="A Curious Crossways" intern="solutions/curious-crossways" />
+      <NavLink text="6x6: Hyperthetical" intern="solutions/hyperthetical" />
+      <NavLink text="6x6: The Power of Sudoku" intern="solutions/power-of-sudoku" />
+      <NavLink text="5x5: A Curious Crossways" intern="solutions/curious-crossways" />
   </section>
 
   <section>
@@ -94,6 +94,7 @@ let { mobile = false }: Props = $props();
 nav {
   flex-grow: 1;
   max-width: 25vw;
+  min-height: 100vh;
   padding: 1rem 1vw 4rem;
   display: flex;
   flex-flow: column nowrap;
@@ -101,7 +102,7 @@ nav {
   overflow-y: auto;
 
   background: light-dark(
-    rgb(black, 2%),
+    rgb(black, 1%),
     rgb(white, 4%));
   
   &.mobile {
