@@ -6,6 +6,8 @@
 | update = 2026 March 19
 -->
 
+> *Note: This article is currently unfinished.*
+
 > *Recommended reading: [Skyling](skylining.md)*
 
 There's many ways we can think of the relationship between [clues]() and [lane peaks]() when skylining. One way I quite like is to visualise the clues firing ‘lasers’, and the lane peaks trying to find a ‘safe spot’ where they aren't hit.
@@ -99,7 +101,7 @@ Very vividly, there is only one safe column, and so that's where the $5$ must go
 
 </div>
 
-<div class="blockquote">
+<aside>
 
 Of course, this isn't *really* any different from [pencilmarking]() the [candidates]() for each head cell and then applying Sudoku-style deductions. We'd get the same result.
 
@@ -123,7 +125,7 @@ That's normal, and this is an important idea to recognise – the same deduction
 
 Why even think of them differently then? Well, as humans, abstraction is very useful for us! They make spotting higher-level structure and logic much easier. In general, having multiple perspectives for the same thing can deepen your appreciation and intuition for it. It's quite cool to see how all the different constraints interact and combine. You'll become faster, more flexible, and most importantly, be able to recognise increasingly obscure deductions.
 
-</div>
+</aside>
 
 
 ## Advancing the Front Line
@@ -210,87 +212,7 @@ The 4th column already has a $5$, so it can't go there either. The only safe pla
 
 </div>
 
-Now, we're going to think of the lane peaks conducting an ‘assault’ downwards. In each column, the lane peak needs to find a safe spot. They can't enter the cells where the lasers hit, and we still need to uphold Sudoku rules, so none of the lane peaks can be in the same row.
-
-<div class="puzzle">
-
-||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |
-|     |***5***|***5***|***5***|     |***5***|     |
-|     |***5***|***5***|***5***|     |***5***|     |
-|     |~~×~~|***5***|~~×~~|     |***5***|     |
-|     |~~×~~|~~×~~|~~×~~|     |***5***|     |
-|     |~~×~~|~~×~~|~~×~~|  5  |~~×~~|     |
-|     |  4  |  3  |  4  |     |  2  |     |
-
-</div>
-
-Ok, we could try filling the lane peaks in either from top to down, or from down to top. We'll go with the latter here, since it's probably easier to understand.
-
-We've already got a lane peak in the bottom row. So let's consider the next row up.
-
-<div class="puzzle">
-
-||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |
-|     | *5* | *5* | *5* |     | *5* |     |
-|     | *5* | *5* | *5* |     | *5* |     |
-|     |~~×~~| *5* |~~×~~|     | *5* |     |
-|     |~~×~~|~~×~~|~~×~~|**&ensp;**|***5***|     |
-|     |~~×~~|~~×~~|~~×~~|  5  |~~×~~|     |
-|     |  4  |  3  |  4  |     |  2  |     |
-
-</div>
-
-There's only one $5$ that could advance this far, since one of the columns already has that first $5$ we found which led the charge. This leaves only one spot for the $5$.
-
-<div class="puzzle">
-
-||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |
-|     | *5* | *5* | *5* |     |     |     |
-|     | *5* | *5* | *5* |     |     |     |
-|     |~~×~~| *5* |~~×~~|     |     |     |
-|     |~~×~~|~~×~~|~~×~~|     |**5**|     |
-|     |~~×~~|~~×~~|~~×~~|  5  |~~×~~|     |
-|     |  4  |  3  |  4  |     |  2  |     |
-
-</div>
-
-Now we look at the next row up.
-
-<div class="puzzle">
-
-||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |
-|     | *5* | *5* | *5* |     |     |     |
-|     | *5* | *5* | *5* |     |     |
-|     |~~×~~|***5***|~~×~~|**&ensp;**|**&ensp;**|     |
-|     |~~×~~|~~×~~|~~×~~|     |  5  |     |
-|     |~~×~~|~~×~~|~~×~~|  5  |~~×~~|     |
-|     |  4  |  3  |  4  |     |  2  |     |
-
-</div>
-
-Same thing here, the right two columns already have their $5$-skyscrapers. This means the $5$ that advances this far must go in the second column.
-
-<div class="puzzle">
-
-||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |     |     |     |     |     |     |
-|     | *5* | *5* | *5* |     |     |     |
-|     | *5* | *5* | *5* |     |     |
-|     |~~×~~| *5* |~~×~~|**&ensp;**|**&ensp;**|     |
-|     |~~×~~|~~×~~|~~×~~|     |  5  |     |
-|     |~~×~~|~~×~~|~~×~~|  5  |~~×~~|     |
-|     |  4  |  3  |  4  |     |  2  |     |
-
-</div>
+TODO
 
 
 ## The Lone Scout
@@ -322,16 +244,14 @@ We're going to try and find the lane peak (now the $6$-skyscraper) in the $2$-cl
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
-|  2  |**&ensp;**|**&ensp;**|**&ensp;**|**&ensp;**|**&ensp;**|**&ensp;**|     |
+|  2  |***6***|***6***|***6***|***6***|***6***|***6***|     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |  6  |     |     |     |     |
 |     |     |  2  |     |  4  |  5  |     |     |
 
-> Where should the $6$ go in this row?
-
 </div>
 
-As usual we can ignore the head cell. The $6$ in the 3rd column also eliminates that as an option.
+As usual we can ignore the head cell (because of course, the $2$-clue also fires its own laser!). The $6$ already present in the 3rd column also eliminates that as an option.
 
 <div class="puzzle">
 
@@ -348,4 +268,108 @@ As usual we can ignore the head cell. The $6$ in the 3rd column also eliminates 
 
 </div>
 
-This still leaves things fairly open. Here's where the lasers come in.
+This still leaves things fairly open. Now we turn our attention to the clues at the bottom. These are firing lasers upwards, which could restrict where our $6$ can reside.
+
+The $2$-clue's laser only spans 1 cell, so isn't of concern.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     | *36*|     |
+|     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     | *36*|     |
+|  2  |     | *6* |     | *6* | *6* | *6* |     |
+|     |     |     |     |     |     |     |     |
+|     |     |~~×~~|  6  |     |     |     |     |
+|     |     |**2**|     |  4  |  5  |     |     |
+
+</div>
+
+However, the $4$ and $5$-clues fire lasers that *do* hit our $6$.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     | *36*|     |
+|     |     |     |     |     |~~×~~|     |     |
+|     |     |     |     |~~×~~|~~×~~| *36*|     |
+|  2  |     | *6* |     |~~6~~|~~6~~| *6* |     |
+|     |     |     |     |~~×~~|~~×~~|     |     |
+|     |     |     |  6  |~~×~~|~~×~~|     |     |
+|     |     |  2  |     |**4**|**5**|     |     |
+
+</div>
+
+This means those cells aren't safe, and the $6$ can't go in them.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     | *36*|     |
+|     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     | *36*|     |
+|  2  |     | *6* |     |~~×~~|~~×~~| *6* |     |
+|     |     |     |     |     |     |     |     |
+|     |     |     |  6  |     |     |     |     |
+|     |     |  2  |     |  4  |  5  |     |     |
+
+</div>
+
+<aside>
+
+Again, we could've noticed this by pencilmarking, but with these [high]() clues, we often refrain from doing so because it creates a mess.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     | *36*|     |
+|     |     |     |     |     |     |     |     |
+|     |     |     |     |     |     | *36*|     |
+|  2  |     | *6* |     |***12345***|***1234***| *6* |     |
+|     |     |     |     |***1234***|***123***|     |     |
+|     |     |     |  6  |***123***|***12***|     |     |
+|     |     |  2  |     |  4  |  5  |     |     |
+
+> So many digits...
+
+</div>
+
+Usually, we might only pencilmark after we've found the lane peak in that column, particularly if it's in the first possible cell (leading to a [dense sequence]()).
+
+So you might ask, but doesn't that mean we could miss out on deductions by not pencilmarking, like we probably would have here?
+
+Certainly, such is the nature of puzzle-solving! But more often that not, massive candidate sets are pretty useless for us, and can actively hinder spotting useful constraints by cluttering the grid.
+
+This is *exactly* why all this abstract ‘lasers’ nonsense is helpful: it allows us to focus on the fundamental constraint behind those sequences (“The lane peak can't come too early”) as opposed to the huge set of irrelevant candidates. With this abstraction, we can internally note the constraints in our mind very simply and apply them when needed, instead of committing to writing down a whole bunch of numbers.
+
+> *See also: [Recursion & Abstraction](recursion-and-abstraction.md)*
+
+</aside>
+
+In fact, this laser metaphor is pretty general, and is sort of how I think about Sudoku-style eliminations as well. Any time a skyscraper can't go in a lane because it would conflict with a duplicate, or block a clue, you can visualise it as that duplicate or clue firing a laser at your skyscraper, which your skyscraper must dodge.
+
+<div class="puzzle">
+
+||||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |     |     |     |     |     |     |     |
+|     |  7  |~~×~~|~~×~~|~~×~~|~~×~~|~~×~~|~~×~~|     |
+|     |~~×~~|  6  |     |     |     |     |     |     |
+|     |~~×~~|     |     |     |     |     |     |     |
+|     |~~×~~|     |~~×~~|     |~~×~~|     |     |     |
+|     |~~×~~|     |~~×~~|     |~~×~~|~~×~~|~~×~~|  4  |
+|     |~~×~~|     |~~×~~|~~×~~|~~×~~|     |     |     |
+|     |~~×~~|     |~~×~~|~~×~~|~~×~~|     |~~×~~|  2  |
+|     |     |     |  5  |  3  |  5  |     |     |     |
+
+> Sometimes, skyscraping can feel a bit like dodging lasers.
+
+</div>

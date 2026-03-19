@@ -341,6 +341,9 @@ Small numbers placed in a cell to indicate what [candidates](#candidate) *could*
 Refers to the entire [Skyscrapers](#skyscrapers) puzzle, including the [grid](#grid) and [clues](#clue).
 
 
+## satisfiable
+
+
 ## sequence
 
 > *Since the clue is $4$ and we only have 3 [unsolved cells](#unsolved-cell), this [half-lane](#half-lane) must have a sequence.*

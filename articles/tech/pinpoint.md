@@ -1,10 +1,10 @@
-# Pinpoint
+# Technique: Pinpoint
 <!-- #SQUARK live!
 | dest = tech/pinpoint
 | capt = Sudoku-style elimination
 | index = tech
 | date = 2026 February 25
-| update = 2026 February 25
+| update = 2026 March 19
 -->
 
 When solving Skyscrapers, the skyscraper visibility rules of Skyscrapers usually take centre stage. The Sudoku eliminations become sort of a ‘background’ thing that you just carry out on autopilot.[^autopilot]
