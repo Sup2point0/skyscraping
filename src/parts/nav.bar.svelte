@@ -74,7 +74,9 @@ button#nav {
   padding: 0 0.25em 0.05em;
   @include font-ui;
   font-size: 200%;
-  color: rgb(black, 30%);
+  color: light-dark(
+    rgb(black, 30%),
+    rgb(white, 80%));
   line-height: 100%;
   background: none;
   border: none;
