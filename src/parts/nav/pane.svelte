@@ -5,7 +5,7 @@ The global side navigation pane.
 
 <script lang="ts">
 
-import NavLink from "#parts/nav.link.svelte";
+import NavLink from "./link.nav.svelte";
 
 import { base } from "$app/paths";
 
@@ -134,6 +134,7 @@ section {
       aspect-ratio: 1;
       transition: filter 0.1s ease-out;
     }
+
     &:hover, &:focus-visible,
     &.header:hover, &.header:focus-visible {
       background: light-dark(

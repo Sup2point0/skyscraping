@@ -5,8 +5,8 @@ import "#styles/puzzles.scss";
 
 import { prefs } from "#scripts/stores";
 
-import NavPane from "#parts/nav.pane.svelte";
-import NavBar from "#parts/nav.bar.svelte";
+import NavPane from "#parts/nav/pane.svelte";
+import NavBar from "#parts/nav/bar.svelte";
 
 import { onMount } from "svelte";
 
@@ -35,18 +35,16 @@ function check_mobile() {
 </script>
 
 
-<div class={["layout", mobile, prefs]}>
-  {#if !mobile}
+<div class={["layout", { mobile }, prefs]}>
+  {#if mobile}
+    <NavBar />
+  {:else}
     <div class="nav-pane">
       <NavPane />
     </div>
   {/if}
 
   <main>
-    {#if mobile}
-      <NavBar />
-    {/if}
-
     {#if children}
       {@render children()}
     {:else}
@@ -64,6 +62,10 @@ function check_mobile() {
   display: flex;
   flex-flow: row nowrap;
   justify-content: stretch;
+
+  &.mobile {
+    flex-flow: column nowrap;
+  }
 }
 
 .nav-pane {
@@ -78,10 +80,10 @@ function check_mobile() {
 main {
   flex: 20 0;
   padding: 2rem 3rem;
-}
 
-.layout.mobile main {
-  padding: 2rem 8vw;
+  .layout.mobile & {
+    padding: 2rem 8vw;
+  }
 }
 
 </style>

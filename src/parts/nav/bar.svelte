@@ -5,7 +5,8 @@ The global top navigation bar for mobile.
 
 <script lang="ts">
 
-import NavPane from "#parts/nav.pane.svelte";
+import NavPane from "./pane.svelte";
+import NavClicky from "./clicky.nav.svelte";
 
 import { slide } from "svelte/transition";
 import { expoIn, expoOut } from "svelte/easing";
@@ -18,17 +19,23 @@ let shown = $state(false);
 
 <div class="nav-bar">
   <nav>
-    <a href="https://sup2point0.github.io/skyscraping">
-      <img alt="" src="{base}/skyscraping-icon.svg">
-    </a>
+    <div class="left">
+      <a href="https://sup2point0.github.io/skyscraping">
+        <img alt="" src="{base}/skyscraping-icon.svg">
+      </a>
+    </div>
 
-    <button id="nav" onclick={() => { shown = !shown; }}>
-      ≡
-    </button>
+    <div class="right">
+      <NavClicky text="" onclick={() => {}} />
+
+      <button id="nav" onclick={() => { shown = !shown; }}>
+        ≡
+      </button>
+    </div>
   </nav>
 
   {#if shown}
-    <div class="nav-pane"
+    <div class="nav-overlay"
       in:slide={{ duration: 500, easing: expoIn }}
       out:slide={{ duration: 500, easing: expoOut }}
     >
@@ -42,8 +49,12 @@ let shown = $state(false);
 
 .nav-bar {
   width: 100%;
-  margin-bottom: 2rem;
-  position: relative;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(36px);
 }
 
 nav {
@@ -52,11 +63,16 @@ nav {
   justify-content: space-between;
 }
 
-.nav-pane {
-  width: 100%;
+.nav-overlay {
+  width: 80vw;
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: absolute;
-  z-index: 10;
+  right: 2rem;
+  z-index: 20;
   background: light-dark(white, black);
+  backdrop-filter: blur(36px);  // FIXME
   box-shadow: 0 2px 4px $col-line;
 }
 
@@ -83,6 +99,7 @@ button#nav {
   transition: all 0.1s ease-out;
 
   &:hover, &:focus-visible {
+    cursor: pointer;
     color: white;
     background: $col-prot;
   }
