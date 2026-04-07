@@ -3,10 +3,13 @@
 import "#styles/essence.scss";
 import "#styles/puzzles.scss";
 
+import { prefs } from "#scripts/stores";
+
 import NavPane from "#parts/nav.pane.svelte";
 import NavBar from "#parts/nav.bar.svelte";
 
 import { onMount } from "svelte";
+
 
 let { children } = $props();
 
@@ -32,7 +35,7 @@ function check_mobile() {
 </script>
 
 
-<div class="layout" class:mobile>
+<div class={["layout", mobile, prefs]}>
   {#if !mobile}
     <div class="nav-pane">
       <NavPane />
