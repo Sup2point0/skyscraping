@@ -11,6 +11,7 @@ import { base } from "$app/paths";
 
 <svelte:head>
   <title> Skyscraping · by Sup#2.0 </title>
+  <meta name="description" content="Techniques, strategies and learnings for solving Skyscrapers, a Sudoku-like puzzle variety." />
 </svelte:head>
 
 

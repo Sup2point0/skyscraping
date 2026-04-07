@@ -6,6 +6,7 @@
 | date = 2026 February 25
 | update = 2026 March 15
 -->
+<!-- TODO -->
 
 The most important skyscrapers in an *NxN* Skyscrapers puzzle are the $N$-skyscrapers. For instance, in a *5x5* Skyscrapers they’re the five $5$-skyscrapers:
 
