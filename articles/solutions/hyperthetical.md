@@ -585,8 +585,8 @@ This allows us to make some powerful deductions.
 
 Firstly, notice in both configurations those upper two cells use $5$ and $6$ between them.
 
-<div>
-  <div class="puzzle" style="display: inline-block">
+<div class="deduction">
+  <div class="puzzle">
 
   |||||||
   | :-- | :-- | :-- | :-- |
@@ -599,7 +599,7 @@ Firstly, notice in both configurations those upper two cells use $5$ and $6$ bet
 
   </div>
 
-  <div class="puzzle" style="display: inline-block">
+  <div class="puzzle">
 
   |||||||
   | :-- | :-- | :-- | :-- |

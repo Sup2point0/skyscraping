@@ -24,8 +24,8 @@ When we have the $N$ skysfraper pinned between clues of $2$ at both ends of the 
 
 The 2 possibilities are:
 
-<div>
-  <div class="puzzle" style="display: inline-block">
+<div class="deduction">
+  <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
@@ -39,7 +39,7 @@ The 2 possibilities are:
 
   </div>
 
-  <div class="puzzle" style="display: inline-block">
+  <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |

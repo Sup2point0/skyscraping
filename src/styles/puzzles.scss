@@ -2,6 +2,30 @@
 @use 'src/styles/mixins/fonts' as *;
 
 
+.deduction {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  & > :not(:first-child) {
+    padding-left: 4rem;
+    position: relative;
+
+    &::before {
+      content: '›';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      @include font-ui;
+      font-size: 150%;
+      color: $col-text-deut;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+
 .puzzle {
   margin: 1em 0;
 }
