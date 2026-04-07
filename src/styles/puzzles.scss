@@ -32,8 +32,12 @@
 
 .puzzle table {
   $size: 2em;
-  margin: 0 auto;
+  margin-left: 2rem;
   border-collapse: collapse;
+
+  .center_puzzles & {
+    margin: 0 auto;
+  }
 
   th {
     display: none;
@@ -178,6 +182,9 @@
   max-width: 100%;
   margin: -0.5em 0 2em;
   font-size: 90%;
-  text-align: center;
   border-left: none !important;
+
+  .center_puzzles & {
+    text-align: center;
+  }
 }
