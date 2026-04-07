@@ -142,7 +142,7 @@ The other $4$ is cutting off that past-peak tail cell, so it’s like it doesn�
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |  4  |     |
 |     |     |     |     |     |     |     |
-|  2  |**&ensp;**|**&ensp;**|**&ensp;**|**5**|*/*|     |
+|  2  |**&ensp;**|**&ensp;**|**&ensp;**|**5**|*×*|     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -198,33 +198,91 @@ Other more subtle ones will be revealed through [pencilmarking](../tech/pencilma
 
 Now take a look at this situation, and again we’ll try to apply Blockade.
 
-[=]
+<div class="puzzle lane">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  2  |     |     |     |     |  6  |  5  |     |
+
+</div>
 
 Blockade usually talks about the $N-1$ skyscraper (here, the $5$), except here the $5$ has already been used in the tail cell.
 
 But, just like before, since all the past-peak cells are solved, the lane peak is *effectively* in the tail cell. The structure we need is the same:
 
-[=&]
+<div class="puzzle lane">
 
-To obscure all the intermediate cells, we need the tallest currently available skyscraper. Usually that’s $N-1$, but here $5$ has been taken, so the next tallest is the $4$, and that’s the skyscraper we use for Blockade.
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  2  |***high***|***low***|***low***|***low***|  6  |  5  |     |
 
-[=]
+> The head cell must obscure all intermediate cells until the lane peak.
+
+</div>
+
+To obscure the intermediate cells, we need the tallest currently available skyscraper. Usually that’s $N-1$, but here $5$ has been taken, so the next tallest is $4$.
+
+<div class="puzzle lane">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  2  |**4**|     |     |     |  6  |  5  |     |
+
+</div>
 
 The logic is the same as Blockade, but we used the $N-2$ skyscraper instead of the $N-1$ skyscraper.
 
 And we can keep going – even for a monstrous *9x9* puzzle, this recursive logic still holds.
 
-[=]
+<div class="puzzle lane">
+
+||||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  2  |**5**|     |     |     |     |  9  |  7  |  8  |  6  |     |
+
+> After $9$, $8$, $7$, $6$, the next tallest is $5$.
+
+</div>
 
 Remember that the head cell skyscraper we want is the *tallest* available one, not just any available one. Here, the past-peak skyscrapers aren’t a consecutive set:
 
-[=7]
+<div class="puzzle lane">
+
+||||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  7  |     |     |     |  7  |  6  |  3  |  5  |     |
 
 > What goes in the head cell here?
 
+</div>
+
 There’s $\{653\}$, with a gap of $4$ – that’s the skyscraper we want, not the ‘next’ ($2$).
 
-Also, if even one past-peak cell is unsolved, this won’t necessarily apply
+<div class="puzzle lane">
+
+||||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  7  |**4**|     |     |  7  |  6  |  3  |  5  |     |
+
+</div>
+
+Also, if even one past-peak cell is unsolved, this won’t necessarily apply!
+
+<div class="puzzle lane">
+
+||||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  7  |***34***|     |     |  7  |  6  |     |  5  |     |
+
+> With a post-peak gap, now the head cell is uncertain. What could cause it to be certain? Answer.[^answer]
+
+</div>
+
+[^answer]: If a constraint prevented the $4$ from being post-peak, such that we get $\text{7 | [34] \_ \_ 7 6 [123] 5}$, then we could pinpoint the $4$ and get $\text{7 | 4 \_ \_ 7 6 [123] 5}$ via Outflanked Blockade.
+
+The key constraint is that the lane peak must be *effectively* in the tail cell, which allows Blockade to still hold.
 
 
 ## Recursive Outflanked Middle Ground
+
+TODO
