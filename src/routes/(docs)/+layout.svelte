@@ -6,7 +6,8 @@ import "#styles/puzzles.scss";
 import { prefs } from "#scripts/stores";
 
 import NavPane from "#parts/nav/pane.nav.svelte";
-import NavBar from "#parts/nav/bar.svelte";
+import NavBar  from "#parts/nav/bar.svelte";
+import Prefs   from "#parts/prefs/prefs.svelte";
 
 import { onMount } from "svelte";
 
@@ -45,6 +46,8 @@ function check_mobile() {
   {/if}
 
   <main>
+    <Prefs {mobile} />
+
     {#if children}
       {@render children()}
     {:else}

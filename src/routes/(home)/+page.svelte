@@ -2,7 +2,7 @@
 
 import "#styles/essence.scss";
 
-import Clicky from "#parts/clicky.svelte";
+import Clicky from "#parts/clicky.macro.svelte";
 
 import { base } from "$app/paths";
 

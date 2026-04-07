@@ -1,6 +1,6 @@
-<!-- @component Clicky
+<!-- @component MacroClicky
 
-A button or link button.
+A button or link button, usually containing longer text.
 -->
 
 <script lang="ts">

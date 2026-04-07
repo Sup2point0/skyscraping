@@ -1,5 +1,6 @@
-<!-- @component NavClicky
+<!-- @component `MicroClicky`
 
+A small, secondary button that turns solid on hover, usually square with an icon.
 -->
 
 <script lang="ts">
