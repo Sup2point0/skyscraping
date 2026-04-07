@@ -251,7 +251,7 @@ blockquote {
 }
 
 a:not(.card) {
-  @include link-underline();
+  @include link-underline;
 }
 
 </style>

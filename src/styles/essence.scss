@@ -57,7 +57,11 @@ article .content {
   }
 
   a:not(sup > a):not(.footnote-backref) {
-    @include link-underline();
+    @include link;
+    
+    .underline_links & {
+      @include link-underline;
+    }
   }
 
   sup > a, a.footnote-backref {

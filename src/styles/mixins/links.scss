@@ -1,20 +1,27 @@
 @use './colours' as *;
 
 
-@mixin link-underline {
+@mixin link {
   padding-bottom: 0.15em;
   position: relative;
   z-index: 0;
   color: $col-prot;
   text-decoration: none;
-  background-image: linear-gradient($col-prot, $col-prot);
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 1px;
   transition: all 0.1s ease-out;
 
   &:hover, &:focus-visible {
     color: $col-deut;
+  }
+}
+
+@mixin link-underline {
+  @include link;
+  background-image: linear-gradient($col-prot, $col-prot);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+
+  &:hover, &:focus-visible {
     background-image: linear-gradient($col-deut, $col-deut);
   }
 }
