@@ -5,19 +5,21 @@ The global top navigation bar for mobile.
 
 <script lang="ts">
 
-import NavPane from "./pane.svelte";
+import NavPane from "./pane.nav.svelte";
+import PrefsPane from "./pane.prefs.svelte";
 import NavClicky from "./clicky.nav.svelte";
 
-import { slide } from "svelte/transition";
+import { fade, slide } from "svelte/transition";
 import { expoIn, expoOut } from "svelte/easing";
 import { base } from "$app/paths";
 
-let shown = $state(false);
+
+let shown_overlay: "nav" | "prefs" | null = $state(null);
 
 </script>
 
 
-<div class="nav-bar">
+<div class="nav-container">
   <nav>
     <div class="left">
       <a href="https://sup2point0.github.io/skyscraping">
@@ -26,20 +28,35 @@ let shown = $state(false);
     </div>
 
     <div class="right">
-      <NavClicky text="" onclick={() => {}} />
+      <NavClicky onclick={() => {
+        shown_overlay = shown_overlay === "prefs" ? null : "prefs";
+      }}>
+        <div style:transform="translateY(0.24em)">*</div>
+      </NavClicky>
 
-      <button id="nav" onclick={() => { shown = !shown; }}>
-        ≡
-      </button>
+      <NavClicky text="≡" onclick={() => {
+        shown_overlay = shown_overlay === "nav" ? null : "nav";
+      }} />
     </div>
   </nav>
 
-  {#if shown}
-    <div class="nav-overlay"
+  {#if shown_overlay}
+    <div class="exit"
+      in:fade={{ duration: 250, delay: 400 }}
+      out:fade={{ duration: 250 }}
+    >
+      <NavClicky text="×" onclick={() => { shown_overlay = null; }} />
+    </div>
+
+    <div class="overlay {shown_overlay}"
       in:slide={{ duration: 500, easing: expoIn }}
       out:slide={{ duration: 500, easing: expoOut }}
     >
-      <NavPane mobile={true} />
+      {#if shown_overlay === "nav"}
+        <NavPane mobile={true} />
+      {:else if shown_overlay === "prefs"}
+        <PrefsPane />
+      {/if}
     </div>
   {/if}
 </div>
@@ -47,7 +64,7 @@ let shown = $state(false);
 
 <style lang="scss">
 
-.nav-bar {
+.nav-container {
   width: 100%;
   padding: 0.5rem 2rem;
   margin-top: 1rem;
@@ -63,9 +80,19 @@ nav {
   justify-content: space-between;
 }
 
-.nav-overlay {
+
+.exit {
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  z-index: 25;
+}
+
+.overlay {
   width: 80vw;
   height: 90vh;
+  margin-top: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
@@ -82,29 +109,6 @@ img {
   transition: filter 0.1s ease-out;
 
   &:hover {
-    filter: brightness(90%);
-  }
-}
-
-button#nav {
-  padding: 0 0.25em 0.05em;
-  @include font-ui;
-  font-size: 200%;
-  color: light-dark(
-    rgb(black, 30%),
-    rgb(white, 80%));
-  line-height: 100%;
-  background: none;
-  border: none;
-  transition: all 0.1s ease-out;
-
-  &:hover, &:focus-visible {
-    cursor: pointer;
-    color: white;
-    background: $col-prot;
-  }
-
-  &:active {
     filter: brightness(90%);
   }
 }

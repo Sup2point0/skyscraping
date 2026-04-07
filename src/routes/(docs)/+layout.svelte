@@ -5,7 +5,7 @@ import "#styles/puzzles.scss";
 
 import { prefs } from "#scripts/stores";
 
-import NavPane from "#parts/nav/pane.svelte";
+import NavPane from "#parts/nav/pane.nav.svelte";
 import NavBar from "#parts/nav/bar.svelte";
 
 import { onMount } from "svelte";
