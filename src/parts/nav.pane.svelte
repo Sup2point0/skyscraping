@@ -56,13 +56,14 @@ let { mobile = false }: Props = $props();
       <NavLink text="Lighthouse" intern="cases/lighthouse" />
       <NavLink text="Blockade" intern="cases/blockade" />
       <NavLink text="Meet in the Middle" intern="cases/meet-in-the-middle" />
-      <NavLink text="Slide" intern="cases/" disabled={true} />
       <NavLink text="Leap of Faith" intern="cases/leap-of-faith" />
       <NavLink text="High-Rise" intern="cases/high-rise" />
-      <NavLink text="Slide" intern="cases/" disabled={true} />
-      <NavLink text="Hideout" intern="cases/" disabled={true} />
       <NavLink text="Middle Ground" intern="cases/middle-ground" />
-      <NavLink text="Frontier" intern="cases/" disabled={true} />
+      <NavLink text="Outflanked" intern="cases/outflanked" />
+      <NavLink text="Slide" intern="cases/" disabled={true} />
+      <!-- <NavLink text="Hideout" intern="cases/" disabled={true} /> -->
+      <!-- <NavLink text="Frontier" intern="cases/" disabled={true} /> -->
+      <!-- <NavLink text="Successor" intern="cases/" disabled={true} /> -->
   </section>
 
   <section>

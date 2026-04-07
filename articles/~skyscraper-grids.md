@@ -19,6 +19,7 @@
 
 ## 5x5
 
+### Lane
 <div class="puzzle lane">
 
 ||||||||
@@ -27,6 +28,7 @@
 
 </div>
 
+### Grid
 <div class="puzzle">
 
 ||||||||
