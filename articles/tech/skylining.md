@@ -1,8 +1,8 @@
-# Skylining
+# Technique: Skylining
 <!-- #SQUARK live!
 | dest = tech/skylining
 | capt = Peaking the Grid
-| index = cases
+| index = tech
 | date = 2026 February 25
 | update = 2026 March 15
 -->
