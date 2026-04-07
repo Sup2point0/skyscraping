@@ -56,26 +56,6 @@ article .content {
     font-weight: 600;
   }
 
-  a:not(sup > a):not(.footnote-backref) {
-    @include link;
-    
-    .underline_links & {
-      @include link-underline;
-    }
-  }
-
-  sup > a, a.footnote-backref {
-    margin-top: -0.5em;
-    margin-left: 0.1em;
-    font-style: italic;
-    color: $col-prot;
-    text-decoration: none;
-
-    &:hover, &:focus-visible {
-      color: $col-deut;
-    }
-  }
-
   sup {
     line-height: 100%;
   }
@@ -116,6 +96,43 @@ article .content {
     margin: 1rem 0;
     max-width: 80%;
     box-shadow: 0 2px 4px light-dark($col-line, black);
+  }
+
+  
+  // lmao links got a lotta logic
+  $link: "a:not(sup > a):not(.footnote-backref)";
+
+  #{$link} {
+    @include link;
+
+    .underline_links & {
+      @include link-underline;
+    }
+  }
+
+  #{$link}[href*='glossary'] {
+    color: unset;
+    background: none;
+  }
+
+  .show_glossary_links & #{$link} {
+    @include link;
+  }
+  .show_glossary_links.underline_links & #{$link} {
+    @include link-underline;
+  }
+}
+
+
+sup > a, a.footnote-backref {
+  margin-top: -0.5em;
+  margin-left: 0.1em;
+  font-style: italic;
+  color: $col-prot;
+  text-decoration: none;
+
+  &:hover, &:focus-visible {
+    color: $col-deut;
   }
 }
 
