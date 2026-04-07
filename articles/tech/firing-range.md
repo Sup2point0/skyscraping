@@ -6,9 +6,10 @@
 | update = 2026 March 19
 -->
 
+<!-- TODO -->
 > *Note: This article is currently unfinished.*
 
-> *Recommended reading: [Skyling](skylining.md)*
+> *Recommended reading: [Skylining](skylining.md)*
 
 There's many ways we can think of the relationship between [clues]() and [lane peaks]() when skylining. One way I quite like is to visualise the clues firing ‘lasers’, and the lane peaks trying to find a ‘safe spot’ where they aren't hit.
 

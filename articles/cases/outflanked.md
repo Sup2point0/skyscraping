@@ -71,13 +71,13 @@ We can ‘outflank’ Blockade with other constraints, too! Here, we do have an 
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |  .  |     |
-|  .  |     |     |     |     |  4  |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  2  |     |     |     |  5  |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|     |  .  |  .  |  .  |  .  |  .  |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |  4  |     |
+|     |     |     |     |     |     |     |
+|  2  |     |     |     |  5  |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 > The only past-peak cell here is the tail cell.
 
@@ -89,13 +89,13 @@ We know from [Successor](successor.md) that the $4$-skyscraper must either be in
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |  .  |     |
-|  .  |     |     |     |     |  4  |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  2  |***4***|     |     |  5  |***4***|  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|     |  .  |  .  |  .  |  .  |  .  |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |  4  |     |
+|     |     |     |     |     |     |     |
+|  2  |***4***|     |     |  5  |***4***|     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 </div>
 
@@ -105,13 +105,13 @@ But, notice the other $4$ already in the column of the tail cell. This means we 
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |  .  |     |
-|  .  |     |     |     |     |  4  |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  2  | *4* |     |     |  5  |~~4~~|  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|     |  .  |  .  |  .  |  .  |  .  |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |  4  |     |
+|     |     |     |     |     |     |     |
+|  2  | *4* |     |     |  5  |~~4~~|     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 </div>
 
@@ -121,13 +121,13 @@ This means it must be pre-peak, and of course the only pre-peak cell it can go i
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |  .  |     |
-|  .  |     |     |     |     |  4  |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  2  |**4**|     |     |  5  |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|     |  .  |  .  |  .  |  .  |  .  |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |  4  |     |
+|     |     |     |     |     |     |     |
+|  2  |**4**|     |     |  5  |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 </div>
 
@@ -139,53 +139,53 @@ The other $4$ is cutting off that past-peak tail cell, so it’s like it doesn�
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |  .  |     |
-|  .  |     |     |     |     |  4  |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  2  |**&ensp;**|**&ensp;**|**&ensp;**|**5**|*/*|  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|     |  .  |  .  |  .  |  .  |  .  |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |  4  |     |
+|     |     |     |     |     |     |     |
+|  2  |**&ensp;**|**&ensp;**|**&ensp;**|**5**|*/*|     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 </div>
 
 Which means, as far as the $4$ is concerned, the lane peak *is* in the tail cell, so Blockade *does* apply. Pretty cool, right?
 
-We can perform this outflanking as long as all the past-peak cells have constraints preventing the $N-1$ from being placed in them.
+We can perform this outflanking as long as all the past-peak cells have constraints preventing the $N-1$ skyscraper from being placed in them.
 
-We’ve seen two such constraints here – a literally solved cell and a $4$ already in the lane – but any others work also work. Two easily spottable concrete ones are:
+We’ve seen two such constraints here – a literally solved cell and a conflicting solved cell – but any others work also work. Two easily spottable concrete ones are:
 
-- A [laser](../tech/firing-range.md)
+- A [laser](../tech/firing-range.md):
 
 <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |  .  |     |
-|  4  |     |     |     |     |     |  .  |
-|  .  |     |  5  |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |**4**|     |     |     |  .  |
-|     |  .  |  2  |  .  |  .  |  .  |     |
+|     |     |     |     |     |     |     |
+|  4  |     |     |     |     |     |     |
+|     |     |  5  |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |**4**|     |     |     |     |
+|     |     |  2  |     |     |     |     |
 
 > The $4$-clue prevents a $4$-skyscraper from being placed in the tail cell.
 
 </div>
 
-- A [couple](../tech/couples.md)
+- A [couple](../tech/couples.md):
 
 <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  .  |  .  |  .  |  .  |  .  |     |
-|  .  | *14*|     |     |     |     |  .  |
-|  .  | *14*|     |     |     |     |  .  |
-|  .  |     |     |     |     |     |  .  |
-|  .  |     |  5  |     |     |**4**|  2  |
-|  .  |     |     |     |     |     |  .  |
-|     |  .  |  .  |  .  |  .  |  .  |     |
+|     |     |     |     |     |     |     |
+|     | *14*|     |     |     |     |     |
+|     | *14*|     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |  5  |     |     |**4**|  2  |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
 
 > The $4$-skyscraper in the leftmost column appears in the couple, so it can’t be in the tail cell.
 
