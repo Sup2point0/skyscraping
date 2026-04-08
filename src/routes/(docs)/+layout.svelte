@@ -46,7 +46,9 @@ function check_mobile() {
   {/if}
 
   <main>
-    <Prefs {mobile} />
+    {#if !mobile}
+      <Prefs />
+    {/if}
 
     {#if children}
       {@render children()}
@@ -78,6 +80,7 @@ function check_mobile() {
   position: sticky;
   top: 0;
   align-self: flex-start;
+  background: $col-back-deut;
 }
 
 main {

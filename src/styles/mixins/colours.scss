@@ -16,4 +16,9 @@ $col-text-highlight: light-dark(
   oklch(0.42 0.1184 254.88),
   oklch(0.9095 0.0401 254.88));
 
+$col-back: light-dark(white, black);
+$col-back-deut: light-dark(
+  rgb(black, 1%),
+  rgb(white, 4%));
+
 $col-line: oklch(0.8612 0.0028 204.88);

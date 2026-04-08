@@ -103,10 +103,6 @@ nav {
   flex-flow: column nowrap;
   gap: 1.5rem;
   overflow-y: auto;
-
-  background: light-dark(
-    rgb(black, 1%),
-    rgb(white, 4%));
   
   &.mobile {
     max-width: 100vw;

@@ -67,11 +67,12 @@ let shown_overlay: "nav" | "prefs" | null = $state(null);
 .nav-container {
   width: 100%;
   padding: 0.5rem 2rem;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(36px);
+  background: $col-back;
+  box-shadow: 0 2px 4px $col-line;
 }
 
 nav {

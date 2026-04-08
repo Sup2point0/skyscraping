@@ -12,13 +12,6 @@ import { fade, fly } from "svelte/transition";
 import { cubicIn, expoOut } from "svelte/easing";
 
 
-interface Props {
-  mobile: boolean;
-}
-
-let { mobile } = $props();
-
-
 let shown = $state(false);
 
 </script>
@@ -30,7 +23,7 @@ let shown = $state(false);
   </MinorClicky>
 </div>
 
-{#if !mobile && shown}
+{#if shown}
   <div class="overlay"
     in:fly={{ duration: 500, x: "2rem", easing: expoOut }}
     out:fly={{ duration: 200, x: "2rem", easing: cubicIn }}
@@ -63,7 +56,7 @@ let shown = $state(false);
   top: 5rem;
   right: 2rem;
   z-index: 20;
-  backdrop-filter: blur(36px);
+  background: light-dark(white, black);
   box-shadow: 0 2px 4px $col-line;
 
   .exit {

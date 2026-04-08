@@ -1,5 +1,6 @@
 export const prefs = $state({
-  center_puzzles:      true,
-  show_glossary_links: true,
-  underline_links:     true,
+  center_puzzles:        true,
+  underline_links:       true,
+  show_glossary_links:   true,
+  dotted_glossary_links: false,
 });
