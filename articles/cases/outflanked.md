@@ -3,6 +3,7 @@
 | dest = cases/outflanked
 | capt = The effective tail cell
 | index = cases
+| date = 2026 April 7
 | update = 2026 April 7
 -->
 
