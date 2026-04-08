@@ -124,6 +124,12 @@ article .content {
 }
 
 
+.case {
+  padding: 0 1rem;
+  border: 1px solid $col-line;
+}
+
+
 sup > a, a.footnote-backref {
   margin-top: -0.5em;
   margin-left: 0.1em;
