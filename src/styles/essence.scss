@@ -127,6 +127,11 @@ article .content {
 .case {
   padding: 0 1rem;
   border: 1px solid $col-line;
+
+  .quicklinks {
+    font-size: 90%;
+    text-align: center;
+  }
 }
 
 
