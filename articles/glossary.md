@@ -217,6 +217,9 @@ In context, it refers to a skyscraper that is taller than another (usually denot
 We might use this instead of specific skyscrapers ($[23]$ above) to emphasise the [structure](#structure), which is often more important for reasoning than the concrete numbers.
 
 
+## highest case
+
+
 ## hypothetical deduction
 
 > *my mind needs more RAM to handle these long-chain hypothetical deductions TvT*
@@ -278,6 +281,9 @@ In context, it refers to a skyscraper that is shorter than another (usually deno
 </div>
 
 We might use this instead of specific skyscrapers ($[12]$ above) to emphasise the [structure](#structure), which is often more important for reasoning than the concrete numbers.
+
+
+## lowest case
 
 
 ## obscured

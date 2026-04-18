@@ -34,6 +34,8 @@ let { mobile = false }: Props = $props();
     <NavLink text="Walkthrough" intern="walk" header={true} />
       <NavLink text="Foreword" intern="walk/foreword" />
       <NavLink text="Primer" intern="walk/primer" />
+      <NavLink text="Terminology" intern="walk/terminology" />
+      <NavLink text="The Game Plan" intern="walk/game-plan" />
       <NavLink text="Clueless" intern="walk/clueless" disabled={true} />
   </section>
 
