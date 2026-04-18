@@ -64,6 +64,7 @@ let { mobile = false }: Props = $props();
       <NavLink text="Higher-Rise"        intern="cases/higher-rise" disabled={true} />
       <NavLink text="Successor"          intern="cases/successor" disabled={true} />
       <NavLink text="Outflanked"         intern="cases/outflanked" />
+      <!-- <NavLink text="Ascendant" intern="cases/" disabled={true} /> -->
       <!-- <NavLink text="Frontier" intern="cases/" disabled={true} /> -->
   </section>
 
