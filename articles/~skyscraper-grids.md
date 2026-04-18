@@ -19,7 +19,6 @@
 
 ## 5x5
 
-### Lane
 <div class="puzzle lane">
 
 ||||||||
@@ -28,7 +27,6 @@
 
 </div>
 
-### Grid
 <div class="puzzle">
 
 ||||||||
@@ -46,7 +44,6 @@
 
 ## 6x6
 
-### Lane
 <div class="puzzle lane">
 
 |||||||||
@@ -55,7 +52,6 @@
 
 </div>
 
-### Grid
 <div class="puzzle">
 
 |||||||||
@@ -74,7 +70,6 @@
 
 ## 7x7
 
-### Lane
 <div class="puzzle lane">
 
 ||||||||||
@@ -83,7 +78,6 @@
 
 </div>
 
-### Grid
 <div class="puzzle">
 
 ||||||||||
