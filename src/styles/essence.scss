@@ -118,8 +118,11 @@ article .content {
   .show_glossary_links & #{$link} {
     @include link;
   }
-  .show_glossary_links.underline_links & #{$link} {
+  .show_glossary_links.underline_links:not(.dotted_glossary_links) & #{$link} {
     @include link-underline;
+  }
+  .show_glossary_links.dotted_glossary_links & #{$link}[href*='glossary'] {
+    @include link-dotted;
   }
 }
 

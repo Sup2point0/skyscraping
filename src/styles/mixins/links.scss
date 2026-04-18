@@ -25,3 +25,15 @@
     background-image: linear-gradient($col-deut, $col-deut);
   }
 }
+
+@mixin link-dotted {
+  @include link;
+  background-image: radial-gradient(circle, $col-prot 1px, transparent 1px);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0.3em 1px;
+
+  &:hover, &:focus-visible {
+    background-image: linear-gradient($col-deut, $col-deut);
+  }
+}
