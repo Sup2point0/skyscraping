@@ -3,12 +3,59 @@
 | dest = cases/silhouette
 | capt = Clue of $1$
 | index = cases
-| update = 2025 May 20
+| update = 2026 April 18
 -->
 
-When we have a clue of $1$, we know the tallest skyscraper $N$ must lie immediately in front of that clue.
+<div class="case">
 
-<div class="puzzle">
+  <div class="quicklinks">
+
+  [Examples](#examples) · [Explanation](#explanation)
+
+  </div>
+
+A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1$ must have the $N$-skyscraper in the [head cell](../glossary.md#head-cell).
+
+<div class="deduction">
+  <div class="puzzle lane">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  1  |     |     |     |     |     |     |
+
+  </div>
+
+  <div class="puzzle lane">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  1  |**N**|     |     |     |     |     |
+
+  </div>
+</div>
+
+</div>
+
+
+## Examples
+
+### Case 1
+<div class="deduction">
+  <div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  1  |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |  1  |
+|     |     |     |     |     |     |     |
+|     |     |     |     |     |     |     |
+
+  </div>
+
+  <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
@@ -20,10 +67,14 @@ When we have a clue of $1$, we know the tallest skyscraper $N$ must lie immediat
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 
+  </div>
 </div>
 
-Since we can only see 1 skyscraper, it has to be the tallest one blocking all the rest. If it were anything else, we’d be able to see the tallest skyscraper behind it as well.
 
-[ pict ]
+## Explanation
 
-This is usually the first kind of deduction you make at the start of skyscrapers, when locating the $N$ skyscrapers.
+A $1$-clue means we can only [see](../glossary.md#visible) 1 skyscraper. The only way to achieve this is if we see the tallest skyscraper (the $N$-skyscraper), [obscuring](../glossary.md#obscured) all the rest behind it.
+
+If we picked any other skyscraper as our 1 visible skyscraper, we’d still be able to see the $N$-skyscraper behind it as well, since the $N$-skyscraper is taller than all other skyscrapers.
+
+<!-- TODO add illustration -->
