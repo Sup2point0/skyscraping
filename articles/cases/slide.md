@@ -492,6 +492,38 @@ All make sense? It's important to not lose sight of it in larger puzzles when ce
 
 </div>
 
+Let's say we find that the middle unsolved cell is $4$.
 
+<div class="puzzle lane">
 
-Looking at these pencilmarks and recognising the ascending structure, I don't actually think about the individual numbers, I just think “This is a sequence” – i.e. each skyscraper needs to be taller than the one before it.
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  4  |*123*|**4**|*345*|  6  |     |     |  .  |
+
+</div>
+
+Purely relying on Sudoku-style eliminations, we'd leave the last unsolved cell as $[35]$.
+
+<div class="puzzle lane">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  4  |*123*|  4  |***35***|  6  |     |     |  .  |
+
+</div>
+
+But we can actually solve it, because there's the sequence structure! Since every cell must be visible, we know it can't be a $3$ since that'd be obscured. It must be a $5$.
+
+<div class="puzzle lane">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  4  |*123*|  4  |**5**|  6  |     |     |     |
+
+</div>
+
+This is why it's important to remember these pencilmarks aren't just plain pencilmarks, they also encode the sequence structure. When I look at them, I don't actually think about the individual numbers, I just think “This is a sequence” – i.e. each skyscraper needs to be taller than the one before it.
+
+### Narrowing the Band
+
+![Viewing the sequence as a chain of bands]({base}/cases/slide-bands.png)
