@@ -3,7 +3,7 @@
 | dest = cases/slide
 | capt = Dense sequences
 | index = cases
-| date = 2026 April 17
+| date = 2026 April 18
 -->
 
 <div class="case">
