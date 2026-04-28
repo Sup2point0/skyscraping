@@ -78,7 +78,7 @@ import { base } from "$app/paths";
   <h2> The Adventure </h2>
 
   <ul class="cards">
-    <a class="card" href="{base}/walk">
+    <a class="card" href="{base}/walk/4x4">
       <h3> Setting Out: <em>4x4</em> </h3>
       <p> The easiest ones can be solved in no time, even with no prior experience. Generally trivial, but really good for building your intuition and familiarity as a beginner. </p>
     </a>
