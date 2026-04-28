@@ -153,6 +153,18 @@ Solving a Skyscrapers puzzle is just repeatedly performing deductions! [Cases](c
 Another name for a [closed](closed) Skyscrapers.
 
 
+## dense sequence
+
+<!-- TODO -->
+
+
+## edge cell
+
+> *The $4$-skyscraper must go in an edge cell.*
+
+A [head cell](#head-cell) or [tail cell](#tail-cell).
+
+
 ## half-lane
 
 One ‘side’ of a [lane](#lane) – the cells from the head cell up to and including the lane peak, as well as the clue (if any) on that side.
@@ -359,6 +371,8 @@ An ascending sequence of [skyscrapers](#skyscrapers), when looking across a lane
 This usually refers to a series of [unsolved cells](#unsolved-cells) with the constraint that they must be ascending. For instance, $\text{| [12] [23] [34]}$ is a sequence that could be solved to $\text{| 1 2 3}$, or $\text{| 2 3 4}$, or any mix such as $\text{| 1 3 4}$.
 
 $\text{| [12] [123] [123]}$, in contrast, would not be a sequence, since it’s not necessarily ascending – it could end up being solved to $\text{| 2 1 3}$.
+
+> *See also: [dense sequence](#dense-sequence)*
 
 
 ## skyscraper
