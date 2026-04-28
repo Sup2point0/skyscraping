@@ -14,7 +14,7 @@
 
   </div>
 
-In a [half-lane]() with clue $c$, if the [lane peak]() is in the $c$-th cell, then all skyscrapers in the half-lane must be [visible]() (forming a [dense sequence]()).
+In a [half-lane](../glossary.md#half-lane) with clue $c$, if the [lane peak](../glossary.md#lane-peak) is in the $c$-th cell, then all skyscrapers in the half-lane must be [visible](../glossary.md#visible) (forming a [dense sequence](../glossary.md#dense-sequence)).
 
 <div class="step deduction">
   <div class="puzzle lane">
@@ -72,7 +72,7 @@ This is a *5x5* puzzle, so the lane peak is the $5$-skyscraper. It’s in the 3r
 
 </div>
 
-The [lowest-case]() sequence we could have is $(125)$, and the [highest-case]() is $(345)$. Hence the candidates for the [head cell]() are $\{123\}$ and for the second cell $\{234\}$.
+The [lowest-case](../glossary.md#lowest-case) sequence we could have is $(125)$, and the [highest-case](../glossary.md#highest-case) is $(345)$. Hence the candidates for the [head cell](../glossary.md#head-cell) are $\{123\}$ and for the second cell $\{234\}$.
 
 <div class="puzzle">
 
@@ -221,7 +221,7 @@ When the lane peak is in the $c$-th cell of a half-lane, then the greatest possi
 
 </div>
 
-...then we could have a maximum of 5 skyscrapers visible, by having a sequence of skyscrapers with none [obscured]():
+...then we could have a maximum of 5 skyscrapers visible, by having a sequence of skyscrapers with none [obscured](../glossary.md#obscured):
 
 <div class="puzzle lane">
 
