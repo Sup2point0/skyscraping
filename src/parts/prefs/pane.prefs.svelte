@@ -5,7 +5,7 @@ Options for configuring user preferences.
 
 <script lang="ts">
 
-import { prefs } from "#src/scripts/stores";
+import { prefs } from "#scripts/stores";
 
 </script>
 

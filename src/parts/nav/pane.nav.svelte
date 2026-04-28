@@ -63,7 +63,7 @@ let { mobile = false }: Props = $props();
       <NavLink text="Hideout"            intern="cases/hideout" />
       <NavLink text="High-Rise"          intern="cases/high-rise" />
       <NavLink text="Middle Ground"      intern="cases/middle-ground" />
-      <NavLink text="Higher-Rise"        intern="cases/higher-rise" disabled={true} />
+      <NavLink text="Higher-Rise"        intern="cases/higher-rise" />
       <NavLink text="Successor"          intern="cases/successor" disabled={true} />
       <NavLink text="Outflanked"         intern="cases/outflanked" />
       <!-- <NavLink text="Ascendant" intern="cases/" disabled={true} /> -->
