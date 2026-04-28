@@ -233,9 +233,9 @@ When the lane peak is in the $c$-th cell of a half-lane, then the greatest possi
 
 Of course, this isn’t the only such sequence. We could very well have had $(12356)$, $(23456)$, etc. to achieve 5 visible skyscrapers.
 
-If the clue were, say, $3$, then we'd need to choose which cells contain visible skyscrapers, and there are many different ways of doing that.[^choose]
+If the clue were, say, $3$, then we’d need to choose which cells contain visible skyscrapers, and there are many different ways of doing that.[^choose]
 
-[^choose]: Specifically, $^{4}C_{2}$ different choices of visible cells. (The lane peak is always visible so must be included in the choice, which is why it's not $^{5}C_{3}$.)
+[^choose]: Specifically, $^{4}C_{2}$ different choices of visible cells. (The lane peak is always visible so must be included in the choice, which is why it’s not $^{5}C_{3}$.)
 
 <div class="puzzles">
   <div class="puzzle lane">
@@ -271,12 +271,12 @@ But if the clue were $5$, then the *only* way to have 5 skyscrapers visible is i
 
 The lane peak is guaranteed to be visible, so we need 4 more visible to make up the required 5. There are only 4 cells between the clue and lane peak – so they must all be visible!
 
-When the lane peak is further away, we have a choice between the gaps. But when it's in the $c$-th cell (as close as it can be), it leaves no wiggle room, so we have only 1 choice.
+When the lane peak is further away, we have a choice between the gaps. But when it’s in the $c$-th cell (as close as it can be), it leaves no wiggle room, so we have only 1 choice.
 
 ### The Numbers
 The structure that ensures all cells are visible is a *dense sequence* – a chain of skyscrapers where each is taller than the last. For instance, $\text{| 1 2 3 4 5}$ is a sequence, since $1 < 2 < 3 < 4 < 5$. All of these skyscrapers would be visible in the half-lane.
 
-However, while we do have only 1 possible structure (all visible), there's more than 1 sequence that could satisfy that structure. We can't say for certain which one it is, so we can only [pencilmark](../tech/pencilmark.md).
+However, while we do have only 1 possible structure (all visible), there’s more than 1 sequence that could satisfy that structure. We can’t say for certain which one it is, so we can only [pencilmark](../tech/pencilmark.md).
 
 For instance, if we need 2 visible skyscrapers...
 
@@ -288,7 +288,7 @@ For instance, if we need 2 visible skyscrapers...
 
 </div>
 
-...then we could have $(15)$, $(25)$, $(35)$, or $(45)$. That's a lot of options!
+...then we could have $(15)$, $(25)$, $(35)$, or $(45)$. That’s a lot of options!
 
 <div class="puzzle lane">
 
@@ -298,7 +298,7 @@ For instance, if we need 2 visible skyscrapers...
 
 </div>
 
-Let's compare this to a sequence of 4 visible skyscrapers:
+Let’s compare this to a sequence of 4 visible skyscrapers:
 
 <div class="puzzle lane">
 
@@ -308,9 +308,9 @@ Let's compare this to a sequence of 4 visible skyscrapers:
 
 </div>
 
-Well, one sequence we could choose is $(1235)$. But there's nothing guaranteeing that – we could also have $(1245)$. Or $(1345)$. Or $(2345)$.
+Well, one sequence we could choose is $(1235)$. But there’s nothing guaranteeing that – we could also have $(1245)$. Or $(1345)$. Or $(2345)$.
 
-Focusing on the head cell, in all of the possible sequences it's either $1$ or $2$. This makes sense because if it were $3$, the longest sequence we could have is $(345)$, which only has 3 skyscrapers, not 4 as the clue requires.
+Focusing on the head cell, in all of the possible sequences it’s either $1$ or $2$. This makes sense because if it were $3$, the longest sequence we could have is $(345)$, which only has 3 skyscrapers, not 4 as the clue requires.
 
 <div class="puzzle lane">
 
@@ -320,7 +320,7 @@ Focusing on the head cell, in all of the possible sequences it's either $1$ or $
 
 </div>
 
-For the next cell, it's $2$ and $3$. It needs to definitely be taller than $1$, and it can't be $4$, since then we would only be able to see a maximum of 3 skyscrapers.
+For the next cell, it’s $2$ and $3$. It needs to definitely be taller than $1$, and it can’t be $4$, since then we would only be able to see a maximum of 3 skyscrapers.
 
 <div class="puzzle lane">
 
@@ -418,7 +418,7 @@ Then the only possible sequence collapses to $(2345)$, so we can solve the half-
 
 </div>
 
-This doesn't just apply for the head cell, though. At any point, if a cell is solved to be its tallest candidate, then all following cells must also contain their tallest candidate.
+This doesn’t just apply for the head cell, though. At any point, if a cell is solved to be its tallest candidate, then all following cells must also contain their tallest candidate.
 
 <div class="deduction">
   <div class="puzzle lane">
@@ -482,7 +482,7 @@ On the flip side, if a cell is solved to be its shortest candidate, then all pre
   </div>
 </div>
 
-All make sense? It's important to not lose sight of it in larger puzzles when cells start to have more candidates. For instance:
+All make sense? It’s important to not lose sight of it in larger puzzles when cells start to have more candidates. For instance:
 
 <div class="puzzle lane">
 
@@ -492,7 +492,7 @@ All make sense? It's important to not lose sight of it in larger puzzles when ce
 
 </div>
 
-Let's say we find that the middle unsolved cell is $4$.
+Let’s say we find that the middle unsolved cell is $4$.
 
 <div class="puzzle lane">
 
@@ -502,7 +502,7 @@ Let's say we find that the middle unsolved cell is $4$.
 
 </div>
 
-Purely relying on Sudoku-style eliminations, we'd leave the last unsolved cell as $[35]$.
+Purely relying on Sudoku-style eliminations, we’d leave the last unsolved cell as $[35]$.
 
 <div class="puzzle lane">
 
@@ -512,7 +512,7 @@ Purely relying on Sudoku-style eliminations, we'd leave the last unsolved cell a
 
 </div>
 
-But we can actually solve it, because there's the sequence structure! Since every cell must be visible, we know it can't be a $3$ since that'd be obscured. It must be a $5$.
+But we can actually solve it, because there’s the sequence structure! Since every cell must be visible, we know it can’t be a $3$ since that’d be obscured. It must be a $5$.
 
 <div class="puzzle lane">
 
@@ -522,7 +522,7 @@ But we can actually solve it, because there's the sequence structure! Since ever
 
 </div>
 
-This is why it's important to remember these pencilmarks aren't just plain pencilmarks, they also encode the sequence structure. When I look at them, I don't actually think about the individual numbers, I just think “This is a sequence” – i.e. each skyscraper needs to be taller than the one before it.
+This is why it’s important to remember these pencilmarks aren’t just plain pencilmarks, they also encode the sequence structure. When I look at them, I don’t actually think about the individual numbers, I just think “This is a sequence” – i.e. each skyscraper needs to be taller than the one before it.
 
 ### Narrowing the Band
 
