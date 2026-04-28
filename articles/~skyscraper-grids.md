@@ -1,6 +1,13 @@
 # Skyscrapers Templates
 
 
+## Querying
+
+```
+\[[a-z- ]*?\]\(\)
+```
+
+
 ## 4x4
 
 <div class="puzzle">

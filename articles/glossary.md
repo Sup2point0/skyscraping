@@ -41,7 +41,7 @@ A cell is either:
 - [solved](#solved-cell), containing one [skyscraper](#skyscraper)
 - [unsolved](#unsolved-cell), containing many [candidates](#candidates), which may be indicated with [pencilmarks](#pencilmarks)
 
-I'll also often use “Cell” to refer to the [skyscraper](#skysrcaper) *inside* it ([metonymy!<sup>↗</sup>](https://wikipedia.org/wiki/Metonymy)).
+I’ll also often use “Cell” to refer to the [skyscraper](#skysrcaper) *inside* it ([metonymy!<sup>↗</sup>](https://wikipedia.org/wiki/Metonymy)).
 
 
 ## chained deductions
@@ -87,25 +87,25 @@ An $n$-clue indicates that in the [lane](#lane) it is adjacent to, there are pre
 
 ## concrete deduction
 
-A deduction which we don't intend to [backtrack](#backtrack) on.
+A deduction which we don’t intend to [backtrack](#backtrack) on.
 
 If solving Skyscrapers [‘properly’](thoughts/imagination-vs-guesswork.md), this means we are making the deduction with certainty – we can be confident the deduction is correct because it is based on logic.
 
 
 ## contradiction
 
-> *Oh dear, we've found a contradiction. That means we must've gone wrong somewhere...*
+> *Oh dear, we’ve found a contradiction. That means we must’ve gone wrong somewhere...*
 
 A situation where a constraint cannot be satisfied (is *contradicted*).
 
-For instance, if [half-lane](#half-lane) has a clue of $4$, but our working in its current state means 5 skyscrapers are guaranteed to be visible, then this is a contradiction. We've violated the $4$-clue, and there's no way to repair it.
+For instance, if [half-lane](#half-lane) has a clue of $4$, but our working in its current state means 5 skyscrapers are guaranteed to be visible, then this is a contradiction. We’ve violated the $4$-clue, and there’s no way to repair it.
 
-Reaching a contradiction when performing [concrete](#concrete-deduction) deductions means you've made an error in your solution. Reaching a contradiction when performing [hypothetical](#hypothetical-deduction) deductions is very common, and is a strategy for ruling out potential solutions as impossible.
+Reaching a contradiction when performing [concrete](#concrete-deduction) deductions means you’ve made an error in your solution. Reaching a contradiction when performing [hypothetical](#hypothetical-deduction) deductions is very common, and is a strategy for ruling out potential solutions as impossible.
 
 
 ## counterexample
 
-> *We've found a counterexample, so we know this [cell](#cell) can't contain a $3$-[skyscraper](#skyscraper).*
+> *We’ve found a counterexample, so we know this [cell](#cell) can’t contain a $3$-[skyscraper](#skyscraper).*
 
 A potential configuration of candidates which leads to a [contradiction](#contradiction), which disproves the possibility of that configuration.
 
@@ -139,7 +139,7 @@ In the grid above, the $[34]$ cells are couples, as are the $[12]$ cells.
 
 ## deduction
 
-> *Keep looking for deductions, even where you've already looked!*
+> *Keep looking for deductions, even where you’ve already looked!*
 
 A logical inference based on the currently available information.
 
@@ -266,6 +266,8 @@ For instance, this is the lane $\text{5 | 1 2 3 4 5 | 1}$:
 
 ## lane peak
 
+> *We’ll start by solving some of the **lane peaks**.*
+
 An $N$-skyscraper in a *NxN* Skyscrapers puzzle.
 
 
@@ -372,7 +374,7 @@ This usually refers to a series of [unsolved cells](#unsolved-cells) with the co
 
 $\text{| [12] [123] [123]}$, in contrast, would not be a sequence, since it’s not necessarily ascending – it could end up being solved to $\text{| 2 1 3}$.
 
-> *See also: [dense sequence](#dense-sequence)*
+> *See also: [dense sequence](#dense-sequence), [sparse sequence](#sparse-sequence)*
 
 
 ## skyscraper
@@ -407,6 +409,9 @@ In contrast to an [*unsolved* cell](#unsolved-cell).
 ## sparse
 
 Another name for an [open](#open) Skyscrapers.
+
+
+## sparse sequence
 
 
 ## tail cell
@@ -448,7 +453,7 @@ In contrast to an [*obscured* skyscraper](#obscured).
 
 <!-- TODO: main article? -->
 
-“Without loss of generality”. In short, in a situation where they may be many possible [configurations](#configuration), we can consider 1 *specific* configuration and make deductions that apply to *all* configurations – so long as we can show it's arbitrary, and doesn't depend on the particular configuration we choose.
+“Without loss of generality”. In short, in a situation where they may be many possible [configurations](#configuration), we can consider 1 *specific* configuration and make deductions that apply to *all* configurations – so long as we can show it’s arbitrary, and doesn’t depend on the particular configuration we choose.
 
 Usually, the most common scenario where this applies is where we have 2+ similar or identical lanes – the same structure, [solved cells](#solved-cell) and/or [candidates](#candidates) in [unsolved cells](#unsolved-cell) – and no restrictions coming from the sides that could influence them.
 
