@@ -52,6 +52,12 @@ article .content {
     color: $col-text-highlight;
   }
 
+  h4 {
+    @include font-body;
+    font-weight: 500;
+    font-size: 125%;
+  }
+
   strong {
     font-weight: 600;
   }
