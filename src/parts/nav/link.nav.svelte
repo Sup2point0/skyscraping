@@ -23,14 +23,14 @@ let { text, link, intern, header = false, disabled = false }: Props = $props();
 <a class={{ header, disabled }}
   href={link ?? `${base}/${intern}`}
 >
-  {text}
+  {@html text}
 </a>
 
 
 <style lang="scss">
 
 a {
-  padding: 0.2em 1em;
+  padding: 0.15em 1em;
   @include font-body;
   color: $col-text;
   text-decoration: none;
@@ -57,7 +57,7 @@ a {
   }
 
   &.header {
-    margin: 0 0 0.25em;
+    margin-bottom: 0.2em;
     padding: 0.2em 0.5em;
     @include font-body;
     font-weight: 500;
