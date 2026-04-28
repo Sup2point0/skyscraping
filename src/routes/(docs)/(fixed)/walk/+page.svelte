@@ -35,7 +35,7 @@ const paths = [
       </li>
 
       <li>
-        <a href="{base}/walk">Setting Out: <em>4x4</em></a>
+        <a href="{base}/walk/4x4">Setting Out: <em>4x4</em></a>
         <ul>
           <li><a href="{base}/">The Game Plan</a></li>
           <li><a href="{base}/cases/stairs">Case: Stairs</a></li>
