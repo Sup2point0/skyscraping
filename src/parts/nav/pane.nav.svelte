@@ -36,12 +36,8 @@ let { mobile = false }: Props = $props();
       <NavLink text="Primer" intern="walk/primer" />
       <NavLink text="Terminology" intern="walk/terminology" />
       <NavLink text="The Game Plan" intern="walk/game-plan" />
+      <NavLink text="The Adventure" intern="walk/adventure" />
       <NavLink text="Clueless" intern="walk/clueless" disabled={true} />
-  </section>
-
-  <section>
-    <NavLink text="Sizes" intern="walk" header={true} />
-      <NavLink text="<em>4x4</em>" intern="walk/4x4" />
   </section>
 
   <section>
@@ -111,7 +107,7 @@ nav {
   padding: 1rem 1vw 4rem;
   display: flex;
   flex-flow: column nowrap;
-  gap: 0.5rem;
+  gap: 0.8rem;
   overflow-y: auto;
   
   &.mobile {

@@ -7,12 +7,6 @@ import Footer from "#parts/footer.svelte";
 
 import { base } from "$app/paths";
 
-
-const paths = [
-  "articles/walkthrough/foreword.md",
-  "articles/walkthrough/primer.md",
-];
-
 </script>
 
 
@@ -35,7 +29,7 @@ const paths = [
       </li>
 
       <li>
-        <a href="{base}/walk/4x4">Setting Out: <em>4x4</em></a>
+        <a href="{base}/walk/adventure/4x4">Setting Out: <em>4x4</em></a>
         <ul>
           <li><a href="{base}/">The Game Plan</a></li>
           <li><a href="{base}/cases/stairs">Case: Stairs</a></li>
@@ -48,28 +42,28 @@ const paths = [
       </li>
       
       <li>
-        <a href="{base}/walk">Gearing Up: <em>5x5</em></a>
+        <a href="{base}/walk/adventure">Gearing Up: <em>5x5</em></a>
         <ul>
           <li><a href="{base}/"></a></li>
         </ul>
       </li>
       
       <li>
-        <a href="{base}/walk">Bring the Heat: <em>6x6</em></a>
+        <a href="{base}/walk/adventure">Bring the Heat: <em>6x6</em></a>
         <ul>
           <li><a href="{base}/"></a></li>
         </ul>
       </li>
       
       <li>
-        <a href="{base}/walk">Gateway to Chaos: <em>7x7</em></a>
+        <a href="{base}/walk/adventure">Gateway to Chaos: <em>7x7</em></a>
         <ul>
           <li><a href="{base}/"></a></li>
         </ul>
       </li>
       
       <li>
-        <a href="{base}/walk">In the Deep End: <em>8x8</em></a>
+        <a href="{base}/walk/adventure">In the Deep End: <em>8x8</em></a>
         <ul>
           <li><a href="{base}/"></a></li>
         </ul>
