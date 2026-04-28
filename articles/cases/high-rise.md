@@ -131,7 +131,7 @@ However, notice in the left column, the $4$ cannot go in the 2nd cell, since the
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 
-> We can't place the lane peak before the $4$, since then we see only $(5)$, but if we put it after, we see $(x45)$.
+> We can’t place the lane peak before the $4$, since then we see only $(5)$, but if we put it after, we see $(x45)$.
 
 </div>
 
