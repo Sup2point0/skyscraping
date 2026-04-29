@@ -431,12 +431,12 @@ Now, to have 3 visible skyscrapers, we know the sequence must be $(456)$.
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
-|  .  |     |     |     |     | *12*|     |  .  |
+|  .  |     |     |     |     |  2  |     |  .  |
+|  .  |  3  |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |*123*|     |  .  |
-|  .  |     |     |     |     | *23*|     |  .  |
+|  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |  6  |     |  .  |
-|  .  |  6  |     |     |     |     |     |  3  |
+|  .  |     |  5  |     |  6  |     |     |  3  |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 
 </div>
@@ -447,50 +447,64 @@ Now, to have 3 visible skyscrapers, we know the sequence must be $(456)$.
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
-|  .  |     |     |     |     | *12*|     |  .  |
-|  .  |     |     |     |     |**4**|     |  .  |
-|  .  |     |     |     |     |*123*|     |  .  |
-|  .  |     |     |     |     | *23*|     |  .  |
+|  .  |     |     |     |     |  2  |     |  .  |
+|  .  |  3  |     |     |     |***15***|     |  .  |
+|  .  |     |     |     |     |     |     |  .  |
+|  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |  6  |     |  .  |
-|  .  |  6  |     |     |     |**5**|     |  3  |
+|  .  |     |  5  |     |  6  |***34***|***123***|  3  |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 
 </div>
 
 #### Explanation
-Applying the case to the lowermost row, we have all candidates except $4$.
+In the lowermost row, the $3$-clue creates a [dense sequence](../glossary.md#dense-sequence).
 
 <div class="puzzle">
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
-|  .  |     |     |     |     | *12*|     |  .  |
+|  .  |     |     |     |     |  2  |     |  .  |
+|  .  |  3  |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |*123*|     |  .  |
-|  .  |     |     |     |     | *23*|     |  .  |
+|  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |  6  |     |  .  |
-|  .  |  6  |     |     |     |***1235***|     |  3  |
+|  .  |     |  5  |     |  6  |***234***|***123***|  3  |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 
 </div>
 
-However, the $[12]$, $[123]$ and $[23]$ cells form a [triplet](../tech/couples.md), between them consuming $\{123\}$. Eliminating these from the candidates, we're left with $5$ as the solution.
+Notice this means the $5$ cannot go in the tail cell of the $3$-clue lane, so the case [effectively](../glossary#effectively) applies.
 
 <div class="puzzle">
 
 |||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
-|  .  |     |     |     |     | *12*|     |  .  |
+|  .  |     |     |     |     |  2  |     |  .  |
+|  .  |  3  |     |     |     |***1235***|     |  .  |
 |  .  |     |     |     |     |     |     |  .  |
-|  .  |     |     |     |     |*123*|     |  .  |
-|  .  |     |     |     |     | *23*|     |  .  |
+|  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |  6  |     |  .  |
-|  .  |  6  |     |     |     |**5**|     |  3  |
+|  .  |     |  5  |     |  6  |*234*|*123*|  3  |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
-
-> $\{123\}$ are guaranteed to be used by the other unsolved cells, so the only valid candidate is $5$.
 
 </div>
 
+The $2$ and $3$ have already been used in the column and row, respectively, so we can eliminate those candidates.
+
+<div class="puzzle">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |  .  |  .  |  .  |  .  |  3  |  .  |     |
+|  .  |     |     |     |     |  2  |     |  .  |
+|  .  |  3  |     |     |     |***15***|     |  .  |
+|  .  |     |     |     |     |     |     |  .  |
+|  .  |     |     |     |     |     |     |  .  |
+|  .  |     |     |     |     |  6  |     |  .  |
+|  .  |     |  5  |     |  6  |***34***|*123*|  3  |
+|     |  .  |  .  |  .  |  .  |  .  |  .  |     |
+
+</div>
