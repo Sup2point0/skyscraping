@@ -7,7 +7,7 @@
 
 This page defines all of the technical quasi-jargon I use throughout *Skyscraping*.
 
-It really isn’t my intention to gatekeep beginners! In fact, I’ve made this partially for myself too, because it ensures:
+It really isn’t my intention to use this to gatekeep beginners! In fact, I’ve made this mostly for myself, because it ensures:
 
 - Consistency – one name for one concept.
 - Unambiguity – well-defined concepts.
@@ -20,19 +20,21 @@ I wouldn’t recommend reading through this entire page – instead, use it as a
 
 ## backtrack
 
-> *Since we spotted the [contradiction](#contradiction) early, luckily we can still backtrack.*
+> *Since we spotted the [contradiction](#contradiction) early, luckily we can still **backtrack**.*
 
 To undo [deductions](#deduction).
 
 
 ## candidates
 
-> *$1$ and $2$ are the only candidates for this cell.*
+> *$1$ and $2$ are the only **candidates** for this cell.*
 
 The numbers in [pencilmarks](tech/pencilmarks.md), indicating which [skyscrapers](#skyscraper) could be placed in that cell.
 
 
 ## cell
+
+> *The $3$-skyscraper must go in this **cell**.*
 
 A single square in the puzzle [grid](#grid).
 
@@ -49,7 +51,7 @@ I’ll also often use “Cell” to refer to the [skyscraper](#skysrcaper) *insi
 
 ## closed
 
-> *Solving closed Skyscrapers is fairly trivial, but solving open Skyscrapers is something else entirely*.
+> *Solving **closed** Skyscrapers is fairly trivial, but solving open Skyscrapers is something else entirely*.
 
 A **closed** Skyscrapers puzzle has clues along every [lane](#lane), such that it’s ‘closed off’.
 
@@ -74,7 +76,7 @@ With the maximum number of clues available, these Skyscrapers tend to require mo
 
 ## clue
 
-> *This [lane](#lane) has a clue of $5$, so we know it must have a [sequence](#sequence).*
+> *This [half-lane](#half-lane) has a **clue** of $5$, so we know it must have a [sequence](#sequence).*
 
 A number outside the puzzle [grid](#grid).
 
@@ -94,7 +96,7 @@ If solving Skyscrapers [‘properly’](thoughts/imagination-vs-guesswork.md), t
 
 ## contradiction
 
-> *Oh dear, we’ve found a contradiction. That means we must’ve gone wrong somewhere...*
+> *Oh dear, we’ve found a **contradiction**. That means we must’ve gone wrong somewhere...*
 
 A situation where a constraint cannot be satisfied (is *contradicted*).
 
@@ -105,7 +107,7 @@ Reaching a contradiction when performing [concrete](#concrete-deduction) deducti
 
 ## counterexample
 
-> *We’ve found a counterexample, so we know this [cell](#cell) can’t contain a $3$-[skyscraper](#skyscraper).*
+> *We’ve found a **counterexample**, so we know this [cell](#cell) can’t contain a $3$-[skyscraper](#skyscraper).*
 
 A potential configuration of candidates which leads to a [contradiction](#contradiction), which disproves the possibility of that configuration.
 
@@ -139,7 +141,7 @@ In the grid above, the $[34]$ cells are couples, as are the $[12]$ cells.
 
 ## deduction
 
-> *Keep looking for deductions, even where you’ve already looked!*
+> *Keep looking for **deductions**, even where you’ve already looked!*
 
 A logical inference based on the currently available information.
 
@@ -160,7 +162,7 @@ Another name for a [closed](closed) Skyscrapers.
 
 ## edge cell
 
-> *The $4$-skyscraper must go in an edge cell.*
+> *The $4$-skyscraper must go in an **edge cell**.*
 
 A [head cell](#head-cell) or [tail cell](#tail-cell).
 
@@ -177,6 +179,8 @@ A [head cell](#head-cell) or [tail cell](#tail-cell).
 
 
 ## half-lane
+
+> *[Looking](#look) across the **half-lane**, we need to have 3 skyscrapers [visible](#visible).*
 
 One ‘side’ of a [lane](#lane) – the cells from the head cell up to and including the lane peak, as well as the clue (if any) on that side.
 
@@ -195,7 +199,7 @@ The 2 half-lanes in the above lane are $\text{3 | [12] [23] 5}$ (from the left) 
 
 ## head cell
 
-> *The head cell can’t be too tall or we won’t be able to satisfy the clue.*
+> *The **head cell** can’t be too tall or we won’t be able to satisfy the clue.*
 
 The first cell in a lane.
 
@@ -245,7 +249,7 @@ We might use this instead of specific skyscrapers ($[23]$ above) to emphasise th
 
 ## hypothetical deduction
 
-> *my mind needs more RAM to handle these long-chain hypothetical deductions TvT*
+> *my mind needs more RAM to handle these long-chain **hypothetical deductions**...*
 
 A deduction which we perform ‘hypothetically’ without comitting to; we will most likely have to [backtrack](#backtrack) on it.
 
@@ -256,7 +260,7 @@ If solving Skyscrapers [‘properly’](thoughts/imagination-vs-guesswork.md), t
 
 ## lane
 
-> *Now that we’ve found where the $6$-skyscraper goes in this lane, solving the rest of the lane becomes much easier.*
+> *Now that we’ve found where the [lane peak](#lane-peak) goes in this **lane**, solving the rest of the lane becomes much easier.*
 
 A general term for either a **row** or **column** of a puzzle, as well as the [clues](#clue) adjacent to it.
 
@@ -284,7 +288,7 @@ An $N$-skyscraper in a *NxN* Skyscrapers puzzle.
 
 ## look
 
-> *If we look across this [half-lane](#half-lane), we need to be able to see four [skyscrapers](#skyscrapers).*
+> *If we **look** across this [half-lane](#half-lane), we need to be able to see 4 [skyscrapers](#skyscrapers).*
 
 “Look” is used abstractly to describe considering the cells in a lane.
 
@@ -318,7 +322,7 @@ In contrast to a [*visible* skyscraper](#visible).
 
 ## open
 
-> *I can solve [closed](#closed) 7x7 Skyscrapers with time, but it takes ingenuity to finish an open 7x7 Skyscrapers.*
+> *I can solve [closed](#closed) 7x7 Skyscrapers with time, but it takes ingenuity to finish an **open** 7x7 Skyscrapers.*
 
 In contrast to a [closed](#closed) Skyscrapers, an **open** Skyscrapers does not have clues along every lane, but only a select few. This leaves parts of the edges of the grid ‘open’.
 
@@ -343,7 +347,7 @@ With fewer but impactful clues, these Skyscrapers are much more ‘directed’ a
 
 ## past-peak
 
-> *In a $2$-[clue](#clue) [lane](#lane), the $N-1$ skyscraper must either be in the [head cell](head-cell) or **past-peak**.
+> *In a $2$-[clue](#clue) [lane](#lane), the $N-1$ skyscraper must either be in the [head cell](head-cell) or **past-peak**.*
 
 (of a cell) Coming after the [lane peak](#lane-peak) in a given [lane](#lane).
 
@@ -364,7 +368,7 @@ In this lane, the cells containing the $3$ and $4$ skyscrapers are past-peak:
 
 ## peak
 
-> *We’ve found 3 peaks already, but the [clue](#clue) is $4$, so there must be 1 more peak before these 3 peaks.*
+> *We’ve found 3 **peaks** already, but the [clue](#clue) is $4$, so there must be 1 more peak before these 3 peaks.*
 
 A [skyscraper](#skyscraper) that is guaranteed to be visible.
 
@@ -373,7 +377,7 @@ Akin to a “maximum” in mathematics.
 
 ## pencilmarks
 
-> *This cell could contain a $1$ or $2$, so we’ll write those [candidates](#candidates) in as pencilmarks.*
+> *This [cell](#cell) could contain a $1$ or $2$, so we’ll write those [candidates](#candidates) in as **pencilmarks**.*
 
 Small numbers placed in a cell to indicate what [candidates](#candidate) *could* go in there:
 
@@ -398,7 +402,7 @@ Refers to the entire [Skyscrapers](#skyscrapers) puzzle, including the [grid](#g
 
 ## sequence
 
-> *Since the clue is $4$ and we only have 3 [unsolved cells](#unsolved-cell), this [half-lane](#half-lane) must have a sequence.*
+> *Since the [clue](#clue) is $4$ and we only have 3 [unsolved cells](#unsolved-cell), this [half-lane](#half-lane) must have a **sequence**.*
 
 An ascending sequence of [skyscrapers](#skyscrapers), when looking across a lane from the [head cell](#head-cell) towards the [lane peak](#lane-peak).
 
@@ -411,7 +415,7 @@ $\text{| [12] [123] [123]}$, in contrast, would not be a sequence, since it’s 
 
 ## skyscraper
 
-> *The $5$-skyscraper must go in this cell.*
+> *The $5$-**skyscraper** must go in this cell.*
 
 A number inside a cell of a Skyscrapers puzzle. As opposed to the a number outside the grid, which is a [clue](#clue).
 
@@ -422,7 +426,7 @@ $n$-skyscraper refers to the skyscraper of height $n$ (i.e. the number $n$). In 
 
 ## Skyscrapers
 
-> *We love solving Skyscrapers!*
+> *We love solving **Skyscrapers**!*
 
 A **Skyscrapers** puzzle. It’s capitalised since it refers to the *name* of the puzzle, not a [skyscraper](#skyscraper) (number) in the puzzle.
 
@@ -431,7 +435,7 @@ To avoid ambiguity I may sometimes use the fully qualified form “Skyscrapers p
 
 ## solved cell
 
-> *We’ve got loads of [pencilmarks](#pencilmarks), but not many solved cells =(*
+> *We’ve got loads of [pencilmarks](#pencilmarks), but not many **solved cells** =(*
 
 A cell which has been definitively assigned a [skyscraper](#skyscraper).
 
@@ -448,7 +452,7 @@ Another name for an [open](#open) Skyscrapers.
 
 ## tail cell
 
-> *Since the tail cell is a $6$ and the [clue](#clue) is $2$, the [head cell](#head-cell) must be a $5$.*
+> *Since the **tail cell** is a $6$ and the [clue](#clue) is $2$, the [head cell](#head-cell) must be a $5$.*
 
 The last cell in a lane.
 
@@ -473,12 +477,16 @@ In this lane, the tail cell is the one containing the $4$-[skyscraper](#skyscrap
 
 A cell which has not been definitively assigned a [skyscraper](#skyscraper), and may have multiple [candidates](#candidates) indicated with [pencilmarks](#pencilmarks).
 
-In contrast to a [*solved* cell](#solved-cell).
+*In contrast to a [solved cell](#solved-cell).*
 
 
 ## visible
 
-In contrast to an [*obscured* skyscraper](#obscured).
+> *The [clue](#clue) is $3$, so we need 2 [skyscrapers](#skyscraper) **visible** before the [lane peak](#lane-peak).*
+
+(of a [skyscraper](#skyscraper)) Taller than all preceding skyscrapers, in the context of [looking](#look) across a [lane](#lane).
+
+*In contrast to an [obscured](#obscured) skyscraper.*
 
 
 ## wlog
