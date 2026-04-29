@@ -165,6 +165,17 @@ Another name for a [closed](closed) Skyscrapers.
 A [head cell](#head-cell) or [tail cell](#tail-cell).
 
 
+## effectively
+
+> *Now, the [lane peak](lane-peak) is **effectively** in the [tail cell](#tail-cell).*
+
+(generally) Not *literally* true, but ‘effectively’ true as a result of the constraints present.
+
+(of a [case](cases/)) Applicable because the requirements have been effectively satisfied.
+
+> *See also: [Recursion and Abstraction](tech/recursion-and-abstraction.md)*
+
+
 ## half-lane
 
 One ‘side’ of a [lane](#lane) – the cells from the head cell up to and including the lane peak, as well as the clue (if any) on that side.
@@ -328,6 +339,27 @@ In contrast to a [closed](#closed) Skyscrapers, an **open** Skyscrapers does not
 With fewer but impactful clues, these Skyscrapers are much more ‘directed’ and challenging.
 
 *Also called “sparse” for historical reasons.*
+
+
+## past-peak
+
+> *In a $2$-[clue](#clue) [lane](#lane), the $N-1$ skyscraper must either be in the [head cell](head-cell) or **past-peak**.
+
+(of a cell) Coming after the [lane peak](#lane-peak) in a given [lane](#lane).
+
+In this lane, the cells containing the $3$ and $4$ skyscrapers are past-peak:
+
+<div class="puzzle lane">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  2  |     |  5  |**3**|     |**4**|  .  |
+
+> These skyscrapers are past the lane peak.
+
+</div>
+
+> *See also: [pre-peak](#pre-peak)*
 
 
 ## peak
