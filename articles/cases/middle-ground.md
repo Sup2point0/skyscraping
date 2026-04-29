@@ -26,6 +26,8 @@ In a $3$-clue [lane](../glossary.md#lane) with the [lane peak](../glossary.md#la
 
 </div>
 
+This case can [effectively](../glossary.md#effectively) apply if the $N-1$ skyscraper cannot be [past-peak](../glossary.md#past-peak)
+
 </div>
 
 
@@ -78,7 +80,7 @@ The $N-2$ skyscraper is the $3$-skyscraper, so the 2nd cell can contain $[124]$ 
 
 </div>
 
-The $N-2$ skyscraper is the $4$-skyscraper. In the left column, the 2nd cell can contain $[1235]$ but not $4$. In the right column, the case doesn't apply since the lane peak ($6$) isn't in the tail cell.
+The $N-2$ skyscraper is the $4$-skyscraper. In the left column, the 2nd cell can contain $[1235]$ but not $4$. In the right column, the case doesn’t apply since the lane peak ($6$) isn’t in the tail cell.
 
 <div class="puzzle">
 
@@ -223,7 +225,7 @@ Now... notice we couldn’t place the $5$ in the head cell, because this would a
 
 </div>
 
-<!-- TODO future sequences 3 can't have 5 -->
+<!-- TODO future sequences 3 can’t have 5 -->
 This is pretty obvious, but here’s the trick – combine it with our previous constraint.
 
 We said that (1) $5$ must come before $4$, and (2) $5$ can’t go in the head cell. What happens, then, if $4$ is in the 2nd cell?
@@ -236,9 +238,9 @@ We said that (1) $5$ must come before $4$, and (2) $5$ can’t go in the head ce
 
 </div>
 
-We need to place the $5$ before it, but we can't, because the cell before it is the head cell. There’s nowhere valid to place the $5$!
+We need to place the $5$ before it, but we can’t, because the cell before it is the head cell. There’s nowhere valid to place the $5$!
 
-We've reached a contradiction, so we can conclude $4$ cannot go in the 2nd cell.
+We’ve reached a contradiction, so we can conclude $4$ cannot go in the 2nd cell.
 
 <div class="puzzle lane">
 
