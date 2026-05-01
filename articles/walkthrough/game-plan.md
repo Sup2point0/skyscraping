@@ -3,30 +3,33 @@
 | dest = walk/game-plan
 | capt = Where do we start?
 | index = walk
-| update = 2026 February 21
+| update = 2026 April 29
 -->
 
 We’re faced with a Skyscrapers puzzle. Where do we start?
 
-There is, of course, no mandatory strategy that you *have* to follow – whatever works, works! That being said, if you’re here you might be looking for more structured ways to approach Skyscrapers, so I’ll share some of what goes through my mind when tackling a puzzle.
+There is, of course, no mandatory strategy that you *have* to follow – whatever works, works! That being said, if you’re here you're probably looking for more structured ways to approach Skyscrapers, so I’ll share some of what goes through my mind when tackling a puzzle.
 
-Like many logic puzzles, Skyscrapers is a game of *iterated deduction*. We start by filling in what we ‘obviously’ know. Then we look for more obscure deductions we can make. When we do find one, we “chase it” until we’ve exhausted all the things it affects.
+
+## Overview
+
+Like many logic puzzles, Skyscrapers is a game of *iterated deduction*. We start by filling in what we ‘obviously’ know. Then we look for more obscure deductions we can make. When we do find one, we ‘chase it’ until we’ve exhausted all the things it affects.
 
 We keep doing this, over and over, until we’ve solved the puzzle. The tough part is spotting a new deduction each time! The further on we go, generally the fewer ‘obvious’ deductions there’ll be available to us, and we may have to reach for more niche deductions.
 
-Can’t talk loads about theory without showing how to apply it, so we’ll be solving this example puzzle:
+Can’t talk loads about theory without showing how to apply it, so throughout this article I’ll demonstrate everything by solving this example puzzle:
 
 <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  4  |  2  |     |     |     |     |
+|     |     |  2  |  2  |     |  2  |     |
 |     |     |     |     |     |     |     |
+|     |     |  2  |     |     |     |     |
+|  1  |     |     |     |     |     |  2  |
 |     |     |     |     |     |     |     |
-|     |     |     |     |     |     |     |
-|  1  |     |     |     |     |     |  3  |
-|     |     |     |     |     |     |     |
-|     |     |     |  5  |  3  |     |     |
+|  2  |     |     |  4  |     |     |     |
+|     |     |     |     |  5  |     |     |
 
 </div>
 
@@ -35,121 +38,177 @@ Feel free to take a stab at it yourself, and compare how we approach it!
 
 ## Pregame
 
-We start by filling in what we know.
+At the start of a puzzle, there'll often be many ‘obvious’ deductions that are freely available. You might be familiar with that initial rush to fill in everything we can.
+
+However, this won't always be the case! Some of the toughest puzzles are incredibly difficult to start, and might need an egregious amount of pencilmarking before even solving a third cell.
 
 ### Fill out the obvious
-There are two clues can be trivially solved immediately – the $1$-clue ([Silhouette](../cases/silhouette.md)) and the $N$-clue ([Stairs](../cases/stairs.md)). In this puzzle we’ve got both:
+There are two clues can be trivially solved immediately – the $1$-clue ([Silhouette](../cases/silhouette.md)) and the $N$-clue ([Stairs](../cases/stairs.md)). In this puzzle, we’ve got both!
 
 <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  4  |  2  |     |     |     |     |
-|     |     |     |**5**|     |     |     |
-|     |     |     |**4**|     |     |     |
-|     |     |     |**3**|     |     |     |
-|  1  |**5**|     |**2**|     |     |  3  |
-|     |     |     |**1**|     |     |     |
-|     |     |     |  5  |  3  |     |     |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |     |     |**5**|     |     |
+|     |     |  2  |     |**4**|     |     |
+|  1  |**5**|     |     |**3**|     |  2  |
+|     |     |     |     |**2**|     |     |
+|  2  |     |     |  4  |**1**|     |     |
+|     |     |     |     |  5  |     |     |
 
 </div>
 
+### Easy cases
+[Blockade](../cases/blockade.md) is a free and surprisingly common case to watch out for.
+
+<div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |     |     |  5  |     |     |
+|     |     |  2  |     |  4  |     |     |
+|  1  |  5  |     |     |  3  |**4**|  2  |
+|     |     |     |     |  2  |     |     |
+|  2  |     |     |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
+
+</div>
+
+### Look for lane peaks
+
+> *Main article: [Skylining](../tech/skylining.md)*
+
+[Lane peaks](../glossary.md#lane-peak) ($N$-skyscrapers) are a *core* part of the ‘structure’ of a Skyscrapers grid. They provide more information than any other skyscraper, and luckily for us are also often the easiest skyscrapers to deduce.
+
+Since this is a *5x5* puzzle, the lane peaks are $5$-skyscrapers. We've already found two, and we can find two more by [Ascendant](../cases/ascendant.md).
+
+<div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |     |     |  5  |     |     |
+|     |     |  2  |     |  4  |**5**|     |
+|  1  |  5  |     |     |  3  |  4  |  2  |
+|     |     |     |     |  2  |     |     |
+|  2  |     |**5**|  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
+
+> In a $2$-clue lane where $4$ is not in the [head cell](../glossary.md#head-cell), the lane peak must come before the $4$.
+
+</div>
+
+With 4/5 lane peaks found, this [pinpoints](../tech/pinpoint.md) the last one.
+
+<div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |     |     |  5  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
+|  1  |  5  |     |     |  3  |  4  |  2  |
+|     |     |     |**5**|  2  |     |     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
+
+</div>
+
+Notice this means [Blockade](../cases/blockade.md) applies *again* in the 2nd column. These deductions aren't once-and-done, they could apply at any moment!
+
+<div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |**4**|     |  5  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
+|  1  |  5  |     |     |  3  |  4  |  2  |
+|     |     |     |  5  |  2  |     |     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
+
+</div>
+
+
+## Midgame
+
 ### Pencilmark!
-Often, like in this puzzle, you’ll find yourself unable to really make any more ‘obvious’ deductions. This is common.
+Often, like in this puzzle, you’ll find yourself unable to really make any more ‘obvious’ deductions. Don't worry, this is common, especially in more difficult puzzles.
 
 The solution? [Pencilmarking](../tech/pencilmarks.md) – writing out candidates for unsolved cells. If you’re averse to this (I know I was for a while[^averse]), unfortunately it really is the most powerful tool as your disposal, so you’re freezing yourself in the foot if you don’t make use of it!
 
 [^averse]: Mainly when solving on paper. But when it’s digital you can easily remove pencilmarks!
 
-The start of the puzzle is when there’s the least structure to the puzzle. Pencilmarking helps elucidate some of that structure to us. Of course, it’s very possible to go overboard with pencilmarking, and then things get messy! Generally, I only pencilmark cells with two candidates (maybe three, for larger puzzles), or where the candidates are particularly notable.
+The start of the puzzle is when there’s the least structure to the puzzle. Pencilmarking helps elucidate some of that structure to us.
 
-### Pencilmark sequences
-The easiest kind of pencilmark to make is for ascending [sequences](../glossary.md#sequence). These are a huge part of solving Skyscrapers in general.
+> Of course, it’s very possible to go overboard with pencilmarking, and then things get messy! Generally, I only pencilmark cells with two candidates (maybe three, for larger puzzles), or where the candidates are particularly notable.
 
-Here, take a look at the leftmost [half-lane](../glossary.md#half-lane):
-
-<div class="puzzle">
-
-||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  4  |  2  |     |     |     |     |
-|     |** **|     |  5  |     |     |     |
-|     |** **|     |  4  |     |     |     |
-|     |** **|     |  3  |     |     |     |
-|  1  |**5**|     |  2  |     |     |  3  |
-|     |     |     |  1  |     |     |     |
-|     |     |     |  5  |  3  |     |     |
-
-</div>
-
-We need four skyscrapers visible here, and the only way for that to happen is if all three skyscrapers before the $5$-skyscraper are visible (i.e. we have a sequence). Let’s pencilmark this in:
+In this row, we've already solved 3/5 cells, so the last two must contain $[12]$.
 
 <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  4  |  2  |     |     |     |     |
-|     |***12***|     |  5  |     |     |     |
-|     |***23***|     |  4  |     |     |     |
-|     |***34***|     |  3  |     |     |     |
-|  1  |  5  |     |  2  |     |     |  3  |
-|     |     |     |  1  |     |     |     |
-|     |     |     |  5  |  3  |     |     |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |  4  |     |  5  |     |     |
+|     |     |  2  |     |  4  |     |     |
+|  1  |  5  |***12***|***12***|  3  |  4  |  2  |
+|     |     |     |  5  |  2  |     |     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
 
 </div>
-
-So, for instance, we could have $\text{4 | 1 2 3 5}$, or $\text{4 | 2 3 4 5}$, or indeed $\text{4 | 1 3 4 5}$, or any other valid combination. We don’t know which yet! – but we *do* know the heights must be increasing.
 
 ### Always look for Sudoku-style deductions
-Remember that the rules of Sudoku apply to Skyscrapers, and they’re pretty powerful rules.
+The rules of Sudoku apply in Skyscrapers, and they're pretty powerful rules. Always be on the lookout for them, because they'll constantly come in crucial.
 
-Notice the $3$ candidate is actually invalid, because it would conflict with the $3$ in the same row:
-
-<div class="puzzle">
-
-||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  4  |  2  |     |     |     |     |
-|     | *12*|     |  5  |     |     |     |
-|     | *23*|     |  4  |     |     |     |
-|     |***34***|     |~~3~~|     |     |     |
-|  1  |  5  |     |  2  |     |     |  3  |
-|     |     |     |  1  |     |     |     |
-|     |     |     |  5  |  3  |     |     |
-
-</div>
-
-We can eliminate it, meaning that cell must now contain the $4$-skyscraper:
+Here, we can eliminate $2$ as a candidate, because $2$ is already used in the column.
 
 <div class="puzzle">
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|     |  4  |  2  |     |     |     |     |
-|     | *12*|     |  5  |     |     |     |
-|     | *23*|     |  4  |     |     |     |
-|     |**4**|     |  3  |     |     |     |
-|  1  |  5  |     |  2  |     |     |  3  |
-|     |     |     |  1  |     |     |     |
-|     |     |     |  5  |  3  |     |     |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |  4  |     |  5  |     |     |
+|     |     |  2  |     |  4  |     |     |
+|  1  |  5  |***1***|***12***|  3  |  4  |  2  |
+|     |     |     |  5  |  2  |     |     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
 
 </div>
 
-### Look for lane peaks
-[Lane peaks](../glossary.md#lane-peak) ($N$-skyscrapers) are a *core* part of the ‘structure’ of a Skyscrapers grid. They provide more information than any other skyscraper, and luckily for us are also often the easiest skyscrapers to deduce.
+That leaves only $1$ as a candidate, so we can now solve the row.
 
+<div class="puzzle">
 
-## Midgame
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |  4  |     |  5  |     |     |
+|     |     |  2  |     |  4  |     |     |
+|  1  |  5  |**1**|**2**|  3  |  4  |  2  |
+|     |     |     |  5  |  2  |     |     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
 
-A long, painful search for new leads.
+</div>
 
-### Check all clues
+And we can also solve this column, since we only have one unused skyscraper left.
 
+<div class="puzzle">
 
-## Endgame
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |  4  |     |  5  |     |     |
+|     |     |  2  |     |  4  |     |     |
+|  1  |  5  |  1  |  2  |  3  |  4  |  2  |
+|     |     |**3**|  5  |  2  |     |     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
 
-Home straight to the finish.
-
-### Couples
-
-### Sudoku-style
+</div>
