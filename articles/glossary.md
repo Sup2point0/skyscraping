@@ -139,6 +139,13 @@ In the grid above, the $[34]$ cells are couples, as are the $[12]$ cells.
 *Also called “twins” and “pairs”.*
 
 
+## critical mass
+
+> *We've now reached **critical mass**, so we're on the home straight.*
+
+(of a [puzzle](#skyscrapers)) At a point where enough cells have been solved that we can speedrun the rest of the puzzle with ease, using mostly [Sudoku-style deductions](#sudoku-deductions).
+
+
 ## deduction
 
 > *Keep looking for **deductions**, even where you’ve already looked!*
@@ -157,7 +164,31 @@ Another name for a [closed](closed) Skyscrapers.
 
 ## dense sequence
 
-<!-- TODO -->
+> *Since the [clue](#clue) is $4$ and the [lane peak](#lane-peak) is in the 4th [cell](#cell), we must have a **dense sequence** in this [half-lane](#half-lane).*
+
+A [sequence](#sequence) where every cell is adjacent, or more intuitively, a [half-lane](#half-lane) where every cell is [visible](#visible) and so is part of the sequence.
+
+For instance, this half-lane has a dense sequence structure, since all 4 cells are visible without gaps:
+
+<div class="puzzle lane">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  4  |**1**|**2**|**4**|**6**|     |     |     |
+
+</div>
+
+On the other hand, this would be a [sparse sequence](#sparse-sequence), because there is an [obscured](#obscured) cell at one point:
+
+<div class="puzzle lane">
+
+|||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  4  |**1**|**2**|**4**|  3  |**6**|     |     |
+
+> The cell containing $3$ is not part of the sequence, so the sequence is ‘spread out’.
+
+</div>
 
 
 ## edge cell
@@ -357,7 +388,7 @@ In this lane, the cells containing the $3$ and $4$ skyscrapers are past-peak:
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|  2  |     |  5  |**3**|     |**4**|  .  |
+|  2  |     |  5  |**3**|     |**4**|     |
 
 > These skyscrapers are past the lane peak.
 
@@ -448,6 +479,13 @@ Another name for an [open](#open) Skyscrapers.
 
 
 ## sparse sequence
+
+See [dense sequence](#dense-sequence).
+
+
+## sudoku deductions
+
+*Also known as **Sudoku-style deductions**.*
 
 
 ## tail cell

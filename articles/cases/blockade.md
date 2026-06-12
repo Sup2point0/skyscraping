@@ -3,7 +3,7 @@
 | dest = cases/blockade
 | capt = $N$ opposite clue of $2$
 | index = cases
-| update = 2025 May 20
+| update = 2026 May 20
 -->
 
 When we have a clue of $2$, and skyscraper $N$ is at the back of that lane, then we know skyscraper $N-1$ must lie immediately in front of that clue.
@@ -24,8 +24,8 @@ When we have a clue of $2$, and skyscraper $N$ is at the back of that lane, then
 
 The $N-1$ blocks all skyscrapers behind it except the tallest one. If it weren’t at the front, we’d be able to see more in front of it, leaving at least 3 skyscrapers in view.
 
-> [!Tip]
-> This is reminiscent of [Singularity](singularity.md).
+<!-- FIXME > [!Tip]
+> This is reminiscent of [Singularity](singularity.md). -->
 
 This deduction only applies if $N$ is at the **very end of the lane**. If it’s not, then $N-1$ could be hiding behind it. In that case we’d have [Haven](haven.md).
 
