@@ -54,20 +54,20 @@ let { mobile = false }: Props = $props();
 
   <section>
     <NavLink text="Cases" intern="cases" header={true} />
-      <NavLink text="Silhouette"         intern="cases/silhouette" />
-      <NavLink text="Stairs"             intern="cases/stairs" />
-      <NavLink text="Lighthouse"         intern="cases/lighthouse" />
-      <NavLink text="Blockade"           intern="cases/blockade" />
+      <NavLink text="Silhouette"    intern="cases/silhouette" />
+      <NavLink text="Stairs"        intern="cases/stairs" />
+      <NavLink text="Lighthouse"    intern="cases/lighthouse" />
+      <NavLink text="Blockade"      intern="cases/blockade" />
       <NavLink text="Meet in the Middle" intern="cases/meet-in-the-middle" />
-      <NavLink text="Leap of Faith"      intern="cases/leap-of-faith" />
-      <NavLink text="Slide"              intern="cases/slide" />
-      <NavLink text="Hideout"            intern="cases/hideout" />
-      <NavLink text="High-Rise"          intern="cases/high-rise" />
-      <NavLink text="Middle Ground"      intern="cases/middle-ground" />
-      <NavLink text="Higher-Rise"        intern="cases/higher-rise" />
-      <NavLink text="Successor"          intern="cases/successor" disabled={true} />
-      <NavLink text="Outflanked"         intern="cases/outflanked" />
-      <!-- <NavLink text="Ascendant" intern="cases/" disabled={true} /> -->
+      <NavLink text="Leap of Faith" intern="cases/leap-of-faith" />
+      <NavLink text="Slide"         intern="cases/slide" />
+      <NavLink text="Hideout"       intern="cases/hideout" />
+      <NavLink text="High-Rise"     intern="cases/high-rise" />
+      <NavLink text="Middle Ground" intern="cases/middle-ground" />
+      <NavLink text="Higher-Rise"   intern="cases/higher-rise" />
+      <NavLink text="Successor"     intern="cases/successor" disabled={true} />
+      <NavLink text="Outflanked"    intern="cases/outflanked" />
+      <NavLink text="Ascendant"     intern="cases/ascendant" />
       <!-- <NavLink text="Frontier" intern="cases/" disabled={true} /> -->
   </section>
 
