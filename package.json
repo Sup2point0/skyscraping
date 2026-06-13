@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite",
       "devx": "npm run prep && vite --open",
-    "prep": "cd stranger-quarkdown && rake squark[fonts] && cd ..",
+    "prep": "cd stranger-quarkdown && bundle exec rake squark[fonts] && cd ..",
       "prepx": "npm run prep",
 		"build": "npm run prep && vite build",
 		"preview": "vite preview"
