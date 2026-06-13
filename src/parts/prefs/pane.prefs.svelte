@@ -57,6 +57,10 @@ import { base } from "$app/paths";
       <p> Show more advanced details about how <a href="{base}/cases">cases</a> can apply recursively. </p>
     </label>
   </section>
+
+  <aside>
+    <p> Preferences are saved to Local Storage. </p>
+  </aside>
 </form>
 
 
@@ -64,7 +68,7 @@ import { base } from "$app/paths";
 
 form {
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 1rem 1rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 1.25rem;
@@ -146,6 +150,13 @@ label {
       @include link-underline;
     }
   }
+}
+
+aside {
+  @include font-ui;
+  font-size: 75%;
+  color: $col-text-deut;
+  text-align: right;
 }
 
 </style>
