@@ -131,10 +131,10 @@ article .content {
     @include link-dotted;
   }
 
-  aside.recursion {
+  .recursion {
     display: none;
   }
-  .show_case_recursion & aside.recursion {
+  .show_case_recursion & .recursion {
     display: block;
   }
 }
