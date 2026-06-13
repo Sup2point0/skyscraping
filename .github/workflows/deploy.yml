@@ -22,7 +22,6 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           working-directory: './stranger-quarkdown/'
-          ruby-version: 3.4.7
           bundler-cache: true
 
       # - name: 'ruby / install'
