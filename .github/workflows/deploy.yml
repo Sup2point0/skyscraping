@@ -21,11 +21,12 @@ jobs:
       - name: 'ruby / setup'
         uses: ruby/setup-ruby@v1
         with:
+          working-directory: './stranger-quarkdown/'
           ruby-version: 3.4.7
           bundler-cache: true
 
-      - name: 'ruby / install'
-        run: cd stranger-quarkdown && bundle install
+      # - name: 'ruby / install'
+      #   run: cd stranger-quarkdown && bundle install
 
       - name: 'node / setup'
         uses: actions/setup-node@v4
