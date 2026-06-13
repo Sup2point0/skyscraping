@@ -3,7 +3,7 @@
 | dest = cases/silhouette
 | capt = Clue of $1$
 | index = cases
-| update = 2026 April 18
+| update = 2026 June 13
 -->
 
 <div class="case">
@@ -21,7 +21,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|  1  |     |     |     |     |     |     |
+|  1  |     |     | ... |     |     |     |
 
   </div>
 
@@ -29,7 +29,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1
 
 ||||||||
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
-|  1  |**N**|     |     |     |     |     |
+|  1  |**N**|     | ... |     |     |     |
 
   </div>
 </div>
@@ -73,8 +73,18 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1
 
 ## Explanation
 
-A $1$-clue means we can only [see](../glossary.md#visible) 1 skyscraper. The only way to achieve this is if we see the tallest skyscraper (the $N$-skyscraper), [obscuring](../glossary.md#obscured) all the rest behind it.
+A $1$-clue means we can only [see](../glossary.md#visible) 1 skyscraper. The only way to achieve this is if we see the tallest skyscraper (the $N$-skyscraper) first, [obscuring](../glossary.md#obscured) all the rest behind it.
+
+<!-- TODO add illustration -->
 
 If we picked any other skyscraper as our 1 visible skyscraper, we’d still be able to see the $N$-skyscraper behind it as well, since the $N$-skyscraper is taller than all other skyscrapers.
 
-<!-- TODO add illustration -->
+<div class="puzzle lane">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|  1  |**&ensp;&&|**5**|     |     |     |  .  |
+
+> If we don‘t place the $5$ in the head cell, then we‘ll be able to see more than 1 skyscraper, since all other skyscrapers are shorter than $5$.
+
+</div>

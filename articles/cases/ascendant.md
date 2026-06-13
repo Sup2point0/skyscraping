@@ -4,7 +4,7 @@
 | capt = The clue of $2$
 | index = cases
 | date = 2026 May 18
-| update = 2026 June 12
+| update = 2026 June 13
 -->
 
 <div class="case">
@@ -134,3 +134,4 @@ If it’s past-peak, well, then it makes no difference to the [half-lane](../glo
 
 - [Case: Blockade](blockade.md)
 - [Case: High-Rise](high-rise.md)
+- [Case: Middle Ground](.middle-ground.md.md)

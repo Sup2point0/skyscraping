@@ -4,7 +4,7 @@
 | capt = The effective tail cell
 | index = cases
 | date = 2026 April 7
-| update = 2026 April 7
+| update = 2026 June 13
 -->
 
 In some cases which require the [lane peak](../glossary.md#lane-peak) to be in the [tail cell](../glossary.md#tail-cell), we may still be able to apply the deduction if there are suitable constraints on the [past-peak](../glossary.md#past-peak) [cells](../glossary.md#cell).
@@ -84,7 +84,7 @@ We can ‘outflank’ Blockade with other constraints, too! Here, we do have an 
 
 </div>
 
-We know from [Successor](successor.md) that the $4$-skyscraper must either be in the head cell or past-peak.
+We know from [Case: Ascendant](ascendant.md) that the $4$-skyscraper must either be in the head cell or past-peak.
 
 <div class="puzzle">
 
