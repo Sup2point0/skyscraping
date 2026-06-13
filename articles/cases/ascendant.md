@@ -36,7 +36,11 @@ In a $2$-clue [lane](../glossary.md#lane), the $N-1$ skyscraper must either be i
   </div>
 </div>
 
+
+<div class="recursion">
+
 ### Recursion
+
 If the $N-1$ skyscraper is past-peak, this case recurses with the $N-2$ skyscraper, $N-3$, and so on.
 
 <div class="deduction">
@@ -55,6 +59,8 @@ If the $N-1$ skyscraper is past-peak, this case recurses with the $N-2$ skyscrap
 |  2  |***N-k-1***|     |  N  | ... |*N-1*| ... |*N-k*|     |
 
   </div>
+</div>
+
 </div>
 
 </div>
