@@ -7,12 +7,14 @@ Options for configuring user preferences.
 
 import { prefs } from "#scripts/stores";
 
+import { base } from "$app/paths";
+
 </script>
 
 
 <form>
   <section>
-    <input id="center-puzzles" type="checkbox" bind:checked={prefs.center_puzzles}>
+    <input id="center-puzzles" type="checkbox" bind:checked={$prefs.center_puzzles}>
 
     <label for="center-puzzles">
       <h4> Center Puzzles </h4>
@@ -21,7 +23,7 @@ import { prefs } from "#scripts/stores";
   </section>
   
   <section>
-    <input id="underline-links" type="checkbox" bind:checked={prefs.underline_links}>
+    <input id="underline-links" type="checkbox" bind:checked={$prefs.underline_links}>
 
     <label for="underline-links">
       <h4> Underline Links </h4>
@@ -30,20 +32,29 @@ import { prefs } from "#scripts/stores";
   </section>
   
   <section>
-    <input id="show-glossary-links" type="checkbox" bind:checked={prefs.show_glossary_links}>
+    <input id="show-glossary-links" type="checkbox" bind:checked={$prefs.show_glossary_links}>
 
     <label for="show-glossary-links">
       <h4> Show Glossary Links </h4>
-      <p> Include links to terms in the Glossary. You may wish to disable this if you are familiar with them and find the links distracting. </p>
+      <p> Include links to terms in the <a href="{base}/glossary">Glossary</a>. You may wish to disable this if you are familiar with them and find the links distracting. </p>
     </label>
   </section>
   
   <section>
-    <input id="dotted-glossary-links" type="checkbox" bind:checked={prefs.dotted_glossary_links}>
+    <input id="dotted-glossary-links" type="checkbox" bind:checked={$prefs.dotted_glossary_links}>
 
     <label for="dotted-glossary-links">
       <h4> Dotted Glossary Links </h4>
-      <p> Use alternate dotted underlines for links to terms in the Glossary. Note that this has no effect if <strong>Underline Links</strong> is disabled. </p>
+      <p> Use alternate dotted underlines for links to terms in the <a href="{base}/glossary">Glossary</a>. Note that this has no effect if <strong>Underline Links</strong> is disabled. </p>
+    </label>
+  </section>
+  
+  <section>
+    <input id="show-case-recursion" type="checkbox" bind:checked={$prefs.show_case_recursion}>
+
+    <label for="show-case-recursion">
+      <h4> Recursion in Case Overviews </h4>
+      <p> Show more advanced details about how <a href="{base}/cases">cases</a> can apply recursively. </p>
     </label>
   </section>
 </form>
@@ -85,7 +96,16 @@ label {
   p {
     @include font-body;
     font-size: 80%;
+    line-height: 150%;
     color: $col-text-deut;
+  }
+  
+  a {
+    @include link;
+
+    :global(.underline_links) & {
+      @include link-underline;
+    }
   }
 }
 

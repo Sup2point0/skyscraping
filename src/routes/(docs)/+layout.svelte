@@ -36,7 +36,7 @@ function check_mobile() {
 </script>
 
 
-<div class={["layout", { mobile }, prefs]}>
+<div class={["layout", { mobile }, $prefs]}>
   {#if mobile}
     <NavBar />
   {:else}
