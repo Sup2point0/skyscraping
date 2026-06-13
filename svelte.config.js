@@ -54,10 +54,11 @@ const config = {
     }),
     sveltePreprocess({
       scss: {
+        includePaths: ["src/styles"],
         prependData: `
-          @use 'src/styles/mixins/colours' as *;
-          @use 'src/styles/mixins/fonts' as *;
-          @use 'src/styles/mixins/links' as *;
+          @use 'mixins/colours' as *;
+          @use 'mixins/fonts' as *;
+          @use 'mixins/links' as *;
         `,
       }
     }),

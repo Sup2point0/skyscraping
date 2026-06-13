@@ -1,8 +1,8 @@
 @use 'sass:color';
 
-@use 'src/styles/mixins/colours' as *;
-@use 'src/styles/mixins/fonts' as *;
-@use 'src/styles/mixins/links' as *;
+@use 'mixins/colours' as *;
+@use 'mixins/fonts' as *;
+@use 'mixins/links' as *;
 
 
 * {
@@ -129,6 +129,13 @@ article .content {
   }
   .show_glossary_links.dotted_glossary_links & #{$link}[href*='glossary'] {
     @include link-dotted;
+  }
+
+  .recursion {
+    display: none;
+  }
+  .show_case_recursion .recursion {
+    display: block;
   }
 }
 
