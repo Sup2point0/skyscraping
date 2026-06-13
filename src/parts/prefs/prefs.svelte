@@ -32,7 +32,9 @@ let shown = $state(false);
       in:fade={{ duration: 250, delay: 400 }}
       out:fade={{ duration: 250 }}
     >
-      <MinorClicky text="×" onclick={() => { shown = false; }} />
+      <MinorClicky onclick={() => { shown = false; }}>
+        <div style:transform="translateY(0.05em)">×</div>
+      </MinorClicky>
     </div>
 
     <PrefsPane />
@@ -49,9 +51,10 @@ let shown = $state(false);
 }
 
 .overlay {
+  overflow-y: auto;
   min-width: 20em;
   max-width: 20vw;
-  overflow-y: auto;
+  padding-top: 0.5rem;
   position: fixed;
   top: 5rem;
   right: 2rem;
@@ -61,7 +64,7 @@ let shown = $state(false);
 
   .exit {
     position: absolute;
-    top: 1rem;
+    top: 0.8rem;
     right: 1rem;
     z-index: 25;
   }

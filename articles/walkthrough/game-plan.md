@@ -154,7 +154,7 @@ In this row, we've already solved 3/5 cells, so the last two must contain $[12]$
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
-|     |     |  2  |     |  4  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
 |  1  |  5  |***12***|***12***|  3  |  4  |  2  |
 |     |     |     |  5  |  2  |     |     |
 |  2  |     |  5  |  4  |  1  |     |     |
@@ -173,7 +173,7 @@ Here, we can eliminate $2$ as a candidate, because $2$ is already used in the co
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
-|     |     |  2  |     |  4  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
 |  1  |  5  |***1***|***12***|  3  |  4  |  2  |
 |     |     |     |  5  |  2  |     |     |
 |  2  |     |  5  |  4  |  1  |     |     |
@@ -189,7 +189,7 @@ That leaves only $1$ as a candidate, so we can now solve the row.
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
-|     |     |  2  |     |  4  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
 |  1  |  5  |**1**|**2**|  3  |  4  |  2  |
 |     |     |     |  5  |  2  |     |     |
 |  2  |     |  5  |  4  |  1  |     |     |
@@ -205,10 +205,49 @@ And we can also solve this column, since we only have one unused skyscraper left
 | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
-|     |     |  2  |     |  4  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
 |  1  |  5  |  1  |  2  |  3  |  4  |  2  |
 |     |     |**3**|  5  |  2  |     |     |
 |  2  |     |  5  |  4  |  1  |     |     |
 |     |     |     |     |  5  |     |     |
 
 </div>
+
+Pencilmarking again:
+
+<div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |  4  |     |  5  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
+|  1  |  5  |  1  |  2  |  3  |  4  |  2  |
+|     |***14***|  3  |  5  |  2  |***14***|     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
+
+</div>
+
+We have a clash in the right column again, which allows us to solve the row.
+
+<div class="puzzle">
+
+||||||||
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+|     |     |  2  |  2  |     |  2  |     |
+|     |     |  4  |     |  5  |     |     |
+|     |     |  2  |     |  4  |  5  |     |
+|  1  |  5  |  1  |  2  |  3  |  4  |  2  |
+|     |**4**|  3  |  5  |  2  |**1**|     |
+|  2  |     |  5  |  4  |  1  |     |     |
+|     |     |     |     |  5  |     |     |
+
+</div>
+
+
+## Endgame
+
+At this point, the puzzle is pretty much solved. 
+
+Can you see how we built a momentum? In fact, we've reached [critical mass](../glossary.md#critical-mass), where we have sufficient information to solve the entire puzzle 

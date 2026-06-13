@@ -78,7 +78,46 @@ section {
 }
 
 input {
-  margin-top: 0.25rem;
+  appearance: none;
+  width: 1rem;
+  min-width: 1rem;
+  max-width: 1rem;
+  height: 1rem;
+  min-height: 1rem;
+  max-height: 1rem;
+  margin-top: 0.2rem;
+  position: relative;
+  border: 1px solid $col-line;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+    border-color: $col-deut;
+  }
+
+  &:checked {
+    border-color: $col-prot;
+
+    &::before {
+      content: '';
+      width: 0.6rem;
+      height: 0.6rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: $col-prot;
+      border-radius: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    &:hover {
+      border-color: $col-deut;
+
+      &::before {
+        background: $col-deut;
+      }
+    }
+  }
 }
 
 label {  
@@ -90,7 +129,7 @@ label {
     padding-bottom: 0.4em;
     @include font-ui;
     font-weight: normal;
-    font-size: 100%;
+    font-size: 90%;
   }
 
   p {
