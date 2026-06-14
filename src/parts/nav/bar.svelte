@@ -5,9 +5,9 @@ The global top navigation bar for mobile.
 
 <script lang="ts">
 
-import NavPane from "./pane.nav.svelte";
-import PrefsPane from "#parts/prefs/pane.prefs.svelte";
-import MinorClicky from "#parts/clicky.micro.svelte";
+import NavPane   from "./pane.nav.svelte";
+import PrefsPane from "./pane.prefs.svelte";
+import Clicky    from "#parts/clicky.svelte";
 
 import { fade, slide } from "svelte/transition";
 import { expoIn, expoOut } from "svelte/easing";
@@ -28,13 +28,13 @@ let shown_overlay: "nav" | "prefs" | null = $state(null);
     </div>
 
     <div class="right">
-      <MinorClicky onclick={() => {
+      <Clicky kind="micro" onclick={() => {
         shown_overlay = shown_overlay === "prefs" ? null : "prefs";
       }}>
         <div style:transform="translateY(0.24em)">*</div>
-      </MinorClicky>
+      </Clicky>
 
-      <MinorClicky text="≡" onclick={() => {
+      <Clicky kind="micro" text="≡" onclick={() => {
         shown_overlay = shown_overlay === "nav" ? null : "nav";
       }} />
     </div>
@@ -45,7 +45,7 @@ let shown_overlay: "nav" | "prefs" | null = $state(null);
       in:fade={{ duration: 250, delay: 400 }}
       out:fade={{ duration: 250 }}
     >
-      <MinorClicky text="×" onclick={() => { shown_overlay = null; }} />
+      <Clicky kind="micro" text="×" onclick={() => { shown_overlay = null; }} />
     </div>
 
     <div class="overlay {shown_overlay}"

@@ -2,7 +2,7 @@
 
 import "#styles/essence.scss";
 
-import Clicky from "#parts/clicky.macro.svelte";
+import Clicky from "#parts/clicky.svelte";
 
 import { base } from "$app/paths";
 
@@ -31,7 +31,7 @@ import { base } from "$app/paths";
     <p> Whether you’re a novice looking to learn, an experienced samurai sharpening their arsenal, or you thought this would be about the miraculous engineering of really tall buildings, there’s something here for you. </p>
   </div>
 
-  <Clicky intern="walk/foreword">
+  <Clicky kind="macro" intern="walk/foreword">
     Shall we depart upon our adventure?
   </Clicky>
 </section>
@@ -43,7 +43,7 @@ import { base } from "$app/paths";
     <p> Awesome. You should give one a shot. Yep, right now! It takes about, like, 30 seconds to learn. <!--<a href="{base}/showerthoughts/why">Here’s why you’ll love Skyscrapers.</a>--> </p>
   </div>
 
-  <Clicky intern="walk/primer">
+  <Clicky kind="macro" intern="walk/primer">
     Here’s how they work.
   </Clicky>
 </section>
