@@ -1,6 +1,6 @@
-<!-- @component MacroClicky
+<!-- @component `Clicky`
 
-A button or link button, usually containing longer text.
+A button or link button.
 -->
 
 <script lang="ts">
@@ -8,13 +8,15 @@ A button or link button, usually containing longer text.
 import { base } from "$app/paths";
 
 interface Props {
+  kind: "micro" | "macro";
   text?: string;
   link?: string;
     intern?: string;
+  onclick?: (e: MouseEvent) => void;
   children?: any;
 }
 
-let { text, link, intern, children }: Props = $props();
+let { kind, text, link, intern, onclick, children }: Props = $props();
 
 </script>
 
@@ -23,17 +25,17 @@ let { text, link, intern, children }: Props = $props();
   {#if children}
     {@render children()}
   {:else}
-    {text}
+    {@html text}
   {/if}
 {/snippet}
 
 
 {#if link || intern}
-  <a class="clicky" href={link || `${base}/${intern}`}>
+  <a class="clicky-{kind}" href={link || `${base}/${intern}`}>
     {@render content()}
   </a>
 {:else}
-  <button class="clicky">
+  <button class="clicky-{kind}" {onclick}>
     {@render content()}
   </button>
 {/if}
@@ -41,7 +43,7 @@ let { text, link, intern, children }: Props = $props();
 
 <style lang="scss">
 
-.clicky {
+.clicky-macro {
   padding: 0.5em 1em;
   @include font-ui;
   color: $col-prot;
@@ -51,6 +53,28 @@ let { text, link, intern, children }: Props = $props();
   border: 2px solid $col-prot;
   transition: all 0.1s ease-out;
 
+  &:hover, &:focus-visible {
+    cursor: pointer;
+    color: white;
+    background: $col-prot;
+  }
+
+  &:active {
+    filter: brightness(90%);
+  }
+}
+
+.clicky-micro {
+  padding: 0 0.25em 0.05em;
+  @include font-ui;
+  font-size: 200%;
+  color: oklch(0.7 0 0);
+  line-height: 100%;
+  text-decoration: none;
+  background: none;
+  border: none;
+  transition: all 0.1s ease-out;
+  
   &:hover, &:focus-visible {
     cursor: pointer;
     color: white;
