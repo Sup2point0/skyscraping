@@ -4,7 +4,7 @@
 | capt = What’s all this nonsense?
 | index = walk
 | date = 2026 April 18
-| update = 2026 April 18
+| update = 2026 June 16
 -->
 
 You’d like to explore all of the content on *Skyscraping*. Why does everything read so cryptically?
@@ -13,7 +13,7 @@ Well, talking about puzzles by text is exceptionally difficult, so I’ve standa
 
 The [Glossary](../glossary.md) exists as a quick reference with short definitions for anything you come across in *Skyscraping* that could remotely be considered a technical term.
 
-This page is complementry to that, as an structured, ‘let-me-show-you’ walkthrough for introducing the terminology in an intuitive and digestable order. If you’re annoyed by how much terminology there is, hopefully this page helps you understand how it arose out of very natural necessity!
+This page is complementary to that, as a structured, ‘let-me-show-you’ walkthrough for introducing the terminology in an intuitive and digestable progression. If you’re annoyed by how much terminology there is, hopefully this page helps you understand how it arose out of very natural necessity!
 
 
 ## The Skyscrapers Puzzle
