@@ -57,8 +57,6 @@ That’s all there is to it!
 
 The easiest and quickest way to learn how to solve a Skyscrapers is just to see it in action. So let’s see how we’d solve a 4x4 puzzle.
 
-> The original puzzle is available at [brainbashers.com](https://www.brainbashers.com/p766664).
-
 <div class="puzzle">
 
 |||||||
