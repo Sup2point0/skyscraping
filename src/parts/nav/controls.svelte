@@ -10,6 +10,7 @@ import Clicky    from "#parts/clicky.svelte";
 
 import { fade, fly } from "svelte/transition";
 import { cubicIn, expoOut } from "svelte/easing";
+import { page } from "$app/state";
 
 
 let show_prefs = $state(false);
@@ -18,12 +19,14 @@ let show_prefs = $state(false);
 
 
 <div class="controls">
-  <Clicky kind="micro" intern="search">
-    <!-- NOTE: inlined so `currentColor` works -->
-    <svg viewBox="0 0 2598 2598" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
-      <g><path d="M236.5 1162C236.5 661.354 642.354 255.5 1143 255.5 1643.65 255.5 2049.5 661.354 2049.5 1162 2049.5 1662.65 1643.65 2068.5 1143 2068.5 642.354 2068.5 236.5 1662.65 236.5 1162Z" stroke="currentColor" stroke-width="366.667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/><path d="M1784.5 1803.5 2362.39 2343.65" stroke="currentColor" stroke-width="366.667" stroke-linecap="round" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/></g>
-    </svg>
-  </Clicky>
+  {#if page.url.pathname != "/search"}
+    <Clicky kind="micro" intern="search">
+      <!-- NOTE: inlined so `currentColor` works -->
+      <svg viewBox="0 0 2598 2598" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+        <g><path d="M236.5 1162C236.5 661.354 642.354 255.5 1143 255.5 1643.65 255.5 2049.5 661.354 2049.5 1162 2049.5 1662.65 1643.65 2068.5 1143 2068.5 642.354 2068.5 236.5 1662.65 236.5 1162Z" stroke="currentColor" stroke-width="366.667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/><path d="M1784.5 1803.5 2362.39 2343.65" stroke="currentColor" stroke-width="366.667" stroke-linecap="round" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/></g>
+      </svg>
+    </Clicky>
+  {/if}
 
   <Clicky kind="micro" onclick={() => { show_prefs = !show_prefs; }}>
     <div style:transform="translateY(0.24em)">*</div>
