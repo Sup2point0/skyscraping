@@ -4,7 +4,7 @@
 | capt = Look Past The Numbers
 | index = tech
 | date = 2026 February 21
-| update = 2026 March 15
+| update = 2026 June 20
 -->
 
 
@@ -23,9 +23,9 @@ Take a look at the following 2 [half-lanes](../glossary.md#half-lane):
 
 </div>
 
-In $\text{3 | \_ \_ 5 \_ \_ 6 |}$, we only have $\{1234\}$ left to work with. None of these are taller than $5$ or $6$, so we know those 2 will be [peaks](../glossary.md#peak).
+In $\text{3 | \_ \_ 5 \_ \_ 6 |}$, we only have $\{1234\}$ left to work with. None of these are taller than $5$ or $6$, so we know that $5$ and $6$ will be [peaks](../glossary.md#peak).
 
-This means before the $5$, there must be 1 more peak (so that we have 3 in total). The only way for that to happen, is for the skyscraper in the [head cell](../glossary.md#head-cell) to obscure that in the 2nd cell:
+This means before the $5$, there must be one more peak (so that we have three in total). The only way for that to happen, is for the skyscraper in the [head cell](../glossary.md#head-cell) to obscure the skyscraper after it:
 
 <div class="puzzle">
 
@@ -36,9 +36,11 @@ This means before the $5$, there must be 1 more peak (so that we have 3 in total
 |  2  |     |     |  6  |     |     |     |     |
 |     |     |     |     |     |     |     |     |
 
+> Here, we could have $(21)$, $(31)$, $(43)$, etc. – just not $(23)$.
+
 </div>
 
-Now look at $\text{2 | \_ \_ 6 \_ \_ \_ |}$. We know there’s 1 more peak before the [lane peak](../glossary.md#lane-peak) $6$. Again, the only way for this to happen is if the head cell obscures the 2nd cell:
+Now look at $\text{2 | \_ \_ 6 \_ \_ \_ |}$. We know there’s one more peak before the $6$. Again, the only way for this to happen is if the head cell obscures the 2nd cell:
 
 <div class="puzzle">
 
@@ -66,7 +68,7 @@ The skyscraper in the 1st cell obscures that in the 2nd cell. So we’ve got a �
 
 </div>
 
-Aha! Now you can very apparently tell, fundamentally these are *the same problem*. The numbers may be a little different, but the underlying constraint is the same in both lanes.
+Aha! Now you can very visually see, fundamentally these are *the same problem*. The numbers may be a little different, but the underlying constraint is the same in both lanes.
 
 Why exactly is that? Well, we’ve guaranteed 2/3 of the peaks the $3$-clue half-lane needs, so we need exactly 1 more peak. And we’ve guaranteed 1/2 of the skyscrapers the $2$-clue half-lane needs, so we... also need exactly 1 more peak.
 
@@ -158,7 +160,7 @@ Now we have a much simpler problem on our hands.
 
 The important part is, we can leverage all the deductions we already know that apply to $2$-clues. This isn’t a *literal* $2$-clue, but it’s *effectively* a $2$-clue.
 
-For instance, in this particular case we know $3$ must go in the head cell (via [Blockade](../cases/blockade.md)):
+For instance, in this particular case we know $3$ must go in the head cell ([Case: Blockade](../cases/blockade.md)):
 
 <div class="puzzle lane">
 
@@ -190,8 +192,6 @@ The numbers are just symbols for an underlying logical structure. Looking back a
 
 Regardless of what the concrete numbers may be, the abstract structure remains the same. It’s that structure which we work with, reason about, and perform logical deductions on.
 
-We might as well use emojis for our skyscrapers! – though that would make puzzle-solving pretty painful.
-
 In fact, who said our skyscrapers even needed to have consecutive heights? We could have a *6x6* Skyscrapers with the digits $\{013679\}$. It’s irrelevant, really, the only necessity is that they’re unique so that the rules of Sudoku can be applied.
 
 <div class="puzzle">
@@ -213,9 +213,14 @@ In fact, who said our skyscrapers even needed to have consecutive heights? We co
 
 Having consecutive numbers just makes checking which numbers have and haven’t been used significantly faster.
 
+We might as well use emojis for our skyscrapers! – though that would make puzzle-solving pretty painful.
+
 Anyway, all this is to say – remind yourself to not get too lost in the numbers sometimes. They’re great for us as humans; we can use them as a crux to speed up a lot of logic and facilitate intuition. But at the end of the day, they’re only a syntax for describing the true underlying logical constraints.
 
 To truly *feel* a Skyscrapers puzzle, look past the numbers and immerse yourself in the abstract structure hidden within.
+
+> [!Tip]
+> If you feel you are ready to think about deductions more abstractly, you may wish to enable *Recursion in Case Overviews* in Preferences (top-right of any page), which will generalise cases to more situations.
 
 
 <br>
