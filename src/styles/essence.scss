@@ -98,6 +98,16 @@ article .content {
     border-left: 1.5px solid $col-line;
   }
 
+  .gfm-alert-indicator {
+    margin-bottom: -0.8em;
+    @include font-ui;
+    font-size: 90%;
+    color: $col-text-highlight;
+  }
+  .tip .gfm-alert-indicator {
+    color: $col-deut;
+  }
+
   img {
     margin: 1rem 0;
     max-width: 80%;

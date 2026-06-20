@@ -1,14 +1,8 @@
 import adapter from "@sveltejs/adapter-static";
 import { sveltePreprocess } from "svelte-preprocess";
-
 import { mdsvex } from "mdsvex";
-import rehypeSlug from "rehype-slug";
-import remarkFootnotes from "remark-footnotes";
-import remarkIndexFootnotes from "remark-numbered-footnote-labels";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex-svelte";
 
-import { correct_hast_tree, render_katex_blocks } from "./latex-config.js";
+import mdsvex_config from "./config/mdsvex-config.js";
 
 
 const config = {
@@ -38,20 +32,7 @@ const config = {
   },
 
   preprocess: [
-    mdsvex({
-      extensions: [".md", ".svx"],
-      remarkPlugins: [
-        remarkFootnotes,
-        remarkIndexFootnotes,
-        remarkMath,
-        render_katex_blocks
-      ],
-      rehypePlugins: [
-        rehypeSlug,
-        correct_hast_tree,
-        rehypeKatex,
-      ],
-    }),
+    mdsvex(mdsvex_config),
     sveltePreprocess({
       scss: {
         includePaths: ["src/styles"],
