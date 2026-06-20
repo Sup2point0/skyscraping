@@ -32,6 +32,10 @@
 
 .puzzle {
   margin: 1em 0;
+
+  .layout.mobile & {
+    margin: 0;
+  }
 }
 
 .puzzle table {

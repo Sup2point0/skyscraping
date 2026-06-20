@@ -88,7 +88,7 @@ main {
   padding: 2rem 3rem;
 
   .layout.mobile & {
-    padding: 2rem 8vw;
+    padding: 2rem 5vw;
   }
 }
 
