@@ -12,6 +12,7 @@ import Clicky    from "#parts/clicky.svelte";
 import { fade, slide } from "svelte/transition";
 import { expoIn, expoOut } from "svelte/easing";
 import { base } from "$app/paths";
+import { page } from "$app/state";
 
 
 let shown_overlay: "nav" | "prefs" | null = $state(null);
@@ -28,6 +29,15 @@ let shown_overlay: "nav" | "prefs" | null = $state(null);
     </div>
 
     <div class="right">
+      {#if page.url.pathname != "/search"}
+        <Clicky kind="micro" intern="search">
+          <!-- NOTE: inlined so `currentColor` works -->
+          <svg viewBox="0 0 2598 2598" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" overflow="hidden">
+            <g><path d="M236.5 1162C236.5 661.354 642.354 255.5 1143 255.5 1643.65 255.5 2049.5 661.354 2049.5 1162 2049.5 1662.65 1643.65 2068.5 1143 2068.5 642.354 2068.5 236.5 1662.65 236.5 1162Z" stroke="currentColor" stroke-width="366.667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/><path d="M1784.5 1803.5 2362.39 2343.65" stroke="currentColor" stroke-width="366.667" stroke-linecap="round" stroke-miterlimit="8" fill="none" fill-rule="evenodd"/></g>
+          </svg>
+        </Clicky>
+      {/if}
+
       <Clicky kind="micro" onclick={() => {
         shown_overlay = shown_overlay === "prefs" ? null : "prefs";
       }}>
@@ -79,6 +89,36 @@ nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
+
+  .left {
+    a {
+      display: block;
+      height: 2em;
+    }
+
+    img {
+      max-height: 2em;
+      aspect-ratio: 1;
+      transition: filter 0.1s ease-out;
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+
+    svg {
+      width: 1rem;
+      aspect-ratio: 1 / 1;
+      transform: translateY(-0.05rem);
+    }
+  }
 }
 
 
@@ -102,16 +142,6 @@ nav {
   background: light-dark(white, black);
   backdrop-filter: blur(36px);  // FIXME
   box-shadow: 0 2px 4px $col-line;
-}
-
-img {
-  max-height: 2em;
-  aspect-ratio: 1;
-  transition: filter 0.1s ease-out;
-
-  &:hover {
-    filter: brightness(90%);
-  }
 }
 
 </style>

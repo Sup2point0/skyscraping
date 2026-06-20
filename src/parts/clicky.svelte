@@ -44,7 +44,9 @@ let { kind, text, link, intern, onclick, children }: Props = $props();
 <style lang="scss">
 
 .clicky-macro {
+  display: block;
   padding: 0.5em 1em;
+  margin: 0;
   @include font-ui;
   color: $col-prot;
   font-size: 1rem;
