@@ -376,6 +376,10 @@ With fewer but impactful clues, these Skyscrapers are much more ‘directed’ a
 *Also called “sparse” for historical reasons.*
 
 
+## opposing
+<!-- TODO -->
+
+
 ## past-peak
 
 > *In a $2$-[clue](#clue) [lane](#lane), the $N-1$ skyscraper must either be in the [head cell](head-cell) or **past-peak**.*
