@@ -6,7 +6,7 @@ on:
     paths:
       - '**.yml'
   schedule:
-    - cron: '20 4 * * 0'
+    - cron: '20 4 2 * *'
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './package-lock.json'
 
-      - name: 'svelte / npm run install'
+      - name: 'svelte / npm install'
         run: npm install
 
       - name: 'svelte / npm run build'
