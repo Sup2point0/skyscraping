@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = glossary
 | capt = (Unofficial) skyscraping jargon
-| update = 2026 March 18
+| update = 2026 September 8
 -->
 
 This page defines all of the technical quasi-jargon I use throughout *Skyscraping*.
@@ -152,7 +152,7 @@ In the grid above, the $[34]$ cells are couples, as are the $[12]$ cells.
 
 A logical inference based on the currently available information.
 
-For instance, in a lane $\text{5 | \_ \_ \_ \_ \_ \_}$ we can *deduce* the solution msut be $\text{5 | 1 2 3 4 5}$ using the rules of Skyscrapers.
+For instance, in a lane $\text{5 | \_ \_ \_ \_ \_ \_}$ we can *deduce* the solution must be $\text{5 | 1 2 3 4 5}$ using the rules of Skyscrapers.
 
 Solving a Skyscrapers puzzle is just repeatedly performing deductions! [Cases](cases/) covers very specific logical deductions; [Techniques](tech/) covers general techniques that aid performing deductions when solving Skyscrapers.
 
@@ -166,7 +166,7 @@ Another name for a [closed](closed) Skyscrapers.
 
 > *Since the [clue](#clue) is $4$ and the [lane peak](#lane-peak) is in the 4th [cell](#cell), we must have a **dense sequence** in this [half-lane](#half-lane).*
 
-A [sequence](#sequence) where every cell is adjacent, or more intuitively, a [half-lane](#half-lane) where every cell is [visible](#visible) and so is part of the sequence.
+A [sequence](#sequence) where every cell is adjacent, or more intuitively, a [half-lane](#half-lane) where every cell is [visible](#visible) (and so is part of the sequence).
 
 For instance, this half-lane has a dense sequence structure, since all 4 cells are visible without gaps:
 
