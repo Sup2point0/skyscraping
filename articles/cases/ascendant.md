@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/ascendant
 | capt = The clue of $2$
-| index = cases
+| tags = cases
 | date = 2026 May 18
 | update = 2026 June 13
 -->

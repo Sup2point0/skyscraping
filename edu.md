@@ -4,7 +4,7 @@
 | title = decoded: Skyscraping
 | capt = Learnings, challenges and discoveries from writing <em>Skyscraping</em>
 | head = decoded: <em>Skyscraping</em>
-| index = info
+| tags = info
 | update = 2026 April 7
 -->
 

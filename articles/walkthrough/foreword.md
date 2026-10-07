@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = walk/foreword
 | capt = Wait, Skyscrapers?
-| index = walk
+| tags = walk
 | update = 2026 June 19
 -->
 

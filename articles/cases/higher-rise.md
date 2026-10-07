@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/higher-rise
 | capt = $N$ pinned between $3$-clues
-| index = cases
+| tags = cases
 | date = 2026 April 7
 | update = 2026 April 28
 -->

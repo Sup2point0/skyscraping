@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/outflanked
 | capt = The effective tail cell
-| index = cases
+| tags = cases
 | date = 2026 April 7
 | update = 2026 June 13
 -->

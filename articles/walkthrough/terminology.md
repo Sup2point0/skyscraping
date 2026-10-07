@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = walk/terminology
 | capt = What’s all this nonsense?
-| index = walk
+| tags = walk
 | date = 2026 April 18
 | update = 2026 June 16
 -->

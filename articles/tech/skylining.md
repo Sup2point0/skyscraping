@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = tech/skylining
 | capt = Peaking the Grid
-| index = tech
+| tags = tech
 | date = 2026 February 25
 | update = 2026 March 15
 -->

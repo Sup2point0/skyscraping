@@ -1,7 +1,7 @@
 # Licence
 <!-- #SQUARK live!
 | dest = info/licence
-| index = info
+| tags = info
 | update = 2026 February 25
 -->
 

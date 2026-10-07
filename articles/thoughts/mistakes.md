@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = thoughts/mistakes
 | capt = Making mistakes when solving Skyscrapers
-| index = thoughts
+| tags = thoughts
 | update = 2025 May 26
 -->
 

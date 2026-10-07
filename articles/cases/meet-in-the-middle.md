@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/meet-in-the-middle
 | capt = $C_1 + C_2 = N+1$
-| index = cases
+| tags = cases
 | update = 2026 April 28
 -->
 

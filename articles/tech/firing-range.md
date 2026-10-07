@@ -1,7 +1,7 @@
 # Technique: Firing Range
 <!-- #SQUARK live!
 | dest = tech/firing-range
-| index = tech
+| tags = tech
 | date = 2026 March 19
 | update = 2026 March 19
 -->

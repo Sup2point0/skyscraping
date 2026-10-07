@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = info/synopsis
 | capt = Internals of Skyscraping
-| index = info
+| tags = info
 | update = 2026 April 7
 -->
 

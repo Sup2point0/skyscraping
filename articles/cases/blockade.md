@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/blockade
 | capt = $N$ opposite $2$-clue
-| index = cases
+| tags = cases
 | update = 2026 June 13
 -->
 

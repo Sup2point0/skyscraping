@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/lighthouse
 | capt = The $N$ clue
-| index = cases
+| tags = cases
 | update = 2025 July 2
 -->
 

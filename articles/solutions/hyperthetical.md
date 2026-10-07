@@ -1,7 +1,7 @@
 # Solution: Hyperthetical
 <!-- #SQUARK live!
 | dest = solutions/hyperthetical
-| index = solutions
+| tags = solutions
 | date = 2026 March 17
 | update = 2026 March 18
 -->

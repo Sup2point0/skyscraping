@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = info/ai
 | capt = Usage of Generative AI in <em>Skyscraping</em>
-| index = info
+| tags = info
 | update = 2026 April 28
 -->
 

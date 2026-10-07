@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/slide
 | capt = Dense sequences
-| index = cases
+| tags = cases
 | date = 2026 April 18
 -->
 

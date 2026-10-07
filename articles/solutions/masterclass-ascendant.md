@@ -1,7 +1,7 @@
 # Solution: A Masterclass in Ascendant
 <!-- #SQUARK live!
 | dest = solutions/masterclass-ascendant
-| index = solutions
+| tags = solutions
 | date = 2026 June 22
 | update = 2026 June 22
 -->

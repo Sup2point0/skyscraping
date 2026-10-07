@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/stairs
 | capt = Clue of $N$
-| index = cases
+| tags = cases
 | update = 2026 April 18
 -->
 

@@ -1,7 +1,7 @@
 # Solution: The Power of Sudoku
 <!-- #SQUARK live!
 | dest = solutions/power-of-sudoku
-| index = solutions
+| tags = solutions
 | date = 2026 March 15
 | update = 2026 March 15
 -->

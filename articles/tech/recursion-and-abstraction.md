@@ -2,7 +2,7 @@
 <!-- #SQUARK live! dev!
 | dest = tech/recursion-and-abstraction
 | capt = Look Past The Numbers
-| index = tech
+| tags = tech
 | date = 2026 February 21
 | update = 2026 June 20
 -->

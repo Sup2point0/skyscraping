@@ -1,7 +1,7 @@
 # Guesswork, I’m Guessing?
 <!-- #SQUARK live!
 | dest = tech/guesswork
-| index = tech
+| tags = tech
 | update = 2025 May 21
 -->
 

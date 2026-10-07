@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = walk/game-plan
 | capt = Where do we start?
-| index = walk
+| tags = walk
 | update = 2026 April 29
 -->
 

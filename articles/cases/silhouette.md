@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/silhouette
 | capt = Clue of $1$
-| index = cases
+| tags = cases
 | update = 2026 June 13
 -->
 

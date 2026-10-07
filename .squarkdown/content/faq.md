@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = info/faq
 | capt = Fervently Anticipated Questions
-| index = info
+| tags = info
 | update = 2026 February 25
 -->
 

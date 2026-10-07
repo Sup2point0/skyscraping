@@ -1,7 +1,7 @@
 # Solution: A Curious Crossways
 <!-- #SQUARK live!
 | dest = solutions/curious-crossways
-| index = solutions
+| tags = solutions
 | update = 2026 March 15
 -->
 

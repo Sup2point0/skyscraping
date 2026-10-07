@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = cases/middle-ground
 | capt = 2nd cell in a $3$-clue lane
-| index = cases
+| tags = cases
 | update = 2026 April 29
 -->
 

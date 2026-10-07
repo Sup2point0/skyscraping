@@ -2,7 +2,7 @@
 <!-- #SQUARK live!
 | dest = thoughts/imagination-vs-guesswork
 | capt = What’s the difference?
-| index = thoughts
+| tags = thoughts
 -->
 
 Famously we [never guess](../techniques/guesswork) when solving Skyscrapers. But there’s a fine line between “guesswork” and “logical elimination” which I’m still unsure how to reconcile.

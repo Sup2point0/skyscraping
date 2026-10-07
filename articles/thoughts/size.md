@@ -1,7 +1,7 @@
 # The Discrete Difficulty of Size
 <!-- #SQUARK live!
 | dest = thoughts/size
-| index = thoughts
+| tags = thoughts
 | update = 2025 June 20
 -->
 
