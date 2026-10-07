@@ -1,18 +1,25 @@
-<script>
+<script lang="ts">
 
 import "#styles/essence.scss";
 import "#styles/puzzles.scss";
 
+import type { PageData } from "stranger-squarkdown";
+
 import { prefs } from "#scripts/stores";
 
+import Header   from "#parts/header.svelte"
+import Footer   from "#parts/footer.svelte";
 import NavPane  from "#parts/nav/pane.nav.svelte";
 import NavBar   from "#parts/nav/bar.nav.svelte";
 import Controls from "#parts/nav/controls.svelte";
 
 import { onMount } from "svelte";
+import { page as _page } from "$app/state";
 
 
 let { children } = $props();
+
+let page: PageData<"short"> = $derived(_page.data);
 
 
 let mobile = $state(false);
@@ -50,11 +57,15 @@ function check_mobile() {
       <Controls />
     {/if}
 
-    {#if children}
-      {@render children()}
-    {:else}
-      <p class="error"> Uh, something’s gone really wrong! </p>
-    {/if}
+    <article>
+      <Header title={page.head} capt={page.capt} />
+      
+      <div class="content">
+        {@render children()}
+      </div>
+
+      <Footer date={page.update_raw} path={page.path} />
+    </article>
   </main>
 </div>
 
