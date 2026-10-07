@@ -17,6 +17,7 @@ sources = [
 [out]
 folder = "src/routes/(docs)/(dyna)/"
 site-data-path = "src/site-data.json"
+shorter-fields = true
 
 [fonts]
 queries = [
