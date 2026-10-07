@@ -8,7 +8,7 @@ import Footer from "#parts/footer.svelte";
 import { base } from "$app/paths";
 
 
-const paths: string[] = Site.index.cases.pages;
+const paths: string[] = Site.tags.cases;
 
 </script>
 
