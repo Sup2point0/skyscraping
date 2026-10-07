@@ -3,8 +3,8 @@
 | dest = cases/higher-rise
 | capt = $N$ pinned between $3$-clues
 | index = cases
-| date = 7 April 2026
-| update = 28 April 2026
+| date = 2026 April 7
+| update = 2026 April 28
 -->
 
 <div class="case">
