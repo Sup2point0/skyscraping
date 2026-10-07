@@ -1,15 +1,14 @@
 # squarkdown
-~content.svx
 site-data.json
 
-(dyna)/
+**/(dyna)/**/+page.svx
+**/(dyna)/**/+page.ts
 
 # output
-build/
+/build/
 
 # internal
-node_modules/
-.svelte-kit/
+/node_modules/
+/.svelte-kit/
 
-**.env**
 vite.config.*.timestamp-*

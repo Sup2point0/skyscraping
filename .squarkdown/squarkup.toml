@@ -1,0 +1,25 @@
+#:schema ../../stranger-quarkdown/squarkdown/src/config/schema.json
+
+[errors]
+strict = true
+on-error = "warn"
+file-already-exists = "overwrite"
+broken-link = "error"
+
+[paths]
+site = "./"
+sources = [
+	"/",
+	"/articles/",
+	"/.squarkdown/",
+]
+
+[out]
+folder = "src/routes/(docs)/(dyna)/"
+site-data-path = "src/site-data.json"
+
+[fonts]
+queries = [
+	"Sora:wght@100..800",
+	"Lora:ital,wght@0,400..700;1,400..700",
+]
