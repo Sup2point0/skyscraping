@@ -320,7 +320,7 @@ Finding the candidates is pretty chill, since every available skyscraper is shor
 
 </div>
 
-[Backtracking](..glossary.md#backtracking) on our hypothetical deduction, we arrive at these candidates for the [half-lane](../glossary.md#half-lane):
+[Backtracking](../glossary.md#backtrack) on our hypothetical deduction, we arrive at these candidates for the [half-lane](../glossary.md#half-lane):
 
 <div class="puzzle">
 

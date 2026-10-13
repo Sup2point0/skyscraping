@@ -134,4 +134,4 @@ If it’s past-peak, well, then it makes no difference to the [half-lane](../glo
 
 - [Case: Blockade](blockade.md)
 - [Case: High-Rise](high-rise.md)
-- [Case: Middle Ground](.middle-ground.md.md)
+- [Case: Middle Ground](middle-ground.md)

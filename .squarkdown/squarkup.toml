@@ -4,7 +4,7 @@
 strict = true
 on-error = "warn"
 file-already-exists = "overwrite"
-broken-link = "error"
+link-inactive = "error"
 
 [paths]
 site = "./"

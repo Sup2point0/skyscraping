@@ -9,7 +9,7 @@ Here are some Skyscrapers which were really satisfying to solve. I’ll (very sl
 
 ## *5x5*
 
-### [A Curious Crossways](solutions/curious-crossways.md)
+### [A Curious Crossways](curious-crossways.md)
 
 <div class="puzzle">
 
@@ -106,7 +106,7 @@ Cool spot.
 
 ## *6x6*
 
-### [The Power of Sudoku](solutions/power-of-sudoku.md)
+### [The Power of Sudoku](power-of-sudoku.md)
 
 <div class="puzzle">
 
