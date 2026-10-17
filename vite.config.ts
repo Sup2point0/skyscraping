@@ -9,4 +9,9 @@ if (process.argv.includes("--open")) {
 
 export default defineConfig({
   plugins: [sveltekit()],
+  server: {
+    fs: {
+      allow: ["static/"],
+    },
+  },
 });
