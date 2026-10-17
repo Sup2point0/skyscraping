@@ -4,41 +4,34 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - '**.yml'
-  schedule:
-    - cron: '20 4 2 * *'
+      - '.github/workflows/deploy.yaml'
+      - 'package-lock.json'
+      - 'src/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
         
     steps:
-      - name: 'git / checkout'
+      - name: 'Checkout'
         uses: actions/checkout@v7
-        with:
-          submodules: recursive
 
-      - name: 'ruby / setup'
-        uses: ruby/setup-ruby@v1
-        with:
-          working-directory: './stranger-quarkdown/'
-          bundler-cache: true
-
-      - name: 'node / setup'
+      - name: 'Setup Node'
         uses: actions/setup-node@v4
         with:
           node-version: latest
           cache: 'npm'
           cache-dependency-path: './package-lock.json'
 
-      - name: 'svelte / npm install'
-        run: npm install
+      - name: '› npm ci'
+        run: |
+          npm ci
 
-      - name: 'svelte / npm run build'
+      - name: '› npm build'
         run: |
           npm run build
 
-      - name: 'github / upload artifacts'
+      - name: 'Upload Pages Artifact'
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'build/'
@@ -56,6 +49,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: 'github / deploy'
+      - name: 'Deploy Pages'
         id: deployment
         uses: actions/deploy-pages@v4
