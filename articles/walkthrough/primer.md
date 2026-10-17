@@ -47,11 +47,11 @@ Each number in the grid represents the height of a ‘skyscraper’ in that cell
 
 What the clues along the outside tell you are how many skyscrapers you can ‘see’ by looking along that row or column. Imagine yourself standing on the clue and looking down that lane – shorter skyscrapers would be obscured by taller ones in front of them.
 
-![[3, 1, 2, 4] hides the {1, 2} skyscrapers.](/primer/2-visible.png)
+![[3, 1, 2, 4] hides the {1, 2} skyscrapers.](../../static/primer/2-visible.png)
 
 So, if you have a clue of $4$ in a 4x4 puzzle, that means you can see all 4 skyscrapers in that lane.
 
-![[1, 2, 3, 4] allows all 4 skyscrapers to be seen.](/primer/all-4.png)
+![[1, 2, 3, 4] allows all 4 skyscrapers to be seen.](../../static/primer/all-4.png)
 
 That’s all there is to it!
 

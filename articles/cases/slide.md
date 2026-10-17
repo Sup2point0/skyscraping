@@ -526,4 +526,4 @@ This is why it’s important to remember these pencilmarks aren’t just plain p
 
 ### Narrowing the Band
 
-![Viewing the sequence as a chain of bands]({base}/cases/slide-bands.png)
+![Viewing the sequence as a chain of bands](../../static/cases/slide-bands.png)
