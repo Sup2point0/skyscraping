@@ -6,6 +6,10 @@ on-error = "warn"
 file-already-exists = "overwrite"
 link-inactive = "error"
 
+[project]
+name = "Skyscraping"
+github = "Sup2point0/Skyscraping"
+
 [paths]
 site = "./"
 sources = [
