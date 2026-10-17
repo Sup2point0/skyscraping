@@ -19,7 +19,7 @@ In a [half-lane](../glossary.md#half-lane) with clue $c$, if the [lane peak](../
 <div class="step deduction">
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  c  | *1* | *2* | ... |*c-1*|  N  |     |     |
 
@@ -27,7 +27,7 @@ In a [half-lane](../glossary.md#half-lane) with clue $c$, if the [lane peak](../
   
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  c  |  p  |  q  | ... |  t  |  N  |     |     |
 
@@ -423,7 +423,7 @@ This doesn’t just apply for the head cell, though. At any point, if a cell is 
 <div class="deduction">
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*| *23*| *34*| *45*|  6  |     |     |
 
@@ -431,7 +431,7 @@ This doesn’t just apply for the head cell, though. At any point, if a cell is 
 
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*|**3**| *34*| *45*|  6  |     |     |
 
@@ -441,7 +441,7 @@ This doesn’t just apply for the head cell, though. At any point, if a cell is 
 
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*|  3  |**4**|**5**|  6  |     |     |
 
@@ -455,7 +455,7 @@ On the flip side, if a cell is solved to be its shortest candidate, then all pre
 <div class="deduction">
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*| *23*| *34*| *45*|  6  |     |     |
 
@@ -463,7 +463,7 @@ On the flip side, if a cell is solved to be its shortest candidate, then all pre
 
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*| *23*|**3**| *45*|  6  |     |     |
 
@@ -473,7 +473,7 @@ On the flip side, if a cell is solved to be its shortest candidate, then all pre
 
   <div class="puzzle lane">
 
-||||||||
+|||||||||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  |**1**|**2**|  3  | *45*|  6  |     |     |
 
