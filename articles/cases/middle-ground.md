@@ -19,7 +19,7 @@ In a $3$-clue [lane](../glossary.md#lane) with the [lane peak](../glossary.md#la
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |**C**| ... | ... |  N  |     |
 
 > Where $C = \{1, 2, ..., N-3, N-1\}$.
@@ -37,7 +37,7 @@ This case can [effectively](../glossary.md#effectively) apply if the $N-1$ skysc
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -53,7 +53,7 @@ The $N-2$ skyscraper is the $3$-skyscraper, so the 2nd cell can contain $[124]$ 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -68,7 +68,7 @@ The $N-2$ skyscraper is the $3$-skyscraper, so the 2nd cell can contain $[124]$ 
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |  6  |     |     |     |
@@ -85,7 +85,7 @@ The $N-2$ skyscraper is the $4$-skyscraper. In the left column, the 2nd cell can
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |***1235***|     |  6  |     |     |     |
@@ -101,7 +101,7 @@ The $N-2$ skyscraper is the $4$-skyscraper. In the left column, the 2nd cell can
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |     |
@@ -119,7 +119,7 @@ The $N-2$ skyscraper is the $5$-skyscraper, so the 2nd cell can contain $[12346]
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |     |
@@ -137,7 +137,7 @@ Then, we can note that $1$ has already been used in the column, and by [Ascendan
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |     |
@@ -164,7 +164,7 @@ Consider the following lane:
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |     |     |     |  6  |     |
 
 </div>
@@ -176,7 +176,7 @@ It could very well go in the [head cell](../glossary.md#head-cell), leaving the 
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |**4**| *5* | *5* | *5* | *5* |  6  |     |
 
 </div>
@@ -186,7 +186,7 @@ And you might think the $4$ could go in any of the other cells too. Suppose we p
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |     |**4**|     |  6  |     |
 
 </div>
@@ -196,7 +196,7 @@ Now, by the rules of Skyscrapers we know the $5$ can’t go between the $4$ and 
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |     |  4  |~~5~~|  6  |     |
 
 </div>
@@ -208,7 +208,7 @@ In this situation, we know the $5$ must come *before* the $4$:
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     | *5* | *5* |  4  |     |  6  |     |
 
 </div>
@@ -220,7 +220,7 @@ Now... notice we couldn’t place the $5$ in the head cell, because this would a
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |~~5~~|     |     |  4  |     |  6  |     |
 
 </div>
@@ -233,7 +233,7 @@ We said that (1) $5$ must come before $4$, and (2) $5$ can’t go in the head ce
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |**4**|     |     |     |  6  |     |
 
 </div>
@@ -245,7 +245,7 @@ We’ve reached a contradiction, so we can conclude $4$ cannot go in the 2nd cel
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |***1235***|    |     |     |  6  |     |
 
 </div>
@@ -263,7 +263,7 @@ This deduction works for any *NxN* puzzle – but only in a $3$-clue lane, becau
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |     |     |  .  |
@@ -279,7 +279,7 @@ This deduction works for any *NxN* puzzle – but only in a $3$-clue lane, becau
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |     |     |  .  |
@@ -297,7 +297,7 @@ The $1$-skyscraper in front of the $2$-clue means that the next skyscraper must 
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |     |     |  .  |
@@ -314,7 +314,7 @@ Now we have the lane peak in the tail cell of the $3$-clue lane, so the case app
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |     |     |     |  .  |
 |  .  |     |     |     |     |     |     |  .  |
@@ -330,7 +330,7 @@ Now we have the lane peak in the tail cell of the $3$-clue lane, so the case app
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |  6  |     |     |  .  |
 |  .  |     |     |     | *12*|     |     |  .  |
@@ -346,7 +346,7 @@ Now we have the lane peak in the tail cell of the $3$-clue lane, so the case app
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |  6  |     |     |  .  |
 |  .  |     |     |     | *12*|     |     |  .  |
@@ -364,7 +364,7 @@ Applying the case, we have all candidates except $4$.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |  6  |     |     |  .  |
 |  .  |     |     |     | *12*|     |     |  .  |
@@ -381,7 +381,7 @@ However, since the two $[12]$ cells form a [couple](../tech/couples.md), between
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |  6  |     |     |  .  |
 |  .  |     |     |     | *12*|     |     |  .  |
@@ -398,7 +398,7 @@ Then, by [Ascendant](ascendant.md) we know the $5$ must be [past-peak](../glossa
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |  6  |     |     |  .  |
 |  .  |     |     |     | *12*|     |     |  .  |
@@ -415,7 +415,7 @@ Now, to have 3 visible skyscrapers, we know the sequence must be $(456)$.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  .  |  .  |     |
 |  .  |     |     |     |  6  |     |     |  .  |
 |  .  |     |     |     | *12*|     |     |  .  |
@@ -431,7 +431,7 @@ Now, to have 3 visible skyscrapers, we know the sequence must be $(456)$.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
 |  .  |     |     |     |     |  2  |     |  .  |
 |  .  |  3  |     |     |     |     |     |  .  |
@@ -447,7 +447,7 @@ Now, to have 3 visible skyscrapers, we know the sequence must be $(456)$.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
 |  .  |     |     |     |     |  2  |     |  .  |
 |  .  |  3  |     |     |     |***15***|     |  .  |
@@ -465,7 +465,7 @@ In the lowermost row, the $3$-clue creates a [dense sequence](../glossary.md#den
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
 |  .  |     |     |     |     |  2  |     |  .  |
 |  .  |  3  |     |     |     |     |     |  .  |
@@ -482,7 +482,7 @@ Notice this means the $5$ cannot go in the tail cell of the $3$-clue lane, so th
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
 |  .  |     |     |     |     |  2  |     |  .  |
 |  .  |  3  |     |     |     |***1235***|     |  .  |
@@ -499,7 +499,7 @@ The $2$ and $3$ have already been used in the column and row, respectively, so w
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |  .  |  .  |  .  |  .  |  3  |  .  |     |
 |  .  |     |     |     |     |  2  |     |  .  |
 |  .  |  3  |     |     |     |***15***|     |  .  |

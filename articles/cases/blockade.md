@@ -20,7 +20,7 @@ In a $2$-[clue](../glossary.md#clue) [lane](../glossary.md#lane) with the $N$-sk
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     | ... |     |  N  |     |
 
   </div>
@@ -28,7 +28,7 @@ In a $2$-[clue](../glossary.md#clue) [lane](../glossary.md#lane) with the $N$-sk
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |***N-1***|     | ... |     |  N  |     |
 
   </div>
@@ -43,7 +43,7 @@ This case recurses by incrementing the clue, and increasing the number of [high]
   <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  2  |     |     |     |     |     |  6  |     |
 |  3  |     |     |     |     |  5  |  6  |     |
@@ -58,7 +58,7 @@ This case recurses by incrementing the clue, and increasing the number of [high]
   <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  2  |**5**|     |     |     |     |  6  |     |
 |  3  |**4**|     |     |     |  5  |  6  |     |
@@ -85,7 +85,7 @@ For more details see [Recursion & Abstraction](../tech/recursion-and-abstraction
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |     |     |     |     |  5  |     |
@@ -99,7 +99,7 @@ For more details see [Recursion & Abstraction](../tech/recursion-and-abstraction
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |**4**|     |     |     |  5  |     |
@@ -122,7 +122,7 @@ Let's take this lane in a *5x5* puzzle.
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |     |  5  |     |
 
 </div>
@@ -132,7 +132,7 @@ The $2$-clue means we need 2 skyscrapers visible. 1 of those must be the lane pe
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |     |**5**|     |
 
 > The $5$ is always visible since the other skyscrapers $\{1234\}$ are all shorter than it.
@@ -144,7 +144,7 @@ Then, let's consider where the other skyscrapers can go. We'll start with the $4
 <div class="hypothetical puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |**4**|     |  5  |     |
 
 </div>
@@ -156,7 +156,7 @@ Indeed, we could now place the $3$ in the head cell, which would mean we now see
 <div class="hypothetical puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |~~2~~|**3**|     |  4  |     |  5  |     |
 
 > Oh no, contradiction! In the lane, $(345)$ will be visible, so the $2$-clue is not satisfied.
@@ -168,7 +168,7 @@ The same argument applies for all the other cells – except the head cell!
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |**4**|     |     |     |  5  |     |
 
 </div>
@@ -183,7 +183,7 @@ If you're just starting out, be careful! This deduction *only applies* if the la
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |  5  |     |     |
 
 </div>
@@ -193,7 +193,7 @@ When the lane peak is not in the tail cell, the $N-1$ could very well be hiding 
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |  5  |**4**|     |
 
 > We can't be certain the $4$ is in the head cell, because it could be hiding here behind the $5$.

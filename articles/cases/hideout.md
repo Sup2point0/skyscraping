@@ -15,7 +15,7 @@ If we have determined that the minimum number of guaranteed [peaks](../glossary.
   <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |  4  |     |     |  6  |     |     |
 
   </div>
@@ -23,7 +23,7 @@ If we have determined that the minimum number of guaranteed [peaks](../glossary.
   <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |  4  |***123***|***123***|  6  |     |     |
 
   </div>
@@ -31,7 +31,7 @@ If we have determined that the minimum number of guaranteed [peaks](../glossary.
   <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |  4  |*123*|*123*|  6  |**5**|     |
 
   </div>
@@ -44,7 +44,7 @@ During [peak descent](../tech/peak-descent.md) we find cells that are guaranteed
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |**&ensp;**|**4**|     |     |**6**|     |     |
 
 > These 3 cells are guaranteed to be visible.
@@ -56,7 +56,7 @@ This means we’re *already* guaranteed to satisfy the clue. Which means we can�
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |~~3~~|**&ensp;**|**4**|**5**|     |**6**|     |     |
 
 > If we had another peak ($5$) in between the $4$ and $6$, we’d have 4 cells guaranteed to be visible, [contradicting](../glossary.md#contradiction) the $3$-clue.
@@ -68,7 +68,7 @@ This means those intermediate cells must be obscured, i.e. shorter than $4$.
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |  4  |***123***|***123***|  6  |     |     |
 
 > $\{123\}$ are the available skyscrapers shorter than $4$.
@@ -80,7 +80,7 @@ In this situation, this also lets us [pinpoint](../tech/pinpoint.md) the $5$. It
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |  4  |*123*|*123*|  6  |**5**|     |
 
 </div>

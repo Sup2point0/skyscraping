@@ -15,7 +15,7 @@ Take a look at the following 2 [half-lanes](../glossary.md#half-lane):
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  3  |     |     |  5  |     |     |  6  |     |
 |  2  |     |     |  6  |     |     |     |     |
@@ -30,7 +30,7 @@ This means before the $5$, there must be one more peak (so that we have three in
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  3  |***234***|***123***|  5  |     |     |  6  |     |
 |  2  |     |     |  6  |     |     |     |     |
@@ -45,7 +45,7 @@ Now look at $\text{2 | \_ \_ 6 \_ \_ \_ |}$. We know there’s one more peak bef
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  3  |*234*|*123*|  5  |     |     |  6  |     |
 |  2  |***2345***|***1234***|  6  |     |     |     |     |
@@ -60,7 +60,7 @@ The skyscraper in the 1st cell obscures that in the 2nd cell. So we’ve got a �
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  3  |***high***|***low***|  5  |     |     |  6  |     |
 |  2  |***high***|***low***|  6  |     |     |     |     |
@@ -81,7 +81,7 @@ We can illustrate this even clearer with a higher clue:
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |     |     |     |     |     |  6  |     |
 
 </div>
@@ -93,7 +93,7 @@ Suppose we find another peak:
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |     |     |     |     |**5**|  6  |     |
 
 </div>
@@ -103,7 +103,7 @@ Now we have 2 skyscrapers guaranteed to be visible, so we need 2 more. Notice th
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |     |     |     |     |  5  |  6  |     |
 |**3**|     |     |     |     |  6  |     |     |
 
@@ -116,7 +116,7 @@ And as we find another peak, meaning we only need 1 more, it now ‘feels like�
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |     |     |     |**4**|  5  |  6  |     |
 |**2**|     |     |     |  6  |     |     |     |
 
@@ -132,7 +132,7 @@ The recursion happens because we *don’t care* what comes after the first curre
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |     |     |     |  4  |**5**|**6**|     |
 
 > The $5$ and $6$ are gonna be visible no matter where we go from here.
@@ -144,7 +144,7 @@ So, we can ‘mentally ignore’ those later skyscrapers, and treat the current 
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |**2**|     |     |     |  N  |  -  |  -  |     |
 
 > Of course, it’s not actually the $N$-skyscraper, but we can think of it as the lane peak.
@@ -165,7 +165,7 @@ For instance, in this particular case we know $3$ must go in the head cell ([Cas
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |**3**|     |     |  4  |  5  |  6  |     |
 
 </div>
@@ -184,7 +184,7 @@ The numbers are just symbols for an underlying logical structure. Looking back a
 <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |*high*|*low*|  98  |     |     | ... |  99 |     |
 |  2  |*high*|*low*|  99  |     |     | ... |     |     |
 
@@ -197,7 +197,7 @@ In fact, who said our skyscrapers even needed to have consecutive heights? We co
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |  2  |  2  |  3  |     |     |
 |     |  6  |  9  |  3  |  7  |  1  |  0  |     |
 |     |  1  |  3  |  0  |  6  |  7  |  9  |     |

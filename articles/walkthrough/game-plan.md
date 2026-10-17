@@ -22,7 +22,7 @@ Can’t talk loads about theory without showing how to apply it, so throughout t
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |     |     |     |     |     |
 |     |     |  2  |     |     |     |     |
@@ -48,7 +48,7 @@ There are two clues can be trivially solved immediately – the $1$-clue ([Silho
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |     |     |**5**|     |     |
 |     |     |  2  |     |**4**|     |     |
@@ -65,7 +65,7 @@ There are two clues can be trivially solved immediately – the $1$-clue ([Silho
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |     |     |  5  |     |     |
 |     |     |  2  |     |  4  |     |     |
@@ -87,7 +87,7 @@ Since this is a *5x5* puzzle, the lane peaks are $5$-skyscrapers. We've already 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |     |     |  5  |     |     |
 |     |     |  2  |     |  4  |**5**|     |
@@ -105,7 +105,7 @@ With 4/5 lane peaks found, this [pinpoints](../tech/pinpoint.md) the last one.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |     |     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |
@@ -121,7 +121,7 @@ Notice this means [Blockade](../cases/blockade.md) applies *again* in the 2nd co
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |**4**|     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |
@@ -151,7 +151,7 @@ In this row, we've already solved 3/5 cells, so the last two must contain $[12]$
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |
@@ -170,7 +170,7 @@ Here, we can eliminate $2$ as a candidate, because $2$ is already used in the co
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |
@@ -186,7 +186,7 @@ That leaves only $1$ as a candidate, so we can now solve the row.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |
@@ -202,7 +202,7 @@ And we can also solve this column, since we only have one unused skyscraper left
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |
@@ -218,7 +218,7 @@ Pencilmarking again:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |
@@ -234,7 +234,7 @@ We have a clash in the right column again, which allows us to solve the row.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |     |     |  4  |     |  5  |     |     |
 |     |     |  2  |     |  4  |  5  |     |

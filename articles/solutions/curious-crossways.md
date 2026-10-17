@@ -10,7 +10,7 @@ This was a *5x5* which I thought I could speedrun, but I ended up running into a
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  3  |     |     |     |     |     |  1  |
@@ -29,7 +29,7 @@ The start is straightforward, pretty speedrunnable.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  3  |     |     |     |     |**5**|**1**|
@@ -45,7 +45,7 @@ This pinpoints the $5$ skyscraper for the $4$ clue...
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  3  |     |     |     |     |  5  |  1  |
@@ -61,7 +61,7 @@ Which pinpoints that for the lowermost $3$ clue...
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  3  |     |     |     |     |  5  |  1  |
@@ -77,7 +77,7 @@ And that pinpoints the $5$ for the vertical $3$ clue, putting the final $5$ in t
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |**3**|     |     |     |     |
 |     |**5**|     |     |     |     |     |
 |  3  |     |     |     |     |  5  |  1  |
@@ -93,7 +93,7 @@ The only place for $4$ in the left column is in the last row, since $3$ and $4$ 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |     |     |     |     |     |
 |  3  |     |     |     |     |  5  |  1  |
@@ -109,7 +109,7 @@ This means the $3$ in the last row must go in front of the leftwards $2$ clue.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |     |     |     |     |     |
 |  3  |     |     |     |     |  5  |  1  |
@@ -125,7 +125,7 @@ From the upwards $2$ clue we can deduce it has to be $[2, 1]$, and this fills th
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |     |     |     |     |     |
 |  3  |     |     |     |     |  5  |  1  |
@@ -144,7 +144,7 @@ Now we start making marks, except... nothing really pops up?
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |        |    3   |        |        |         |     |
 |     |    5   |        |        |***34***|         |     |
 |  3  |        |        |        |***34***|    5    |  1  |
@@ -160,7 +160,7 @@ With nothing to really go off, I just marked up some more of the grid. The inter
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |         |     3   |     |     |     |     |
 |     |     5   |***123***|     | *34*|     |     |
 |  3  |***123***|***124***|     | *34*|  5  |  1  |
@@ -181,7 +181,7 @@ It turned out to be exactly that! Let’s think about the vertical $3$ clue. If 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |**1**|     | *34*|     |     |
 |  3  |*123*|**4**|     | *34*|  5  |  1  |
@@ -197,7 +197,7 @@ It turned out to be exactly that! Let’s think about the vertical $3$ clue. If 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |**2**|     | *34*|     |     |
 |  3  |*123*|**1**|     | *34*|  5  |  1  |
@@ -215,7 +215,7 @@ Hence there aren’t any valid configurations for the column if we put the $2$ i
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |    3   |     |     |     |     |
 |     |  5  |***13***|     | *34*|     |     |
 |  3  |*123*|  *124* |     | *34*|  5  |  1  |
@@ -231,7 +231,7 @@ Now do the same for the $2$ in the second cell. If we start the column with $1$,
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |    3   |     |     |     |     |
 |     |  5  |  **3** |     | *34*|     |     |
 |  3  |*123*|  **2** |     | *34*|  5  |  1  |
@@ -247,7 +247,7 @@ Like before, we can conclude the second cell can’t be a $2$.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |    3   |     |     |     |     |
 |     |  5  |  *13*  |     | *34*|     |     |
 |  3  |*123*|***14***|     | *34*|  5  |  1  |
@@ -263,7 +263,7 @@ Now there’s only one place for the $2$ in that column!
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |*13* |     | *34*|     |     |
 |  3  |*123*|*14* |     | *34*|  5  |  1  |
@@ -282,7 +282,7 @@ After that fiddly deduction it’s plain sailing, and we clear the rest with Sud
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |*13* |     | *34*|     |     |
 |  3  |***23***|*14* |     | *34*|  5  |  1  |
@@ -296,7 +296,7 @@ After that fiddly deduction it’s plain sailing, and we clear the rest with Sud
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |*13* |     | *34*|     |     |
 |  3  |*23* |*14* |     | *34*|  5  |  1  |
@@ -310,7 +310,7 @@ After that fiddly deduction it’s plain sailing, and we clear the rest with Sud
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |*13* |     | *34*|**1**|     |
 |  3  |*23* |*14* |     | *34*|  5  |  1  |
@@ -324,7 +324,7 @@ After that fiddly deduction it’s plain sailing, and we clear the rest with Sud
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |*13* |     | *34*|  1  |     |
 |  3  |**2**|*14* |     | *34*|  5  |  1  |
@@ -338,7 +338,7 @@ After that fiddly deduction it’s plain sailing, and we clear the rest with Sud
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |**3**|     | *34*|  1  |     |
 |  3  |  2  |**1**|     | *34*|  5  |  1  |
@@ -352,7 +352,7 @@ After that fiddly deduction it’s plain sailing, and we clear the rest with Sud
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |  5  |  3  |     |**4**|  1  |     |
 |  3  |  2  |  1  |     |**3**|  5  |  1  |
@@ -366,7 +366,7 @@ After that fiddly deduction it’s plain sailing, and we clear the rest with Sud
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  3  |     |     |     |     |
 |     |**5**|**3**|**2**|**4**|**1**|     |
 |  3  |**2**|**1**|**4**|**3**|**5**|  1  |

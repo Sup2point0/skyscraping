@@ -20,7 +20,7 @@ When a [lane](../glossary.md#lane) has $2$-[clues](../glossary.md#clue) on both 
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |     |     |  2  |
 
   </div>
@@ -28,7 +28,7 @@ When a [lane](../glossary.md#lane) has $2$-[clues](../glossary.md#clue) on both 
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |***N-1***|     |     |     |***N-1***|  2  |
 
   </div>
@@ -43,7 +43,7 @@ When a [lane](../glossary.md#lane) has $2$-[clues](../glossary.md#clue) on both 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |     |     |     |     |     |  2  |
@@ -60,7 +60,7 @@ The 2 possibilities are:
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |**4**|     |     |     |     |  2  |
@@ -74,7 +74,7 @@ The 2 possibilities are:
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |     |     |     |     |**4**|  2  |
@@ -90,7 +90,7 @@ The 2 possibilities are:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |  2  |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |     |     |     |     |     |  2  |
@@ -106,7 +106,7 @@ As in case 1, we note the $4$ must go in one of the head cells of the row:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |  2  |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |***4***|     |     |     |***4***|  2  |
@@ -122,7 +122,7 @@ However, notice in the left column, the $4$ cannot go in the 2nd cell, since the
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |~~2~~|     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |~~4~~|     |     |     | *4* |  2  |
@@ -140,7 +140,7 @@ That eliminates the $4$ from that cell, leaving it with just the other head cell
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |  2  |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  2  |     |     |     |     |**4**|  2  |
@@ -161,7 +161,7 @@ When we have two $2$-clues on either side, though, we get an interesting crossfi
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |  5  |     |     |  2  |
 
 </div>
@@ -171,7 +171,7 @@ Let’s start with the left half-lane. The $N-1$ skyscraper is $4$. It could go 
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |**3**|     |  5  |     |     |  2  |
 
 > Let’s take the head cell to not be $4$, but a $3$, for example.
@@ -183,7 +183,7 @@ Well, it must be past-peak.
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |  3  |     |  5  |***4***|***4***|  2  |
 
 </div>
@@ -195,7 +195,7 @@ From the perspective of the other half-lane, the $4$ is pre-peak, which means it
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |  3  |     |  5  |     |**4**|  2  |
 
 </div>

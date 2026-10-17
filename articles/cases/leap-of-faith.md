@@ -24,7 +24,7 @@ The closest the lane peak can be is in the 2nd cell:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -40,7 +40,7 @@ Here, the head cell could be anything, because any skyscraper would be shorter t
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -61,7 +61,7 @@ Moving the lane peak one more cell away:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -77,7 +77,7 @@ Now we have some structure. The head cell must obscure the 2nd cell:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -93,7 +93,7 @@ We need $\text{tall} > \text{short}$. That means $\text{tall}$ can’t be $1$, a
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -114,7 +114,7 @@ What happens when we push the lane peak further back? Now the void is really fee
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -132,7 +132,7 @@ Notice here, there’s still space behind the lane peak where $N-1$ could go:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -153,7 +153,7 @@ First, could we put a $1$-skyscraper there?
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -169,7 +169,7 @@ Certainly not, because any skyscraper that comes after the $1$ would be visible,
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -185,7 +185,7 @@ Now let’s try a $2$-skyscraper.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -203,7 +203,7 @@ We could start by placing a $1$ after it, which would be [obscured](../glossary.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -219,7 +219,7 @@ But what now? No matter what we place in the remaining [unsolved cell](../glossa
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -237,7 +237,7 @@ Does the same apply for $3$?
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -255,7 +255,7 @@ But we could place $1$ and $2$, leaving the $4$ in the tail cell:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -273,7 +273,7 @@ $4$ will of course always be valid, so combining all this, we arrive at our fina
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -293,7 +293,7 @@ We again need to consider the best case, because we can’t rule out solutions t
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -309,7 +309,7 @@ Finding the candidates is pretty chill, since every available skyscraper is shor
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -325,7 +325,7 @@ Finding the candidates is pretty chill, since every available skyscraper is shor
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -349,7 +349,7 @@ This happens when the lane peak is sufficiently far away. A *5x5* skyscraper is 
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
@@ -366,7 +366,7 @@ I’ll skip the details (it’ll become intuition eventually), but we get the sa
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
@@ -383,7 +383,7 @@ What happens if we move the lane peak further away again?
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
@@ -404,7 +404,7 @@ Indeed, it doesn’t continue forever – because the lane peak will hit the edg
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
@@ -421,7 +421,7 @@ So to illustrate them all in parallel, check out the different structures we obt
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  2  |*12345*|  6  |     |     |     |     |     |
 |  2  |*2345*|*1234*|  6  |     |     |     |     |
@@ -445,7 +445,7 @@ Illustrating abstractly, we have this structure:
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |*tall*|*short*| *...* |*short*|  N  |
 
 </div>
@@ -460,7 +460,7 @@ Well, we know $N-1$ is off-limits, because only $N$ (which is already used) coul
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |~~2~~|*&amp;lt; N-1*|  |~~*N-1*~~|     |  N  |     |
 
 > We end up with at least 3 visible skyscrapers here!
@@ -472,7 +472,7 @@ But $N-2$ is definitely fine, because we can place $N-1$ in the head cell to obs
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |***N-1***|     |***N-2***|     |  N  |     |
 
 > This could be a solution, so we can’t rule out $N-2$.
@@ -490,7 +490,7 @@ To put it more concretely, here’s what they’d be for various puzzle sizes:
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  2  |     | *12*|  4  |     |     |     |     |
 |  2  |     |*123*|*123*|  5  |     |     |     |
@@ -510,7 +510,7 @@ To illustrate this effectively we’ll bring out the *7x7* big guns:
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |  2  |     |*12345*|  7  |     |     |     |     |     |
 |  2  |     |*12345*|*12345*|  7  |     |     |     |     |
@@ -528,7 +528,7 @@ The first half-lane here is straightforward:
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |  2  |***23456***|*12345*|  7  |     |     |     |     |     |
 |  2  |     |*12345*|*12345*|  7  |     |     |     |     |
@@ -544,7 +544,7 @@ Next for the last half-lane, in the best case the hideout is some permutation of
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |  2  |*23456*|*12345*|  7  |     |     |     |     |     |
 |  2  |     |*12345*|*12345*|  7  |     |     |     |     |
@@ -560,7 +560,7 @@ Applying the same logic to the half-lane above, we need anything that could obsc
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |  2  |*23456*|*12345*|  7  |     |     |     |     |     |
 |  2  |     |*12345*|*12345*|  7  |     |     |     |     |
@@ -576,7 +576,7 @@ And for the last half-lane:
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |  2  |*23456*|*12345*|  7  |     |     |     |     |     |
 |  2  |***3456***|*12345*|*12345*|  7  |     |     |     |     |

@@ -13,7 +13,7 @@ The most important skyscrapers in an *NxN* Skyscrapers puzzle are the $N$-skyscr
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |  3  |  1  |**5**|  4  |  2  |     |
 |     |  2  |  3  |  4  |**5**|  1  |     |

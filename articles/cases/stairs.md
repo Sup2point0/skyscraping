@@ -20,7 +20,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $N
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  N  |     |     |     |     |     |  .  |
 
   </div>
@@ -28,7 +28,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $N
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  N  |**1**|**2**|**...**|**N-1**|**N**|  .  |
 
   </div>
@@ -43,7 +43,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $N
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -57,7 +57,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $N
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |**5**|     |     |     |     |
 |     |     |**4**|     |     |     |     |

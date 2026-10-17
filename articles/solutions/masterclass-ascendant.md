@@ -11,7 +11,7 @@ A perfect masterclass in the power of [Case: Ascendant](../cases/ascendant.md).
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -30,7 +30,7 @@ First, we have an obvious [lane peak]() as a result of [lasers](../tech/firing-r
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  |     |     |     |**5**|     |     |
 |     |     |     |     |     |     |     |
@@ -55,7 +55,7 @@ The first [lane]() we might want to look at is the top row, since we have the mo
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |**2**|**&ensp;**|**&ensp;**|**&ensp;**|**5**|**&ensp;**|     |
 |     |     |     |     |     |     |     |
@@ -73,7 +73,7 @@ A good question to consider here is, “Must the [head cell]() be the $4$-skyscr
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  |***4***|     |     |  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -91,7 +91,7 @@ Well, we could also put the $4$ after the peak, and everything would be fine, so
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  |     |     |     |  5  |***4***|     |
 |     |     |     |     |     |     |     |
@@ -107,7 +107,7 @@ For now, we'll pencil in $[34]$ and $[123]$ via [Case: Leap of Faith](../cases/l
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  |***34***|***123***|***123***|  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -123,7 +123,7 @@ Now let's focus on the bottom row, and consider where the lane peak can go. The 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  | *34*|*123*|*123*|  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -139,7 +139,7 @@ Now [Case: Blockade](../cases/blockade.md) comes in. Consider these two adjacent
 <div class="puzzle hypothetical">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  | *34*|*123*|**4**|  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -155,7 +155,7 @@ But we've already deduced the candidates for those head cells to be $[123]$, so 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  | *34*|*123*|*123*|  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -171,7 +171,7 @@ And that leaves only this spot for the $5$. Nice!
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  | *34*|*123*|*123*|  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -187,7 +187,7 @@ Now we can actually use Blockade, putting a $4$ here.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  | *34*|*123*|*123*|  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -203,7 +203,7 @@ And *now* we can determine with certainty that original head cell must be a $4$,
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  2  |     |  2  |     |
 |  2  |**4**|*123*|*123*|  5  |     |     |
 |     |     |     |     |     |     |     |

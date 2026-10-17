@@ -21,7 +21,7 @@ As always, an example will probably explain the best. We're going to find the la
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -37,7 +37,7 @@ Let's start with the bottom row.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -55,7 +55,7 @@ Well, $5$ blocks all skyscrapers behind it, so if we're placing it as in the [he
 <div class="puzzle hypothetical">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -73,7 +73,7 @@ So we can think of the clues as firing lasers which prohibit the lane peak from 
 <div class="puzzle hypothetical">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |~~×~~|~~×~~|~~×~~|     |~~×~~|     |
 |     |~~×~~|~~×~~|~~×~~|     |~~×~~|     |
@@ -91,7 +91,7 @@ Very vividly, there is only one safe column, and so that's where the $5$ must go
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -109,7 +109,7 @@ Of course, this isn't *really* any different from [pencilmarking]() the [candida
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -136,7 +136,7 @@ The use of this firing range analogy might become a bit more apparent once we co
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |**&ensp;**|**&ensp;**|**&ensp;**|     |**&ensp;**|     |
 |     |**&ensp;**|**&ensp;**|**&ensp;**|     |**&ensp;**|     |
@@ -156,7 +156,7 @@ Take this lane with a $4$-clue. The laser travels 3 cells, so the first safe cel
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  |~~×~~|~~×~~|~~×~~|***5***|     |     |
 
 </div>
@@ -166,7 +166,7 @@ Applying this to all the columns, see the structure we obtain?
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -186,7 +186,7 @@ As before, the $3$ and $4$-clue lanes are off-limits, since a $5$ would block th
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -202,7 +202,7 @@ The 4th column already has a $5$, so it can't go there either. The only safe pla
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -223,7 +223,7 @@ The example above was a fairly trivial one. Let's look at a less obvious case wi
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |     |     |     |
@@ -240,7 +240,7 @@ We're going to try and find the lane peak (now the $6$-skyscraper) in the $2$-cl
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |     |     |     |
@@ -257,7 +257,7 @@ As usual we can ignore the head cell (because of course, the $2$-clue also fires
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |     |     |     |
@@ -276,7 +276,7 @@ The $2$-clue's laser only spans 1 cell, so isn't of concern.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |     |     |     |
@@ -293,7 +293,7 @@ However, the $4$ and $5$-clues fire lasers that *do* hit our $6$.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |~~×~~|     |     |
@@ -310,7 +310,7 @@ This means those cells aren't safe, and the $6$ can't go in them.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |     |     |     |
@@ -329,7 +329,7 @@ Again, we could've noticed this by pencilmarking, but with these [high]() clues,
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     | *36*|     |
 |     |     |     |     |     |     |     |     |
@@ -360,7 +360,7 @@ In fact, this laser metaphor is pretty general, and is sort of how I think about
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |     |  7  |~~×~~|~~×~~|~~×~~|~~×~~|~~×~~|~~×~~|     |
 |     |~~×~~|  6  |     |     |     |     |     |     |

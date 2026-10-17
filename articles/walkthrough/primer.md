@@ -12,7 +12,7 @@ So, Skyscrapers.[^tt] They’re a variety of gridded puzzle similar to a Sudoku,
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |  3  |     |  1  |  3  |     |     |
 |     |     |     |     |     |     |  3  |
 |     |     |     |     |  1  |     |  3  |
@@ -28,7 +28,7 @@ The aim is to complete the grid such that each row and column contains each digi
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |  3  |     |  1  |  3  |     |     |
 |     |  1  |  3  |  5  |  2  |  4  |  3  |
 |     |  3  |  5  |  4  |  1  |  2  |  3  |
@@ -60,7 +60,7 @@ The easiest and quickest way to learn how to solve a Skyscrapers is just to see 
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |     |     |     |
 |     |     |     |     |     |     |
@@ -75,7 +75,7 @@ First, notice if we have a clue of $1$, we know the $4$ skyscraper must go direc
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |     |     |     |
 |     |     |     |     |     |     |
@@ -90,7 +90,7 @@ Similarly, where we have a clue of $4$, we know all 4 skyscrapers must be in ord
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |**4**|     |     |
 |     |     |     |**3**|     |     |
@@ -107,7 +107,7 @@ Now looking at the $3$ clue, the only possible order of the row is $[2, 1, 3, 4]
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |  4  |     |     |
 |     |     |     |  3  |     |     |
@@ -124,7 +124,7 @@ We’ve found 3/4 of the $4$ skyscrapers, so by the rules of Sudoku we know wher
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |  4  |     |     |
 |     |     |**4**|  3  |     |     |
@@ -141,7 +141,7 @@ These are the only places $3$ skyscrapers can go:
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |  4  |**3**|     |
 |     |     |  4  |  3  |     |     |
@@ -156,7 +156,7 @@ Then the $2$ skyscrapers:
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |**2**|  4  |  3  |     |
 |     |**2**|  4  |  3  |     |     |
@@ -171,7 +171,7 @@ And finally we can fill out the rest of the $1$ skyscrapers:
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |**1**|  2  |  4  |  3  |     |
 |     |  2  |  4  |  3  |**1**|     |

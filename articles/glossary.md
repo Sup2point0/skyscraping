@@ -58,7 +58,7 @@ A **closed** Skyscrapers puzzle has clues along every [lane](#lane), such that i
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |  2  |  2  |  3  |  3  |  1  |     |
 |  2  |     |     |     |     |     |  1  |
 |  2  |     |     |     |     |     |  2  |
@@ -123,7 +123,7 @@ This is usually relevant while performing [hypothetical deductions](#hypothetica
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :----- | :----- | :----- | :-- |
+| --- | --- | --- | ------ | ------ | ------ | --- |
 |     |     |     |        |        |        |     |
 |     |     |     |    1   |        |        |     |
 |     |     |     |    2   |        |        |     |
@@ -173,7 +173,7 @@ For instance, this half-lane has a dense sequence structure, since all 4 cells a
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |**1**|**2**|**4**|**6**|     |     |     |
 
 </div>
@@ -183,7 +183,7 @@ On the other hand, this would be a [sparse sequence](#sparse-sequence), because 
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |**1**|**2**|**4**|  3  |**6**|     |     |
 
 > The cell containing $3$ is not part of the sequence, so the sequence is ‘spread out’.
@@ -218,7 +218,7 @@ One ‘side’ of a [lane](#lane) – the cells from the head cell up to and inc
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |  3  | *12*| *23*|  5  |*123*|  4  |  2  |
 |     |     |     |     |     |     |     |
@@ -237,7 +237,7 @@ The first cell in a lane.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  3  |***123***|     |     |  5  |     |     |
@@ -267,7 +267,7 @@ In context, it refers to a skyscraper that is taller than another (usually denot
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |***high***|*low*|  4  |     |  5  |     |
 
 </div>
@@ -300,7 +300,7 @@ For instance, this is the lane $\text{5 | 1 2 3 4 5 | 1}$:
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |  5  |  1  |  2  |  3  |  4  |  5  |  1  |
 |     |     |     |     |     |     |     |
@@ -335,7 +335,7 @@ In context, it refers to a skyscraper that is shorter than another (usually deno
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |*high*|***low***|  4  |     |  5  |     |
 
 </div>
@@ -360,7 +360,7 @@ In contrast to a [closed](#closed) Skyscrapers, an **open** Skyscrapers does not
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  1  |     |  2  |     |     |
 |     |     |     |     |     |     |     |
 |  2  |     |     |     |     |     |     |
@@ -391,7 +391,7 @@ In this lane, the cells containing the $3$ and $4$ skyscrapers are past-peak:
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |  5  |**3**|     |**4**|     |
 
 > These skyscrapers are past the lane peak.
@@ -419,7 +419,7 @@ Small numbers placed in a cell to indicate what [candidates](#candidate) *could*
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |
 |  2  |***45***|***1234***|     |     |     |  6  |     |
 |     |     |     |     |     |     |     |     |
@@ -501,7 +501,7 @@ The last cell in a lane.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  3  |     |     |     |  5  |**4**|     |

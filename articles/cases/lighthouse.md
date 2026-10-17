@@ -15,7 +15,7 @@ For instance, consider a *5x5* grid, where $N = 5$.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |  5  |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -31,7 +31,7 @@ A $1$ clue means the $5$ must go in front of it ([silhouette](silhouette.md)). T
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |  5  |  1  |  2  |  3  |  4  |**5**|     |
 |     |     |     |     |     |     |     |
@@ -49,7 +49,7 @@ Consider where we can place the $5$ in a lane where we have a $4$ clue. We defin
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  4  |**5**|  -  |  -  |  -  |  -  |     |
@@ -65,7 +65,7 @@ Nor can we place it in the second, since then we’d only see 2 skyscrapers.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  4  |**-**|**5**|  -  |  -  |  -  |     |
@@ -81,7 +81,7 @@ We can’t do the third either, because this only allows a maximum of 3 skyscrap
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  4  |**-**|**-**|**5**|  -  |  -  |     |
@@ -97,7 +97,7 @@ It follows the $5$ skyscraper can only go in the last 2 spots, i.e. the 4th and 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |  4  |**-**|**-**|**-**|***5***|***5***|     |
@@ -113,7 +113,7 @@ If we apply the same to a $3$ clue, we’ll notice it’s the 3rd, 4th and 5th c
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -129,7 +129,7 @@ And for the $2$ clue, all those from 2nd through to 5th.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -149,7 +149,7 @@ Let’s demonstrate with a *7x7* grid:
 <div class="puzzle">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |     |     |
 |  1  |***7***|     |     |     |     |     |     |     |
 |  2  |     |***7***|***7***|***7***|***7***|***7***|***7***|     |

@@ -20,7 +20,7 @@ Simple rule, but many ways to apply it. Let’s take a grid of [unsolved cells](
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |       |       |       |       |       |     |
 |     |*12345*|*12345*|*12345*|*12345*|*12345*|     |
 |     |*12345*|*12345*|*12345*|*12345*|*12345*|     |
@@ -36,7 +36,7 @@ Suppose we end up solving some cell to be a $5$-skyscraper:
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |       |       |       |       |       |     |
 |     |*12345*|*12345*|*12345*|*12345*|*12345*|     |
 |     |*12345*|*12345*|*12345*|*12345*|*12345*|     |
@@ -52,7 +52,7 @@ Because a lane can only contain one $5$, this eliminates $5$ as a [candidate](..
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |       |       |       |       |       |     |
 |     |*12345*|*12345*|*12345*|***1234***|*12345*|     |
 |     |*12345*|*12345*|*12345*|***1234***|*12345*|     |
@@ -68,7 +68,7 @@ Suppose we keep going and manage to deduce 3 more [lane peaks](../glossary.md#la
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |**5**|     |     |     |     |     |
 |     |     |     |     |     |**5**|     |
@@ -84,7 +84,7 @@ There’s precisely five $5$-skyscrapers in a *5x5* puzzle, so we have one more 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |  5  |     |*1234*|     |     |     |
 |     |     |     |*1234*|     |  5  |     |
@@ -102,7 +102,7 @@ In this situation, we can ***pinpoint*** that the final $5$-skyscraper must go i
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |  5  |     |     |     |     |     |
 |     |     |     |     |     |  5  |     |
@@ -122,7 +122,7 @@ Because of all the added logical deduction, we can very easily end up with very 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  2  |     |
 |  4  |     |     |     |  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -138,7 +138,7 @@ Applying [Slide](../cases/slide.md) to the $4$-clue [half-lane](../glossary.md#h
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  2  |     |
 |  4  |***12***|***23***|***34***|  5  |     |     |
 |     |     |     |     |     |     |     |
@@ -154,7 +154,7 @@ Then for the upper-right cell, using Sudoku-style elimination we get $[123]$ as 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  2  |     |
 |  4  | *12*| *23*| *34*|  5  |***123***|     |
 |     |     |     |     |     |     |     |
@@ -172,7 +172,7 @@ Among all the cells, only one contains $4$ as a candidate. This means we can pin
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  2  |     |
 |  4  | *12*| *23*|**4**|  5  |*123*|     |
 |     |     |     |     |     |     |     |
@@ -188,7 +188,7 @@ Very simple, but powerful deduction. Always be on the watch out for this, becaus
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  2  |     |     |
 |     |     |     |     |     |     |     |     |
 |     |  5  |     |     |     |     |     |     |
@@ -207,7 +207,7 @@ This example also happens to illustrate why [pencilmarking](pencilmarking.md) ca
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |**2**|     |     |
 |     |     |     |     |     |***45***|     |     |
 |     |  5  |     |     |     |     |     |     |
@@ -224,7 +224,7 @@ Once we have pencilmarks in all cells of a row, we might notice there’s a skys
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  2  |     |     |
 |     |     |     |     |     | *45*|     |     |
 |     |  5  |     |     |     |     |     |     |

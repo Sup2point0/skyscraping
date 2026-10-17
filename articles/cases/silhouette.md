@@ -20,7 +20,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  1  |     |     | ... |     |     |     |
 
   </div>
@@ -28,7 +28,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  1  |**N**|     | ... |     |     |     |
 
   </div>
@@ -44,7 +44,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  1  |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -58,7 +58,7 @@ A [half-lane](../glossary.md#half-lane) with a [clue](../glossary.md#clue) of $1
   <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |  1  |     |     |     |     |
 |     |     |**5**|     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -82,7 +82,7 @@ If we picked any other skyscraper as our 1 visible skyscraper, we’d still be a
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  1  |**&ensp;&&|**5**|     |     |     |  .  |
 
 > If we don‘t place the $5$ in the head cell, then we‘ll be able to see more than 1 skyscraper, since all other skyscrapers are shorter than $5$.

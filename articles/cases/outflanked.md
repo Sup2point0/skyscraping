@@ -18,7 +18,7 @@ The cleanest example of this is [Blockade](blockade.md). Usually, this is only a
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |     |  5  |     |
 
   </div>
@@ -26,7 +26,7 @@ The cleanest example of this is [Blockade](blockade.md). Usually, this is only a
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |**4**|     |     |     |  5  |     |
 
   </div>
@@ -37,7 +37,7 @@ However, could we also apply Blockade in this situation?
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |  5  |  2  |     |
 
 </div>
@@ -47,7 +47,7 @@ Well, the lane peak isn’t in the tail cell, but there aren’t any [unsolved c
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |***4***|***4***|***4***|  5  |  2  |     |
 
 </div>
@@ -57,7 +57,7 @@ And of course, the only valid one is the [head cell](../glossary.md#head-cell).
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |**4**|     |     |  5  |  2  |     |
 
 </div>
@@ -71,7 +71,7 @@ We can ‘outflank’ Blockade with other constraints, too! Here, we do have an 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |  4  |     |
 |     |     |     |     |     |     |     |
@@ -89,7 +89,7 @@ We know from [Case: Ascendant](ascendant.md) that the $4$-skyscraper must either
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |  4  |     |
 |     |     |     |     |     |     |     |
@@ -105,7 +105,7 @@ But, notice the other $4$ already in the column of the tail cell. This means we 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |  4  |     |
 |     |     |     |     |     |     |     |
@@ -121,7 +121,7 @@ This means it must be pre-peak, and of course the only pre-peak cell it can go i
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |  4  |     |
 |     |     |     |     |     |     |     |
@@ -139,7 +139,7 @@ The other $4$ is cutting off that past-peak tail cell, so it’s like it doesn�
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |  4  |     |
 |     |     |     |     |     |     |     |
@@ -161,7 +161,7 @@ We’ve seen two such constraints here – a literally solved cell and a conflic
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |  4  |     |     |     |     |     |     |
 |     |     |  5  |     |     |     |     |
@@ -179,7 +179,7 @@ We’ve seen two such constraints here – a literally solved cell and a conflic
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     | *14*|     |     |     |     |     |
 |     | *14*|     |     |     |     |     |
@@ -202,7 +202,7 @@ Now take a look at this situation, and again we’ll try to apply Blockade.
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |     |  6  |  5  |     |
 
 </div>
@@ -214,7 +214,7 @@ But, just like before, since all the past-peak cells are solved, the lane peak i
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |***high***|***low***|***low***|***low***|  6  |  5  |     |
 
 > The head cell must obscure all intermediate cells until the lane peak.
@@ -226,7 +226,7 @@ To obscure the intermediate cells, we need the tallest currently available skysc
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |**4**|     |     |     |  6  |  5  |     |
 
 </div>
@@ -238,7 +238,7 @@ And we can keep going – even for a monstrous *9x9* puzzle, this recursive logi
 <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |**5**|     |     |     |     |  9  |  7  |  8  |  6  |     |
 
 > After $9$, $8$, $7$, $6$, the next tallest is $5$.
@@ -250,7 +250,7 @@ Remember that the head cell skyscraper we want is the *tallest* available one, n
 <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  7  |     |     |     |  7  |  6  |  3  |  5  |     |
 
 > What goes in the head cell here?
@@ -262,7 +262,7 @@ There’s $\{653\}$, with a gap of $4$ – that’s the skyscraper we want, not 
 <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  7  |**4**|     |     |  7  |  6  |  3  |  5  |     |
 
 </div>
@@ -272,7 +272,7 @@ Also, if even one past-peak cell is unsolved, this won’t necessarily apply!
 <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  7  |***34***|     |     |  7  |  6  |     |  5  |     |
 
 > With a post-peak gap, now the head cell is uncertain. What could cause it to be certain? Answer.[^answer]

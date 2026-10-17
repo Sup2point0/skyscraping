@@ -10,7 +10,7 @@ Across *Skyscraping*, I sometimes use a textual notation for [lanes](glossary.md
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  |  1  | *23*|  4  |     |  5  |     |
 
 </div>
@@ -27,7 +27,7 @@ Take the following lane:
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  5  |  1  |  2  |  3  |  4  |  5  |  1  |
 
 </div>
@@ -53,7 +53,7 @@ The direction of the original lane is irrelevant – it very well could be a col
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |  3  |     |     |
 |     |     |     |  2  |     |     |
 |     |     |     |  3  |     |     |
@@ -73,7 +73,7 @@ For a lane with [pencilmarks](glossary.md#pencilmarks):
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |  4  | *12*| *23*| *34*|  5  |*1234*|  2  |
 |     |     |     |     |     |     |     |
@@ -98,7 +98,7 @@ In this lane, we’re focusing on the $3$-clue. What goes between the $5$ and $4
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |  3  | *12*| *23*|  5  |     |  4  |  2  |
 |     |     |     |     |     |     |     |
@@ -118,7 +118,7 @@ We’ll use this a lot in large puzzles where explicitly showing the candidates 
 <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |  4  | *56*|  7  |     |     |     |  3  |  3  |
 
 </div>
@@ -144,7 +144,7 @@ We often need to talk about a particular set of numbers.
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |  3  |     |     |  5  |     |     |
 
 </div>
@@ -161,7 +161,7 @@ Sometimes, we may talk about a specific chain of skyscrapers in a half-lane. Ord
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |  2  |  4  |  1  |  5  |  3  |     |
 
 </div>

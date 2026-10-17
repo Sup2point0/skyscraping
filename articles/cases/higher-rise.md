@@ -21,7 +21,7 @@ In a *5x5* Skyscrapers, when the [lane peak](../glossary.md#lane-peak) is exactl
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |  5  |     |     |  2  |
 
   </div>
@@ -29,7 +29,7 @@ In a *5x5* Skyscrapers, when the [lane peak](../glossary.md#lane-peak) is exactl
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |***23***|     |  5  |     |     |  2  |
 
   </div>
@@ -37,7 +37,7 @@ In a *5x5* Skyscrapers, when the [lane peak](../glossary.md#lane-peak) is exactl
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  | *23*|     |  5  |     |**1**|  2  |
 
   </div>
@@ -51,7 +51,7 @@ In a *5x5* Skyscrapers, when the [lane peak](../glossary.md#lane-peak) is exactl
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |  5  |     |     |  3  |
 
 </div>
@@ -61,7 +61,7 @@ Via [Meet in the Middle](meet-in-the-middle.md), we obtain 2 [dense sequences](.
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |***low***|***high***|  5  |***high***|***low***|  3  |
 
 </div>
@@ -74,7 +74,7 @@ If one of them becomes taken, then the $1$ is forced to go in the other.
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |**X**|     |  5  |     |     |  3  |
 
   </div>
@@ -82,7 +82,7 @@ If one of them becomes taken, then the $1$ is forced to go in the other.
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |  X  |     |  5  |     |**1**|  3  |
 
   </div>
@@ -94,7 +94,7 @@ If that other edge cell was taken by a $2$, then we’re now left with 2 [unsolv
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |**2**|     |  5  |     |  1  |  3  |
 
   </div>
@@ -102,7 +102,7 @@ If that other edge cell was taken by a $2$, then we’re now left with 2 [unsolv
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |  2  |***34***|  5  |***34***|  1  |  3  |
 
   </div>
@@ -114,7 +114,7 @@ If it was instead taken by a $3$, then we can solve the entire lane! That half-l
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |**3**|     |  5  |     |  1  |  3  |
 
   </div>
@@ -122,7 +122,7 @@ If it was instead taken by a $3$, then we can solve the entire lane! That half-l
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |  3  |**4**|  5  |**2**|  1  |  3  |
 
   </div>
@@ -134,7 +134,7 @@ Notice we can’t say anything much about the converse – if one terminal cell 
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |**1**|     |  5  |     |     |  3  |
 
   </div>
@@ -142,7 +142,7 @@ Notice we can’t say anything much about the converse – if one terminal cell 
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |  1  |***234***|  5  |***34***|***23***|  3  |
 
   </div>
@@ -159,7 +159,7 @@ Solve as much as you can (including pencilmarks) with the available context!
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -174,7 +174,7 @@ Solve as much as you can (including pencilmarks) with the available context!
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -191,7 +191,7 @@ First, we can pinpoint the lane peak by [Meet in the Middle](meet-in-the-middle.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -207,7 +207,7 @@ Then, in the left column we need a $3$ or $4$ between the $2$ and $5$.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -223,7 +223,7 @@ Now we can apply Higher-Rise! Since the $1$ isn’t in the left edge cell, it mu
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -239,7 +239,7 @@ Also, notice the left edge cell can’t actually contain a $4$, since then we wo
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -257,7 +257,7 @@ So we must then have $\text{| 3 4 5}$ in the left half-lane, which then makes th
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -272,7 +272,7 @@ So we must then have $\text{| 3 4 5}$ in the left half-lane, which then makes th
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |     |     |     |
 |     |     |     |     |     |     |  2  |
@@ -287,7 +287,7 @@ So we must then have $\text{| 3 4 5}$ in the left half-lane, which then makes th
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |**1**|     |     |
 |     |     |     |     |***23***|***34***|  2  |
@@ -304,7 +304,7 @@ As usual, we can pinpoint the lane peak by Meet in the Middle.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |     |     |     |
 |     |     |     |     |     |     |  2  |
@@ -322,7 +322,7 @@ The key lies in considering the $4$-skyscraper. There are only 2 cells it can go
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |     |     |     |
 |     |     |     |     |***4***|     |  2  |
@@ -340,7 +340,7 @@ By [Ascendant](ascendant.md) we know that in a $2$-clue half-lane, the $4$ can g
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |     |     |     |
 |     |     |     |     |~~4~~|     |  2  |
@@ -358,7 +358,7 @@ Now let’s start pencilmarking. Normally, the top edge cell could be $[123]$.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |***123***|     |     |
 |     |     |     |     |     |     |  2  |
@@ -376,7 +376,7 @@ Hence we’re left with just $1$, solving the cell.
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |**1**|     |     |
 |     |     |     |     |     |     |  2  |
@@ -392,7 +392,7 @@ This is as far as we can get, and we don’t have enough information to solve an
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |
 |     |     |  2  |     |  1  |     |     |
 |     |     |     |     |***23***|***34***|  2  |

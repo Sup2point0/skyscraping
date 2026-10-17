@@ -22,7 +22,7 @@ In a $2$-clue [lane](../glossary.md#lane), the $N-1$ skyscraper must either be i
   <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |  7  |     |     |     |     |
 
   </div>
@@ -30,7 +30,7 @@ In a $2$-clue [lane](../glossary.md#lane), the $N-1$ skyscraper must either be i
   <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |***6***|     |     |  7  |***6***|***6***|***6***|     |
 
   </div>
@@ -47,7 +47,7 @@ If the $N-1$ skyscraper is past-peak, this case recurses with the $N-2$ skyscrap
   <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |  N  | ... |*N-1*| ... |*N-k*|     |
 
   </div>
@@ -55,7 +55,7 @@ If the $N-1$ skyscraper is past-peak, this case recurses with the $N-2$ skyscrap
   <div class="puzzle lane">
 
 ||||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |***N-k-1***|     |  N  | ... |*N-1*| ... |*N-k*|     |
 
   </div>
@@ -73,7 +73,7 @@ Really, this case arises because the $N-1$ skyscraper cannot be both [pre-peak](
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |  5  |     |  6  |     |     |     |
 
 </div>
@@ -83,7 +83,7 @@ If this is the case, the $N$ and $N-1$ are guaranteed to be [visible](../glossar
 <div class="puzzle lane contradiction">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |~~2~~|**&ensp;**|  5  |     |  6  |     |     |     |
 
 > This cell before the $5$-skyscraper ($N-1$) must be shorter than both $5$ and $6$, so must be visible. But now we have 3 visible skyscrapers, not 2 as required!
@@ -95,7 +95,7 @@ Therefore, if the $N-1$ is pre-peak, it *has* to go in the head cell.
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |**5**|     |     |  6  |     |     |     |
 
 > The only pre-peak cell for the $5$ is the head cell so it obscures the other pre-peak skyscrapers.
@@ -108,7 +108,7 @@ If it’s past-peak, well, then it makes no difference to the [half-lane](../glo
   <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |  6  |**5**|     |     |
 
   </div>
@@ -116,7 +116,7 @@ If it’s past-peak, well, then it makes no difference to the [half-lane](../glo
   <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |     |     |  6  |     |**5**|     |
 
   </div>

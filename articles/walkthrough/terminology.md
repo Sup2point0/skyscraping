@@ -23,7 +23,7 @@ Here’s a *5x5* “Skyscrapers” puzzle. It’s got a 5x5 [**grid**](../glossa
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  3  |     |
 |     |     |     |     |  5  |     |     |
 |  3  |     |     |     |     |     |  3  |
@@ -39,7 +39,7 @@ It’s also got quite a few numbers. The numbers inside the grid are the [**skys
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  3  |     |
 |     |     |     |     |**5**|     |     |
 |  3  |     |     |     |     |     |  3  |
@@ -57,7 +57,7 @@ The numbers outside the grid are [**clues**](../glossary.md#clues), which help t
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |**3**|     |
 |     |     |     |     |  5  |     |     |
 |**3**|     |     |     |     |     |**3**|
@@ -80,7 +80,7 @@ When we successfully determine what skyscraper goes inside a cell, we call that 
 <div class="puzzle solved">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  3  |     |
 |     |  4  |  2  |  3  |  5  |  1  |     |
 |  3  |  1  |  4  |  5  |  3  |  2  |  3  |
@@ -98,7 +98,7 @@ To help keep track of what skyscrapers could go in an unsolved cell, we often [*
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  3  |     |
 |     |     |     |     |  5  |     |     |
 |  3  |     |     |     |     |     |  3  |
@@ -121,7 +121,7 @@ This *5x5* grid has 5 horizontal [**rows**](../glossary.md#rows) and 5 vertical 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |**3**|     |
 |     |     |     |     |  5  |**&ensp;**|     |
 |  3  |     |     |     |     |**&ensp;**|  3  |
@@ -141,7 +141,7 @@ The $N$-skyscrapers are so pivotal to solving puzzles that it’s worth giving t
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |  3  |     |
 |     |     |     |     |  5  |     |     |
 |  3  |     |     |**5**|     |     |  3  |
@@ -162,7 +162,7 @@ Focusing on a particular lane, the most notable cells are the first and last cel
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |***head***|     |  5  |  3  |***tail***|  2  |
 
 > Note that we are assuming the direction we’re looking is left-to-right.
@@ -176,7 +176,7 @@ Often, we’ll only care about the half of the lane that comes before the lane p
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  3  |**&ensp;**|**&ensp;**|  5  |  3  |    |  2  |
 
 > We might not care what comes after the $5$, only what comes before.

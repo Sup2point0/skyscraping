@@ -20,7 +20,7 @@ In a [half-lane](../glossary.md#half-lane) with clue $c$, if the [lane peak](../
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  c  | *1* | *2* | ... |*c-1*|  N  |     |     |
 
   </div>
@@ -28,7 +28,7 @@ In a [half-lane](../glossary.md#half-lane) with clue $c$, if the [lane peak](../
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  c  |  p  |  q  | ... |  t  |  N  |     |     |
 
 > Where $p < q < ... < t < N$.
@@ -45,7 +45,7 @@ In a [half-lane](../glossary.md#half-lane) with clue $c$, if the [lane peak](../
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -61,7 +61,7 @@ This is a *5x5* puzzle, so the lane peak is the $5$-skyscraper. It’s in the 3r
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -77,7 +77,7 @@ The [lowest-case](../glossary.md#lowest-case) sequence we could have is $(125)$,
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |
@@ -94,7 +94,7 @@ The [lowest-case](../glossary.md#lowest-case) sequence we could have is $(125)$,
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |  5  |     |     |     |  4  |
 |     |     |     |     |     |     |     |
@@ -112,7 +112,7 @@ The lowest sequence we could have is $(1235)$, and the highest $(2345)$. So for 
 <div class="puzzle">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |     |
 |     |     |  5  |***34***|***23***|***12***|  4  |
 |     |     |     |     |     |     |     |
@@ -127,7 +127,7 @@ The lowest sequence we could have is $(1235)$, and the highest $(2345)$. So for 
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
@@ -144,7 +144,7 @@ Now we have a *6x6* skyscraper so the lane peak is the $6$-skyscraper. Notice we
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
@@ -161,7 +161,7 @@ This is 3 cells away from the $3$ clue, and 4 cells away from the 4 cells away f
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |     |
 |     |     |     |     |***p &amp;lt; q***|     |     |     |
 |     |     |     |     |***q &amp;lt; 6***|     |     |     |
@@ -178,7 +178,7 @@ On the $3$-clue side the lowest sequence is $(126)$ and the highest $(456)$, giv
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |     |
 |     |     |     |     |***1234***|     |     |     |
 |     |     |     |     |***2345***|     |     |     |
@@ -195,7 +195,7 @@ On the $4$-clue side we have $(1236)$ up to $(3456)$, giving $\{123\}$, $\{234\}
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |  3  |     |     |     |
 |     |     |     |     |*1234*|     |     |     |
 |     |     |     |     |*2345*|     |     |     |
@@ -216,7 +216,7 @@ When the lane peak is in the $c$-th cell of a half-lane, then the greatest possi
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |**6**|     |     |
 
 </div>
@@ -226,7 +226,7 @@ When the lane peak is in the $c$-th cell of a half-lane, then the greatest possi
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |**1**|**2**|**3**|**4**|  6  |     |     |
 
 </div>
@@ -241,7 +241,7 @@ If the clue were, say, $3$, then we’d need to choose which cells contain visib
   <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |**&ensp;**|**&ensp;**|     |     |**6**|     |     |
 
 > We could have the first 2 cells visible in addition to the lane peak...
@@ -251,7 +251,7 @@ If the clue were, say, $3$, then we’d need to choose which cells contain visib
   <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |**&ensp;**|**&ensp;**|**6**|     |     |
 
 > ...or maybe have the 2 cells next to lane peak visible. There are many choices!
@@ -264,7 +264,7 @@ But if the clue were $5$, then the *only* way to have 5 skyscrapers visible is i
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  |**&ensp;**|**&ensp;**|**&ensp;**|**&ensp;**|**6**|     |     |
 
 </div>
@@ -283,7 +283,7 @@ For instance, if we need 2 visible skyscrapers...
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |     |  5  |     |     |     |     |
 
 </div>
@@ -293,7 +293,7 @@ For instance, if we need 2 visible skyscrapers...
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  2  |***1234***|  5  |     |     |     |     |
 
 </div>
@@ -303,7 +303,7 @@ Let’s compare this to a sequence of 4 visible skyscrapers:
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  |     |     |     |  5  |     |     |
 
 </div>
@@ -315,7 +315,7 @@ Focusing on the head cell, in all of the possible sequences it’s either $1$ or
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  |***12***|     |     |  5  |     |     |
 
 </div>
@@ -325,7 +325,7 @@ For the next cell, it’s $2$ and $3$. It needs to definitely be taller than $1$
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  | *12*|***23***|     |  5  |     |     |
 
 </div>
@@ -335,7 +335,7 @@ Continuing with the same logic, for the last cell we have $3$ and $4$.
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  | *12*| *23*|***34***|  5  |     |     |
 
 </div>
@@ -345,7 +345,7 @@ In general, to find the candidates for each cell, we only need to consider the l
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |     |     |     |  6  |     |     |  .  |
 
 </div>
@@ -355,7 +355,7 @@ For the lower bound, we start with the shortest possible skyscraper, $1$, and th
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |***1***|***2***|***3***|  6  |     |     |  .  |
 
 </div>
@@ -365,7 +365,7 @@ For the upper bound, we can work backwards. Preceding the $6$, the tallest possi
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |***13***|***24***|***35***|  6  |     |     |  .  |
 
 </div>
@@ -375,7 +375,7 @@ Finally, we just need to add in all the intermediate values. For example, in fir
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |***123***|***234***|***345***|  6  |     |     |  .  |
 
 </div>
@@ -391,7 +391,7 @@ The head cell acts as a ‘lower bound’ on the sequence, dictating where it st
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  | *12*| *23*| *34*|  5  |     |     |
 
 </div>
@@ -401,7 +401,7 @@ Suppose here we manage to find that the head cell is $2$, which is the tallest o
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  |**2**| *23*| *34*|  5  |     |     |
 
 </div>
@@ -411,7 +411,7 @@ Then the only possible sequence collapses to $(2345)$, so we can solve the half-
 <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- |
 |  4  |  2  |**3**|**4**|  5  |     |     |
 
 > We could also achieve this via Sudoku-style eliminations!
@@ -424,7 +424,7 @@ This doesn’t just apply for the head cell, though. At any point, if a cell is 
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*| *23*| *34*| *45*|  6  |     |     |
 
   </div>
@@ -432,7 +432,7 @@ This doesn’t just apply for the head cell, though. At any point, if a cell is 
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*|**3**| *34*| *45*|  6  |     |     |
 
 > $3$ is the tallest of $\{23\}$, so...
@@ -442,7 +442,7 @@ This doesn’t just apply for the head cell, though. At any point, if a cell is 
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*|  3  |**4**|**5**|  6  |     |     |
 
 > ...all following cells must contain their tallest candidate. This is also deducable via Sudoku-style deductions.
@@ -456,7 +456,7 @@ On the flip side, if a cell is solved to be its shortest candidate, then all pre
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*| *23*| *34*| *45*|  6  |     |     |
 
   </div>
@@ -464,7 +464,7 @@ On the flip side, if a cell is solved to be its shortest candidate, then all pre
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  | *12*| *23*|**3**| *45*|  6  |     |     |
 
 > $3$ is the shortest of $\{34\}$, so...
@@ -474,7 +474,7 @@ On the flip side, if a cell is solved to be its shortest candidate, then all pre
   <div class="puzzle lane">
 
 ||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  5  |**1**|**2**|  3  | *45*|  6  |     |     |
 
 > ...all preceding cells must contain their shortest candidate. Again, this is deducable through Sudoku-style deductions.
@@ -487,7 +487,7 @@ All make sense? It’s important to not lose sight of it in larger puzzles when 
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |*123*|*234*|*345*|  6  |     |     |  .  |
 
 </div>
@@ -497,7 +497,7 @@ Let’s say we find that the middle unsolved cell is $4$.
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |*123*|**4**|*345*|  6  |     |     |  .  |
 
 </div>
@@ -507,7 +507,7 @@ Purely relying on Sudoku-style eliminations, we’d leave the last unsolved cell
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |*123*|  4  |***35***|  6  |     |     |  .  |
 
 </div>
@@ -517,7 +517,7 @@ But we can actually solve it, because there’s the sequence structure! Since ev
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  4  |*123*|  4  |**5**|  6  |     |     |     |
 
 </div>

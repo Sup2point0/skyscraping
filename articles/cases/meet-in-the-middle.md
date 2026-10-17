@@ -19,7 +19,7 @@ When we have a [lane](../glossary.md#lane) with [clues](../glossary.md#clue) on 
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |**6**|     |     |     |  4  |
 
 </div>
@@ -33,7 +33,7 @@ When we have a [lane](../glossary.md#lane) with [clues](../glossary.md#clue) on 
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |     |     |     |
 |  2  |     |     |     |     |  3  |
@@ -48,7 +48,7 @@ The clues add up to $2 + 3 = 5$, which is $1$ above $4$ (since this a *4x4* puzz
 <div class="puzzle">
 
 |||||||
-| :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- |
 |     |     |     |     |     |     |
 |     |     |     |     |     |     |
 |  2  |     |**4**|     |     |  3  |
@@ -62,7 +62,7 @@ The clues add up to $2 + 3 = 5$, which is $1$ above $4$ (since this a *4x4* puzz
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  3  |  3  |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |     |     |     |     |     |     |
@@ -81,7 +81,7 @@ $2 + 5 = 7$ and $3 + 4 = 7$, so we can pinpoint the lane peaks in those lanes.
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  3  |  3  |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |**6**|     |     |     |     |     |
@@ -98,7 +98,7 @@ We can’t apply the case to the remaining lane, but we can actually still pinpo
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  3  |  3  |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |  6  |     |     |     |     |     |
@@ -115,7 +115,7 @@ But of course, in the upper cell’s row the $6$ has already been taken, so we�
 <div class="puzzle">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |     |     |  2  |  3  |  3  |     |     |     |
 |     |     |     |     |     |     |     |     |
 |     |     |  6  |     |     |     |     |     |
@@ -135,7 +135,7 @@ Take a look at the constraints on where the $6$ can go produced by the $3$ and $
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |  3  |     |     |***6***| *6* | *6* | *6* |     |
 |     | *6* | *6* |***6***|     |     |     |  4  |
 
@@ -148,7 +148,7 @@ This happens whenever the 2 clues add up to $N+1$, which is in fact the highest 
 <div class="puzzle lane">
 
 |||||||||
-| :-- | :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 |~~4~~|     |     |     |     |     |     |~~4~~|
 |  4  |     |     |     | *6* | *6* | *6* |     |
 |     | *6* | *6* | *6* |     |     |     |  4  |
