@@ -4,8 +4,6 @@ import { pages } from "#src/site-data.json" with { type: "json" };
 
 import { filter_pages } from "./filter";
 
-import Header from "#parts/header.svelte";
-
 import { onMount } from "svelte";
 import { base } from "$app/paths";
 
@@ -19,8 +17,6 @@ let pages_filtered = $derived(filter_pages(query, pages));
 
 </script>
 
-
-<Header title="Search" />
 
 <search>
   <input type="search"
